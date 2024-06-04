@@ -96,7 +96,7 @@
                 <div class="col-sm text-center text-md-left mb-md-0 mb-2 pr-md-4 d-flex topper align-items-center">
                     <p class="mb-0 w-100">
                         <span class="fa fa-paper-plane"></span>
-                        <span class="text"><a href="https://preview.colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9de4f2e8eff8f0fcf4f1ddf8f0fcf4f1b3fef2f0">[email&#160;protected]</a></span>
+                        <span class="text"><a href="https://preview.colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9de4f2e8eff8f0fcf4f1ddf8f0fcf4f1b3fef2f0" style="font-size: 10px">contact@bellehouseniger.com</a></span>
                     </p>
                 </div>
                 <div class="col-sm justify-content-center d-flex mb-md-0 mb-2">
@@ -105,7 +105,7 @@
                             <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
                             <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
                             <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
-                            <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+                            {{-- <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a> --}}
 
                         </p>
                     </div>
