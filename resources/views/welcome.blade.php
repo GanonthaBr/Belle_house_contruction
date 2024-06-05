@@ -96,7 +96,7 @@
                 <div class="col-sm text-center text-md-left mb-md-0 mb-2 pr-md-4 d-flex topper align-items-center">
                     <p class="mb-0 w-100">
                         <span class="fa fa-paper-plane"></span>
-                        <span class="text"><a href="https://preview.colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9de4f2e8eff8f0fcf4f1ddf8f0fcf4f1b3fef2f0" style="font-size: 10px">contact@bellehouseniger.com</a></span>
+                        <span class="text"><a href="https://preview.colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9de4f2e8eff8f0fcf4f1ddf8f0fcf4f1b3fef2f0" style="font-size: 12px">contact@bellehouseniger.com</a></span>
                     </p>
                 </div>
                 <div class="col-sm justify-content-center d-flex mb-md-0 mb-2">
@@ -111,7 +111,7 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-7 d-flex topper align-items-center text-lg-right justify-content-end">
-                    <p class="mb-0 register-link"><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Inquire Now</a></p>
+                    <p class="mb-0 register-link"><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Nous Contacter</a></p>
                 </div>
             </div>
         </div>
@@ -121,8 +121,10 @@
             <div class="row d-flex align-items-start align-items-center px-3 px-md-0">
                 <div class="col-md-4 d-flex mb-2 mb-md-0">
                     <a class="navbar-brand d-flex align-items-center" href="index.html">
-                        <span class="flaticon flaticon-crane"></span>
-                        <span class="ml-2">Wilcon <small>Construction Company</small></span>
+                        <span>
+                            <img src="images/logo.png" alt="Belle House Construction Company" height="65" width="80" >
+                        </span>
+                        <span class="ml-2">Belle House <small style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif" >Batisseur de Confiance</small></span>
                     </a>
                 </div>
                 <div class="col-md-4 d-flex topper mb-md-0 mb-2 align-items-center">
@@ -130,16 +132,16 @@
                         <span class="fa fa-map"></span>
                     </div>
                     <div class="pr-md-4 pl-md-3 pl-3 text">
-                        <p class="con"><span>Free Call</span> <span>+1 234 456 78910</span></p>
-                        <p class="con">Call Us Now 24/7 Customer Support</p>
+                        <p class="con"><span>Appellez au</span> <span>+227 456 78910</span></p>
+                        <p class="con">Appel  24/7 pour vos besoins</p>
                     </div>
                 </div>
                 <div class="col-md-4 d-flex topper mb-md-0 align-items-center">
                     <div class="icon d-flex justify-content-center align-items-center"><span class="fa fa-paper-plane"></span>
                     </div>
                     <div class="text pl-3 pl-md-3">
-                        <p class="hr"><span>Our Location</span></p>
-                        <p class="con">198 West 21th Street, Suite 721 New York NY 10016</p>
+                        <p class="hr"><span>Localisation</span></p>
+                        <p class="con">Niamey Quartier Bobiel,Niger</p>
                     </div>
                 </div>
             </div>
@@ -152,14 +154,14 @@
             </button>
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item active"><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">A propos</a></li>
                     <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a href="project.html" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="project.html" class="nav-link">Projets</a></li>
                     <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
-                <a href="#" class="btn-custom" data-toggle="modal" data-target="#exampleModalCenter">Inquire Now</a>
+                <a href="#" class="btn-custom" data-toggle="modal" data-target="#exampleModalCenter">Nous Contacter</a>
             </div>
         </div>
     </nav>
@@ -170,7 +172,7 @@
             <div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
                 <div class="col-lg-6 ftco-animate">
                     <div class="mt-5">
-                        <h1 class="mb-4">We Build <br>Great Projects</h1>
+                        <h1 class="mb-4">Construire <br>Votre Maison !</h1>
                         <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
                         <p><a href="#" class="btn btn-primary">Our Services</a> <a href="#" class="btn btn-white" data-toggle="modal" data-target="#exampleModalCenter">Request A Quote</a></p>
                     </div>
