@@ -3,84 +3,9 @@
     
     @include('includes.topbar')
     @include('includes.navbar')
-
-    <section class="hero-wrap js-fullheight" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
-                <div class="col-lg-6 ftco-animate">
-                    <div class="mt-5">
-                        <h1 class="mb-4">Construire <br>Votre Maison !</h1>
-                        <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
-                        <p><a href="#" class="btn btn-primary">Our Services</a> <a href="#" class="btn btn-white" data-toggle="modal" data-target="#exampleModalCenter">Request A Quote</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-services-2">
-        <div class="container">
-            <div class="row no-gutters d-flex">
-                <div class="col-lg-4 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services d-flex">
-                        <div class="icon justify-content-center align-items-center d-flex"><span class="flaticon-engineer-1"></span></div>
-                        <div class="media-body pl-4">
-                            <h3 class="heading mb-3">Quality Construction</h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services services-2 d-flex">
-                        <div class="icon justify-content-center align-items-center d-flex"><span class="flaticon-worker-1"></span></div>
-                        <div class="media-body pl-4">
-                            <h3 class="heading mb-3">Professional Liability</h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services d-flex">
-                        <div class="icon justify-content-center align-items-center d-flex"><span class="flaticon-engineer"></span></div>
-                        <div class="media-body pl-4">
-                            <h3 class="heading mb-3">Dedicated To Our Clients</h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="ftco-section" id="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 d-flex align-items-stretch">
-                    <div class="about-wrap img w-100" style="background-image: url(images/about.jpg);">
-                        <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-crane"></span></div>
-                    </div>
-                </div>
-                <div class="col-md-6 py-5 pl-md-5">
-                    <div class="row justify-content-center mb-4 pt-md-4">
-                        <div class="col-md-12 heading-section ftco-animate">
-                            <span class="subheading">Welcome to Wilcon</span>
-                            <h2 class="mb-4">Wilcon A Construction Company</h2>
-                            <div class="d-flex about">
-                                <div class="icon"><span class="flaticon-hammer"></span></div>
-                                <h3>We're in this business since 1975 and We provide the best insdustrial services</h3>
-                            </div>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                            <div class="d-flex video-image align-items-center mt-md-4">
-                                <a href="#" class="video img d-flex align-items-center justify-content-center" style="background-image: url(images/about-2.jpg);">
-                                    <span class="fa fa-play-circle"></span>
-                                </a>
-                                <h4 class="ml-4">This is how we work on our clients, Watch video</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    @include('partials.hero')
+    @include('partials.services')
+    @include('partials.about')
     <section class="ftco-intro">
         <div class="container">
             <div class="row justify-content-center">
@@ -177,90 +102,7 @@
             </div>
         </div>
     </section>
-    <section class="ftco-section">
-        <div class="container">
-            <div class="row justify-content-center mb-5 pb-3">
-                <div class="col-md-7 text-center heading-section ftco-animate">
-                    <span class="subheading">Our Global Work Industries</span>
-                    <h2 class="mb-4">Latest Projects</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="project">
-                        <a href="images/project-1.jpg" class="img image-popup d-flex align-items-center" style="background-image: url(images/project-1.jpg);">
-                            <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fa fa-plus"></span></div>
-                        </a>
-                        <div class="text">
-                            <span class="subheading">Building</span>
-                            <h3>Building A Condominium</h3>
-                            <p><span class="fa fa-map-marker mr-1"></span> San Francisco, California, USA</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="project">
-                        <a href="images/project-1.jpg" class="img image-popup d-flex align-items-center" style="background-image: url(images/project-1.jpg);">
-                            <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fa fa-plus"></span></div>
-                        </a>
-                        <div class="text">
-                            <span class="subheading">Building</span>
-                            <h3>Building A Condominium</h3>
-                            <p><span class="fa fa-map-marker mr-1"></span> San Francisco, California, USA</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="project">
-                        <a href="images/project-1.jpg" class="img image-popup d-flex align-items-center" style="background-image: url(images/project-1.jpg);">
-                            <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fa fa-plus"></span></div>
-                        </a>
-                        <div class="text">
-                            <span class="subheading">Building</span>
-                            <h3>Building A Condominium</h3>
-                            <p><span class="fa fa-map-marker mr-1"></span> San Francisco, California, USA</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="project">
-                        <a href="images/project-1.jpg" class="img image-popup d-flex align-items-center" style="background-image: url(images/project-1.jpg);">
-                            <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fa fa-plus"></span></div>
-                        </a>
-                        <div class="text">
-                            <span class="subheading">Building</span>
-                            <h3>Building A Condominium</h3>
-                            <p><span class="fa fa-map-marker mr-1"></span> San Francisco, California, USA</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="project">
-                        <a href="images/project-1.jpg" class="img image-popup d-flex align-items-center" style="background-image: url(images/project-1.jpg);">
-                            <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fa fa-plus"></span></div>
-                        </a>
-                        <div class="text">
-                            <span class="subheading">Building</span>
-                            <h3>Building A Condominium</h3>
-                            <p><span class="fa fa-map-marker mr-1"></span> San Francisco, California, USA</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="project">
-                        <a href="images/project-1.jpg" class="img image-popup d-flex align-items-center" style="background-image: url(images/project-1.jpg);">
-                            <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fa fa-plus"></span></div>
-                        </a>
-                        <div class="text">
-                            <span class="subheading">Building</span>
-                            <h3>Building A Condominium</h3>
-                            <p><span class="fa fa-map-marker mr-1"></span> San Francisco, California, USA</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    @include('partials.projects')
     <section class="ftco-section ftco-no-pt ftco-no-pb testimony-section img">
         <div class="overlay"></div>
         <div class="container">
@@ -348,69 +190,7 @@
             </div>
         </div>
     </section>
-    <section class="ftco-section bg-light">
-        <div class="container">
-            <div class="row justify-content-center mb-5 pb-3">
-                <div class="col-md-10 heading-section text-center ftco-animate">
-                    <span class="subheading">Our Blog</span>
-                    <h2 class="mb-4">Latest Blog Updates</h2>
-                </div>
-            </div>
-            <div class="row d-flex">
-                <div class="col-lg-4 ftco-animate">
-                    <div class="blog-entry">
-                        <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
-                        </a>
-                        <div class="text d-block">
-                            <div class="meta">
-                                <p>
-                                    <a href="#"><span class="fa fa-calendar mr-2"></span>Sept. 06, 2020</a>
-                                    <a href="#"><span class="fa fa-user mr-2"></span>Admin</a>
-                                    <a href="#" class="meta-chat"><span class="fa fa-comment mr-2"></span> 3</a>
-                                </p>
-                            </div>
-                            <h3 class="heading"><a href="#">Best for any industrial &amp; business solution</a></h3>
-                            <p><a href="blog.html" class="btn btn-secondary py-2 px-3">Read more</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 ftco-animate">
-                    <div class="blog-entry">
-                        <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
-                        </a>
-                        <div class="text d-block">
-                            <div class="meta">
-                                <p>
-                                    <a href="#"><span class="fa fa-calendar mr-2"></span>Sept. 06, 2020</a>
-                                    <a href="#"><span class="fa fa-user mr-2"></span>Admin</a>
-                                    <a href="#" class="meta-chat"><span class="fa fa-comment mr-2"></span> 3</a>
-                                </p>
-                            </div>
-                            <h3 class="heading"><a href="#">Best for any industrial &amp; business solution</a></h3>
-                            <p><a href="blog.html" class="btn btn-secondary py-2 px-3">Read more</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 ftco-animate">
-                    <div class="blog-entry">
-                        <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
-                        </a>
-                        <div class="text d-block">
-                            <div class="meta">
-                                <p>
-                                    <a href="#"><span class="fa fa-calendar mr-2"></span>Sept. 06, 2020</a>
-                                    <a href="#"><span class="fa fa-user mr-2"></span>Admin</a>
-                                    <a href="#" class="meta-chat"><span class="fa fa-comment mr-2"></span> 3</a>
-                                </p>
-                            </div>
-                            <h3 class="heading"><a href="#">Best for any industrial &amp; business solution</a></h3>
-                            <p><a href="blog.html" class="btn btn-secondary py-2 px-3">Read more</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    @include('partials.blogs')
    @include('partials.footer')
    @include('includes.modal')
 
