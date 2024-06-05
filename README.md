@@ -8,7 +8,7 @@ Project Planning
 
 1. split the web app pages and parts in different files
 2. setup the database
-3. fonts and colors
+3. fonts and colors ✅
 4. Hero page
 5. About page & team
 6. Our services
