@@ -7,6 +7,9 @@
     <title>Wilcon - Free Bootstrap 4 Template by Colorlib</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../../stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -122,9 +125,9 @@
                 <div class="col-md-4 d-flex mb-2 mb-md-0">
                     <a class="navbar-brand d-flex align-items-center" href="index.html">
                         <span>
-                            <img src="images/logo.png" alt="Belle House Construction Company" height="65" width="80" >
+                            <img src="images/logo.png" alt="Belle House Construction Company" height="65" width="80">
                         </span>
-                        <span class="ml-2">Belle House <small style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif" >Batisseur de Confiance</small></span>
+                        <span class="ml-2">Belle House <small style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Batisseur de Confiance</small></span>
                     </a>
                 </div>
                 <div class="col-md-4 d-flex topper mb-md-0 mb-2 align-items-center">
@@ -133,7 +136,7 @@
                     </div>
                     <div class="pr-md-4 pl-md-3 pl-3 text">
                         <p class="con"><span>Appellez au</span> <span>+227 456 78910</span></p>
-                        <p class="con">Appel  24/7 pour vos besoins</p>
+                        <p class="con">Appel 24/7 pour vos besoins</p>
                     </div>
                 </div>
                 <div class="col-md-4 d-flex topper mb-md-0 align-items-center">
