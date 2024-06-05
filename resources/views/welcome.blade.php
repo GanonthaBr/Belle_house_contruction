@@ -4,7 +4,7 @@
 <!-- Mirrored from preview.colorlib.com/theme/wilcon/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Jun 2024 16:49:44 GMT -->
 
 <head>
-    <title>Wilcon - Free Bootstrap 4 Template by Colorlib</title>
+    <title>{{config('app.name')}}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="preconnect" href="https://fonts.googleapis.com">
