@@ -6,8 +6,8 @@ Tasks to do
 
 Project Planning
 
-1. split the web app pages and parts in different files
-2. setup the database
+1. split the web app pages and parts in different files✅
+2. setup the database✅
 3. fonts and colors ✅
 4. Hero page
 5. About page & team

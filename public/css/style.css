@@ -2444,6 +2444,7 @@ h5,
 }
 .social-media p a:hover span {
     color: #fff;
+    opacity: 0.7;
 }
 
 .topper {
