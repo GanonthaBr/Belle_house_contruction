@@ -5,8 +5,8 @@
                     <div class="media block-6 services d-flex">
                         <div class="icon justify-content-center align-items-center d-flex"><span class="flaticon-engineer-1"></span></div>
                         <div class="media-body pl-4">
-                            <h3 class="heading mb-3">Quality Construction</h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                            <h3 class="heading mb-3">EXPERIENCE ET EXPERTISE</h3>
+                            <p>Avec près de dix ans d’expérience, nous avons mené à bien de nombreux projets variés, alliant complexité et diversité.</p>
                         </div>
                     </div>
                 </div>
@@ -14,8 +14,8 @@
                     <div class="media block-6 services services-2 d-flex">
                         <div class="icon justify-content-center align-items-center d-flex"><span class="flaticon-worker-1"></span></div>
                         <div class="media-body pl-4">
-                            <h3 class="heading mb-3">Professional Liability</h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                            <h3 class="heading mb-3">INNOVATION CONSTANTE</h3>
+                            <p>Nous restons à la pointe des avancées technologiques et des nouvelles tendances du secteur pour vous offrir le meilleur.</p>
                         </div>
                     </div>
                 </div>
@@ -23,8 +23,8 @@
                     <div class="media block-6 services d-flex">
                         <div class="icon justify-content-center align-items-center d-flex"><span class="flaticon-engineer"></span></div>
                         <div class="media-body pl-4">
-                            <h3 class="heading mb-3">Dedicated To Our Clients</h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                            <h3 class="heading mb-3">PERSONNALISATION</h3>
+                            <p>Chaque projet est adapté aux besoins spécifiques de nos clients, assurant une solution sur-mesure.</p>
                         </div>
                     </div>
                 </div>

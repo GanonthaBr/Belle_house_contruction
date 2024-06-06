@@ -4,7 +4,7 @@
                 <div class="col-lg col-md-6">
                     <div class="ftco-footer-widget">
                         <h2 class="ftco-heading-2 d-flex align-items-center">A Propos</h2>
-                        <p>Belle House vous aide pour construire votre maison de rêve.</p>
+                        <p>BELLE HOUSE, L’ART DE BATIR AUTREMENT</p>
                         <ul class="ftco-footer-social list-unstyled mt-4">
                             <li><a href="#"><span class="fa fa-twitter"></span></a></li>
                             <li><a href="#"><span class="fa fa-facebook"></span></a></li>
@@ -17,29 +17,30 @@
                         <h2 class="ftco-heading-2">Liens Importants</h2>
                         <div class="d-flex">
                             <ul class="list-unstyled mr-md-4">
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Projests</a></li>
+                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Accueil</a></li>
                                 <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>A Propos</a></li>
                                 <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Services</a></li>
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Blog Posts</a></li>
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Belle House Immobilier</a></li>
+                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Projets</a></li>
+                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Actualités</a></li>
+                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Réalisations</a></li>
                             </ul>
                             <ul class="list-unstyled ml-md-5">
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contacts</a></li>
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Aides</a></li>
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Politiques de Confidentialite</a></li>
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Conditions d'utilisations</a></li>
+                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Belle House Immobilier</a></li>
+                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Belle House Architecture</a></li>
+                                {{-- <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Politiques de Confidentialite</a></li>
+                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Conditions d'utilisations</a></li> --}}
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg col-md-6">
                     <div class="ftco-footer-widget">
-                        <h2 class="ftco-heading-2">Services</h2>
+                        <h2 class="ftco-heading-2">BELLE HOUSE </h2>
                         <ul class="list-unstyled">
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Immobilier</a></li>
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Architecture</a></li>
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Construction</a></li>
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Renovation</a></li>
+                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Expérience et expertise</a></li>
+                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Innovation constante</a></li>
+                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Personnalisation</a></li>
+                            {{-- <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Renovation</a></li> --}}
                         </ul>
                     </div>
                 </div>
