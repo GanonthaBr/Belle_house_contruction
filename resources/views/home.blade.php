@@ -5,7 +5,7 @@
     @include('includes.navbar')
     @include('partials.hero')
     @include('partials.missions')
-    @include('partials.about')
+    @include('partials.about.about')
     <section class="ftco-intro">
         <div class="container">
             <div class="row justify-content-center">
@@ -20,7 +20,7 @@
             </div>
         </div>
     </section>
-    @include('partials.services')
+    @include('partials.services.services')
     <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter">
         <div class="img image-overlay" style="background-image: url(images/about-3.jpg);"></div>
         <div class="container">
@@ -58,9 +58,9 @@
             </div>
         </div>
     </section>
-    @include('partials.projects')
+    @include('partials.projects.projects')
     @include('partials.testimonials')
-    @include('partials.blogs')
+    @include('partials.blog.blogs')
    @include('partials.footer')
    @include('includes.modal')
 

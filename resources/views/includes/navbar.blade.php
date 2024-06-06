@@ -5,8 +5,8 @@
             </button>
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a href="index.html" class="nav-link">Accueil</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">A propos</a></li>
+                    <li class="nav-item active"><a href="/" class="nav-link {{Request::is('/') ? 'active':''}}" >Accueil</a></li>
+                    <li class="nav-item"><a href="{{route('about')}}" class="nav-link {{ Request::routeIs('about') ? 'active' : '' }} ">A propos</a></li>
                     <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
                     <li class="nav-item"><a href="project.html" class="nav-link">Projets</a></li>
                     <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
