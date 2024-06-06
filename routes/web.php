@@ -28,3 +28,6 @@ Route::get('/blogs', [BlogsController::class, 'index'])->name('blogs');
 
 //projects
 Route::get('/projects', [ProjectsController::class, 'index'])->name('projects');
+
+//realisations
+Route::get('/realisations', [HomeController::class, 'realisations'])->name('realisations');

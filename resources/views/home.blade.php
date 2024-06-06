@@ -41,7 +41,7 @@
                         <div class="block-18 bg-primary d-flex align-items-center justify-content-between">
                             <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-engineer"></span></div>
                             <div class="text">
-                                <strong class="number" data-number="100">0</strong>
+                                <strong class="number" data-number="68">0</strong>
                                 <span>Projets Terminés</span>
                             </div>
                         </div>
@@ -50,7 +50,7 @@
                         <div class="block-18 d-flex align-items-center justify-content-between">
                             <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-worker-1"></span></div>
                             <div class="text">
-                                <strong class="number" data-number="230">0</strong>
+                                <strong class="number" data-number="64">0</strong>
                                 <span>Clients Satisfaits</span>
                             </div>
                         </div>

@@ -2,7 +2,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 d-flex align-items-stretch">
-                    <div class="about-wrap img w-100" style="background-image: url(images/about.png);">
+                    <div class="about-wrap img w-100" style="background-image: url(images/about-4.png);">
                         <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-crane"></span></div>
                     </div>
                 </div>

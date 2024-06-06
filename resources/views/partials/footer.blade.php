@@ -6,9 +6,9 @@
                         <h2 class="ftco-heading-2 d-flex align-items-center">A Propos</h2>
                         <p>BELLE HOUSE, L’ART DE BATIR AUTREMENT</p>
                         <ul class="ftco-footer-social list-unstyled mt-4">
-                            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                            <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+                            <li><a href="https://x.com/bellehouseniger?s=11"><span class="fa fa-twitter"></span></a></li>
+                            <li><a href="https://www.facebook.com/bellehouse.bh?mibextid=eQY6cl"><span class="fa fa-facebook"></span></a></li>
+                            <li><a href="https://www.instagram.com/invites/contact/?i=11tw3irvosloi&utm_content=tofa4xl"><span class="fa fa-instagram"></span></a></li>
                         </ul>
                     </div>
                 </div>

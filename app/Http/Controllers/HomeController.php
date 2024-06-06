@@ -10,4 +10,8 @@ class HomeController extends Controller
     {
         return view('home');
     }
+    public function realisations()
+    {
+        return view('partials.realisations.index');
+    }
 }

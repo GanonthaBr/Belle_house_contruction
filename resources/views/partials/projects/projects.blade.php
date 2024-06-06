@@ -9,72 +9,72 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="project">
-                        <a href="images/project-1.jpg" class="img image-popup d-flex align-items-center" style="background-image: url(images/project-1.jpg);">
+                        <a href="images/project-1.png" class="img image-popup d-flex align-items-center" style="background-image: url(images/project-1.png);">
                             <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fa fa-plus"></span></div>
                         </a>
                         <div class="text">
-                            <span class="subheading">Building</span>
-                            <h3>Building A Condominium</h3>
+                            <span class="subheading">Construction</span>
+                            <h3>Construction A Condominium</h3>
                             <p><span class="fa fa-map-marker mr-1"></span> San Francisco, California, USA</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="project">
-                        <a href="images/project-1.jpg" class="img image-popup d-flex align-items-center" style="background-image: url(images/project-1.jpg);">
+                        <a href="images/project-1.png" class="img image-popup d-flex align-items-center" style="background-image: url(images/project-2.png);">
                             <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fa fa-plus"></span></div>
                         </a>
                         <div class="text">
-                            <span class="subheading">Building</span>
-                            <h3>Building A Condominium</h3>
+                            <span class="subheading">Renovation</span>
+                            <h3>Construction A Condominium</h3>
                             <p><span class="fa fa-map-marker mr-1"></span> San Francisco, California, USA</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="project">
-                        <a href="images/project-1.jpg" class="img image-popup d-flex align-items-center" style="background-image: url(images/project-1.jpg);">
+                        <a href="images/project-1.png" class="img image-popup d-flex align-items-center" style="background-image: url(images/project-3.png);">
                             <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fa fa-plus"></span></div>
                         </a>
                         <div class="text">
-                            <span class="subheading">Building</span>
-                            <h3>Building A Condominium</h3>
+                            <span class="subheading">Construction</span>
+                            <h3>Construction A Condominium</h3>
                             <p><span class="fa fa-map-marker mr-1"></span> San Francisco, California, USA</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="project">
-                        <a href="images/project-1.jpg" class="img image-popup d-flex align-items-center" style="background-image: url(images/project-1.jpg);">
+                        <a href="images/project-1.png" class="img image-popup d-flex align-items-center" style="background-image: url(images/project-4.png);">
                             <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fa fa-plus"></span></div>
                         </a>
                         <div class="text">
-                            <span class="subheading">Building</span>
-                            <h3>Building A Condominium</h3>
+                            <span class="subheading">Renovation</span>
+                            <h3>Construction A Condominium</h3>
                             <p><span class="fa fa-map-marker mr-1"></span> San Francisco, California, USA</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="project">
-                        <a href="images/project-1.jpg" class="img image-popup d-flex align-items-center" style="background-image: url(images/project-1.jpg);">
+                        <a href="images/project-1.png" class="img image-popup d-flex align-items-center" style="background-image: url(images/project-5.png);">
                             <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fa fa-plus"></span></div>
                         </a>
                         <div class="text">
-                            <span class="subheading">Building</span>
-                            <h3>Building A Condominium</h3>
+                            <span class="subheading">Construction</span>
+                            <h3>Construction A Condominium</h3>
                             <p><span class="fa fa-map-marker mr-1"></span> San Francisco, California, USA</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="project">
-                        <a href="images/project-1.jpg" class="img image-popup d-flex align-items-center" style="background-image: url(images/project-1.jpg);">
+                        <a href="images/project-1.png" class="img image-popup d-flex align-items-center" style="background-image: url(images/project-6.png);">
                             <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fa fa-plus"></span></div>
                         </a>
                         <div class="text">
-                            <span class="subheading">Building</span>
-                            <h3>Building A Condominium</h3>
+                            <span class="subheading">Construction</span>
+                            <h3>Construction A Condominium</h3>
                             <p><span class="fa fa-map-marker mr-1"></span> San Francisco, California, USA</p>
                         </div>
                     </div>
