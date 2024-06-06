@@ -2,7 +2,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 d-flex align-items-stretch">
-                    <div class="about-wrap img w-100" style="background-image: url(images/about.jpg);">
+                    <div class="about-wrap img w-100" style="background-image: url(images/about.png);">
                         <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-crane"></span></div>
                     </div>
                 </div>
@@ -17,7 +17,7 @@
                             </div>
                             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
                             <div class="d-flex video-image align-items-center mt-md-4">
-                                <a href="#" class="video img d-flex align-items-center justify-content-center" style="background-image: url(images/about-2.jpg);">
+                                <a href="#" class="video img d-flex align-items-center justify-content-center" style="background-image: url(images/banner-1.jpg);">
                                     <span class="fa fa-play-circle"></span>
                                 </a>
                                 <h4 class="ml-4">This is how we work on our clients, Watch video</h4>
