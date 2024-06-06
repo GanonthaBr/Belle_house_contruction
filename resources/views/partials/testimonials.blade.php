@@ -5,7 +5,7 @@
                 <div class="col-md-6 p-4 pl-md-0 py-md-5 pr-md-5 aside-stretch d-flex align-items-center">
                     <div class="heading-section heading-section-white">
                         <span class="subheading" style="color:#fff;"> LIRE LES TÉMOIGNAGES </span>
-                        <h2 class="mb-4" style="font-size: 50px;">C'est toujours une joie d'entendre que le travail que nous faisons reçoit des critiques positives.</h2>
+                        <p class="mb-4" style="font-size: 40px;">C'est toujours <b>une joie</b> d'entendre que le travail que nous faisons reçoit des <b>critiques positives</b>.</p>
                     </div>
                 </div>
                 <div class="col-md-6 pl-md-5 py-4 py-md-5 aside-stretch-right">
