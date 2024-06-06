@@ -1,8 +1,7 @@
 @extends('layouts.layout')
 @section('content')
     
-    @include('includes.topbar')
-    @include('includes.navbar')
+
     @include('partials.hero')
     @include('partials.missions')
     @include('partials.about.about')
@@ -61,7 +60,6 @@
     @include('partials.projects.projects')
     @include('partials.testimonials')
     @include('partials.blog.blogs')
-   @include('partials.footer')
-   @include('includes.modal')
+
 
 @endsection
