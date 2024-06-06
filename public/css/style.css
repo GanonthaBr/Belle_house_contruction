@@ -2458,8 +2458,14 @@ h5,
     background: #fff;
     border: 1px solid rgba(0, 0, 0, 0.05);
 }
+.topper .icon:hover {
+    background: #61a1d6;
+}
 .topper .icon span {
     color: #4b4a4a;
+}
+.topper .icon:hover span {
+    color: #fff;
 }
 .topper .text {
     width: calc(100% - 50px);

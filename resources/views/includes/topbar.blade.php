@@ -37,7 +37,7 @@
                 </div>
                 <div class="col-md-4 d-flex topper mb-md-0 mb-2 align-items-center">
                     <div class="icon d-flex justify-content-center align-items-center">
-                        <span class="fa fa-map"></span>
+                        <span class="fa fa-phone"></span>
                     </div>
                     <div class="pr-md-4 pl-md-3 pl-3 text">
                         <p class="con"><span>Appellez au</span> <span>+227 456 78910</span></p>
