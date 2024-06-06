@@ -9,11 +9,11 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-12 text-center">
-                    <div class="img" style="background-image: url(images/bg_2.jpg);">
+                    <div class="img" style="background-image: url(images/banner-2.png);">
                         <div class="overlay"></div>
-                        <h2>Providing Personalized and High Quality Services</h2>
-                        <p>We can manage your dream building A small river named Duden flows by their place</p>
-                        <p class="mb-0"><a href="#" class="btn btn-primary px-4 py-3">Request A Quote</a></p>
+                        <h2>FOURNIR DES SERVICES D’EXCELLENCE PERSONNIFIÉS.</h2>
+                        <p>Laissez-vous séduire par l’élégance et le confort de nos réalisations </p>
+                        <p class="mb-0"><a href="#" class="btn btn-primary px-4 py-3"> AVEZ-VOUS UN PROJET ?</a></p>
                     </div>
                 </div>
             </div>
