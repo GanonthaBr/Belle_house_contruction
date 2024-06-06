@@ -3,8 +3,8 @@
             <div class="row">
                 <div class="col-lg col-md-6">
                     <div class="ftco-footer-widget">
-                        <h2 class="ftco-heading-2 d-flex align-items-center">About</h2>
-                        <p>Far far away, behind the word mountains, far from the countries.</p>
+                        <h2 class="ftco-heading-2 d-flex align-items-center">A Propos</h2>
+                        <p>Belle House vous aide pour construire votre maison de rêve.</p>
                         <ul class="ftco-footer-social list-unstyled mt-4">
                             <li><a href="#"><span class="fa fa-twitter"></span></a></li>
                             <li><a href="#"><span class="fa fa-facebook"></span></a></li>
@@ -14,20 +14,20 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="ftco-footer-widget">
-                        <h2 class="ftco-heading-2">Links</h2>
+                        <h2 class="ftco-heading-2">Liens Importants</h2>
                         <div class="d-flex">
                             <ul class="list-unstyled mr-md-4">
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Project</a></li>
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About Us</a></li>
+                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Projests</a></li>
+                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>A Propos</a></li>
                                 <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Services</a></li>
                                 <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Blog Posts</a></li>
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Industries</a></li>
+                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Belle House Immobilier</a></li>
                             </ul>
                             <ul class="list-unstyled ml-md-5">
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Help</a></li>
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Privacy Policy</a></li>
-                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Terms of Use</a></li>
+                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contacts</a></li>
+                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Aides</a></li>
+                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Politiques de Confidentialite</a></li>
+                                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Conditions d'utilisations</a></li>
                             </ul>
                         </div>
                     </div>
@@ -36,21 +36,21 @@
                     <div class="ftco-footer-widget">
                         <h2 class="ftco-heading-2">Services</h2>
                         <ul class="list-unstyled">
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Customer Services</a></li>
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Prompt Delivery</a></li>
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Reliable Equipment</a></li>
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>New Heavy Equipment</a></li>
+                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Immobilier</a></li>
+                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Architecture</a></li>
+                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Construction</a></li>
+                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Renovation</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg col-md-6">
                     <div class="ftco-footer-widget">
-                        <h2 class="ftco-heading-2">Have a Questions?</h2>
+                        <h2 class="ftco-heading-2">Avez-vous une Question?</h2>
                         <div class="block-23 mb-3">
                             <ul>
-                                <li><span class="fa fa-map-marker mr-3"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-                                <li><a href="#"><span class="fa fa-phone mr-3"></span><span class="text">+2 392 3929 210</span></a></li>
-                                <li><a href="#"><span class="fa fa-paper-plane mr-3"></span><span class="text"><span class="__cf_email__" data-cfemail="2841464e476851475d5a4c4745494146064b4745">[email&#160;protected]</span></span></a></li>
+                                <li><span class="fa fa-map-marker mr-3"></span><span class="text">Quartier Bobiel, Niamey - Niger</span></li>
+                                <li><a href="#"><span class="fa fa-phone mr-3"></span><span class="text">+227 92 08 50 50</span></a></li>
+                                <li><a href="mailto:contact@bellehouseniger.com"><span class="fa fa-paper-plane mr-3"></span><span class="text"><span class="__cf_email__" data-cfemail="2841464e476851475d5a4c4745494146064b4745">Contact@bellehouseniger.com</span></span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -65,8 +65,8 @@
                             Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
                             <script>
                                 document.write(new Date().getFullYear());
-                            </script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com/" target="_blank">Colorlib</a>
-                        </p>
+                            </script>, Belle House, Tout Droit réservé | Site conçu par <a  target="_blank" href="https://www.linkedin.com/in/bruno-ganontha-payang/" target="_blank">Ganontha Payang Bruno</a>
+                        </p
                     </div>
                 </div>
             </div>
