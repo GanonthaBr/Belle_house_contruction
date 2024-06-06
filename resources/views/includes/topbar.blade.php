@@ -28,7 +28,7 @@
         <div class="container">
             <div class="row d-flex align-items-start align-items-center px-3 px-md-0">
                 <div class="col-md-4 d-flex mb-2 mb-md-0">
-                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <a class="navbar-brand d-flex align-items-center" href="/">
                         <span>
                             <img src="images/logo.png" alt="Belle House Construction Company" height="65" width="80">
                         </span>
