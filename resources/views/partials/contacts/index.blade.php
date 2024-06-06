@@ -9,8 +9,8 @@
     <div class="container">
         <div class="row no-gutters slider-text align-items-end justify-content-start">
             <div class="col-md-9 ftco-animate pb-5">
-                <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Contact us <i class="fa fa-chevron-right"></i></span></p>
-                <h1 class="mb-3 bread">Contact us</h1>
+                <p class="breadcrumbs"><span class="mr-2"><a href="/">Accueil <i class="fa fa-chevron-right"></i></a></span> <span>Nous Contacter <i class="fa fa-chevron-right"></i></span></p>
+                <h1 class="mb-3 bread">Nous Contacter</h1>
             </div>
         </div>
     </div>
