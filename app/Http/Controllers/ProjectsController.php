@@ -10,7 +10,8 @@ class ProjectsController extends Controller
 {
     public function index()
     {
-        return view('partials.projects.index');
+        $projects  = Project::all();
+        return view('partials.projects.index', ['projects' => $projects]);
     }
 
     //create

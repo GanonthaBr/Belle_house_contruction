@@ -24,7 +24,22 @@
             </div>
         </div>
         <div class="row">
+            @foreach ($projects as $project)
+                
             <div class="col-md-4">
+                <div class="project">
+                    <a href="images/project-1.jpg" class="img image-popup d-flex align-items-center" style="background-image: url({{asset('storage/' . $project->image)}});">
+                        <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fa fa-plus"></span></div>
+                    </a>
+                    <div class="text">
+                        <span class="subheading">{{$project->type}}</span>
+                        <h3>{{$project->name}}</h3>
+                        <p><span class="fa fa-map-marker mr-1"></span> {{$project->area }}, {{$project->city}}, {{$project->country}}</p> 
+                    </div>
+                </div>
+            </div>
+            @endforeach
+            {{-- <div class="col-md-4">
                 <div class="project">
                     <a href="images/project-1.jpg" class="img image-popup d-flex align-items-center" style="background-image: url(images/project-1.jpg);">
                         <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fa fa-plus"></span></div>
@@ -35,8 +50,8 @@
                         <p><span class="fa fa-map-marker mr-1"></span> San Francisco, California, USA</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
+            </div> --}}
+            {{-- <div class="col-md-4">
                 <div class="project">
                     <a href="images/project-2.jpg" class="img image-popup d-flex align-items-center" style="background-image: url(images/project-2.jpg);">
                         <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fa fa-plus"></span></div>
@@ -95,7 +110,7 @@
                         <p><span class="fa fa-map-marker mr-1"></span> San Francisco, California, USA</p>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
         <div class="row mt-5">
             <div class="col text-center">
