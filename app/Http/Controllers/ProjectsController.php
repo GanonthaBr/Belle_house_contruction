@@ -30,7 +30,7 @@ class ProjectsController extends Controller
                 'area' => 'required',
                 'country' => 'required',
                 'city' => 'required',
-                'image' => 'nullable|image|max:5120',
+                'image' => 'nullable|image|max:10240',
 
             ]);
             //getting the requested data
