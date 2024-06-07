@@ -25,9 +25,9 @@ Route::get('/contacts', [ContactsController::class, 'index'])->name('contacts');
 Route::get('/services', [ServicesController::class, 'index'])->name('services');
 
 //blogs
-Route::get('/blogs', [BlogsController::class, 'index'])->name('blogs');
+Route::get('/blogs', [BlogController::class, 'index'])->name('blogs');
 Route::get('/blog/create', [BlogController::class, 'create'])->name('blog.create');
-Route::post('/blogs', [ProjectsController::class, 'store'])->name('blog.store');
+Route::post('/blogs', [BlogController::class, 'store'])->name('blog.store');
 
 
 //projects
