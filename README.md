@@ -26,3 +26,8 @@ Project Model
 2. Name:BH..., BH...,...
 3. Quartier, Ville, Pays
 4. Image
+
+II - Espace client
+
+1. suivi du service des client
+2.

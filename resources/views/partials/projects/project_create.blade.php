@@ -1,5 +1,4 @@
 @extends('layouts.layout')
-
 @section('content')
     <div class="container">
      <form action="{{ route('project.store') }}" method="POST" enctype="multipart/form-data">
@@ -23,6 +22,31 @@
             <div class="mb-3">
                 <label for="country" class="form-label">Country:</label>
                 <input type="text" class="form-control" id="country" name="country" placeholder="Entrer le Pays" required>
+            </div>
+           
+            <div class="mb-3">
+                <label for="surface" class="form-label">Surface:</label>
+                <input type="text" class="form-control" id="surface" name="surface" placeholder="Entrer la surface" required>
+            </div>
+            <div class="mb-3">
+                <label for="year" class="form-label">Annee:</label>
+                <input type="text" class="form-control" id="year" name="year" placeholder="Entrer l'annee du projet" required>
+            </div>
+            <div class="mb-3">
+                <label for="usage" class="form-label">usage:</label>
+                <input type="text" class="form-control" id="usage" name="usage" placeholder="Entrer l'utilisation" required>
+            </div>
+            <div class="mb-3">
+                <label for="maitre_doeuvre" class="form-label">Maitre doeuvre:</label>
+                <input type="text" class="form-control" id="maitre_doeuvre" name="maitre_doeuvre" placeholder="Maitre d'oeuvre" required>
+            </div>
+            <div class="mb-3">
+                <label for="maitre_douvrage" class="form-label">Maitre douvrage:</label>
+                <input type="text" class="form-control" id="maitre_douvrage" name="maitre_douvrage" placeholde="Maitre d'ouvrage" required>
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">Description:</label>
+                <textarea type="text" class="form-control" id="description" name="description" placeholder="Description"></textarea>
             </div>
             <div class="mb-3">
                 <label for="image" class="form-label">Image:</label>

@@ -15,5 +15,11 @@ class Project extends Model
         'area',
         'city',
         'country',
+        'surface',
+        'year',
+        'usage',
+        'maitre_doeuvre',
+        'maitre_douvrage',
+        'description',
     ];
 }

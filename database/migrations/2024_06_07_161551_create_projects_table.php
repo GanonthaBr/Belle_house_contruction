@@ -18,6 +18,12 @@ return new class extends Migration
             $table->string('type');
             $table->string('area');
             $table->string('city');
+            $table->string('surface');
+            $table->string('year');
+            $table->string('usage');
+            $table->string('maitre_doeuvre');
+            $table->string('maitre_douvrage');
+            $table->string('description');
             $table->string('country');
             $table->timestamps();
         });

@@ -30,6 +30,12 @@ class ProjectsController extends Controller
                 'area' => 'required',
                 'country' => 'required',
                 'city' => 'required',
+                'surface' => 'nullable',
+                'year' => 'nullable',
+                'usage' => 'nullable',
+                'maitre_doeuvre' => 'nullable',
+                'maitre_douvrage' => 'nullable',
+                'description' => 'nullable',
                 'image' => 'nullable|image|max:10240',
 
             ]);
@@ -44,6 +50,12 @@ class ProjectsController extends Controller
             $project->area = $request->area;
             $project->city = $request->city;
             $project->country = $request->country;
+            $project->surface = $request->surface;
+            $project->year = $request->year;
+            $project->usage = $request->usage;
+            $project->maitre_doeuvre = $request->maitre_doeuvre;
+            $project->maitre_douvrage = $request->maitre_douvrage;
+            $project->description = $request->description;
             $project->image = $imagePath;
 
             //save
