@@ -10,7 +10,7 @@ use App\Http\Controllers\ServicesController;
 
 
 //Home 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 
 //About
@@ -28,6 +28,8 @@ Route::get('/blogs', [BlogsController::class, 'index'])->name('blogs');
 
 //projects
 Route::get('/projects', [ProjectsController::class, 'index'])->name('projects');
+Route::post('/projects', [ProjectsController::class, 'store'])->name('project.store');
+Route::get('/project/create', [ProjectsController::class, 'create'])->name('project.create');
 
 //realisations
 Route::get('/realisations', [HomeController::class, 'realisations'])->name('realisations');

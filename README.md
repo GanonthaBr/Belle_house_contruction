@@ -19,3 +19,10 @@ Project Planning
 11. footer
 12. contact page
 13. Main page: Home
+
+Project Model
+
+1. Type: Habitation, Commercial, ...
+2. Name:BH..., BH...,...
+3. Quartier, Ville, Pays
+4. Image
