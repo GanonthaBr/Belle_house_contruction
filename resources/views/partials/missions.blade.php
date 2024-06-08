@@ -6,7 +6,7 @@
                         <div class="icon justify-content-center align-items-center d-flex"><span class="flaticon-engineer-1"></span></div>
                         <div class="media-body pl-4">
                             <h3 class="heading mb-3">EXPERIENCE ET EXPERTISE</h3>
-                            <p>Avec près de dix ans d’expérience, nous avons mené à bien de nombreux projets variés, alliant complexité et diversité.</p>
+                            <p>Avec près de dix ans d’expérience, nous avons mené à bien de nombreux projets variés, alliant la complexité et diversité.</p>
                         </div>
                     </div>
                 </div>
@@ -23,7 +23,7 @@
                     <div class="media block-6 services d-flex">
                         <div class="icon justify-content-center align-items-center d-flex"><span class="flaticon-engineer"></span></div>
                         <div class="media-body pl-4">
-                            <h3 class="heading mb-3">PERSONNALISATION</h3>
+                            <h3 class="heading mb-3">RESPONSABILITE PROFESSIONELLE</h3>
                             <p>Chaque projet est adapté aux besoins spécifiques de nos clients, assurant une solution sur-mesure.</p>
                         </div>
                     </div>

@@ -41,7 +41,7 @@
                     </div>
                     <div class="pr-md-4 pl-md-3 pl-3 text">
                         <p class="con"><span>Appellez au</span> <span>+227 92 08 50 50</span></p>
-                        <p class="con">Appel 24/7 pour vos besoins</p>
+                        <p class="con">Appel 24h/7jrs pour vos besoins</p>
                     </div>
                 </div>
                 <div class="col-md-4 d-flex topper mb-md-0 align-items-center">
@@ -49,7 +49,7 @@
                     </div>
                     <div class="text pl-3 pl-md-3">
                         <p class="hr"><span>Localisation</span></p>
-                        <p class="con">Niamey Quartier Bobiel,Niger</p>
+                        <p class="con">Quartier Bobiel, Niamey-Niger</p>
                     </div>
                 </div>
             </div>

@@ -526,6 +526,9 @@ pre code {
     margin-right: 0;
     margin-left: 0;
 }
+.no-gutter p {
+    text-align: justify;
+}
 .no-gutters > .col,
 .no-gutters > [class*="col-"] {
     padding-right: 0;
@@ -4160,6 +4163,7 @@ textarea.form-control {
 
 .block-6 .media-body p {
     font-size: 16px;
+    /* text-align: center; */
 }
 
 .block-27 ul {

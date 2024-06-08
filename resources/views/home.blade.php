@@ -28,7 +28,7 @@
                 <div class="heading-section heading-section-white p-4 pl-md-0 py-md-5 pr-md-5">
                     <span class="subheading">BELLE HOUSE</span>
                     <h2 class="mb-4">ENTREPRISE DE CONSTRUCTION MODERNE</h2>
-                    <h4>MEILLEURES ENTREPRISES DE CONSTRUCTIONS MODERNES EN AFRIQUE DE L’OUEST<h4>
+                    <h4>MEILLEURE ENTREPRISE DE CONSTRUCTIONS MODERNES EN AFRIQUE DE L’OUEST<h4>
                             <p>
                                 Leader reconnue dans le domaine de la construction moderne en Afrique de l'Ouest, notre entreprise se distingue par son engagement inébranlable envers l'excellence, l'innovation et la durabilité.
                                 Avec une expertise unique dans la conception et la réalisation de projets architecturaux complexes, nous avons une approche multidisciplinaire offrant des solutions novatrices, qui repoussent les limites de l'ingénierie et de l'architecture.
@@ -41,7 +41,7 @@
                         <div class="block-18 bg-primary d-flex align-items-center justify-content-between">
                             <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-engineer"></span></div>
                             <div class="text">
-                                <strong class="number" data-number="68">0</strong>
+                                <strong class="number" data-number="155">0</strong>
                                 <span>Projets Terminés</span>
                             </div>
                         </div>
@@ -50,7 +50,7 @@
                         <div class="block-18 d-flex align-items-center justify-content-between">
                             <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-worker-1"></span></div>
                             <div class="text">
-                                <strong class="number" data-number="64">0</strong>
+                                <strong class="number" data-number="170">0</strong>
                                 <span>Clients Satisfaits</span>
                             </div>
                         </div>

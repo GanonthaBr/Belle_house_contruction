@@ -13,7 +13,7 @@
                         <div class="text">
                             <div class="icon"><span class="flaticon-architect"></span></div>
                             <h2>Architecture</h2>
-                            <p>Notre service d'architecture repose sur une approche innovante et créative pour concevoir des espaces qui allient fonctionnalité, esthétique et durabilité. </p>
+                            <p>Notre service d'architecture utilise une approche innovante et créative pour l'esthétique et durabilité. </p>
                             <a href="#" class="btn-custom">Voir Plus+</a>
                         </div>
                     </div>
@@ -24,7 +24,7 @@
                         <div class="text">
                             <div class="icon"><span class="flaticon-worker"></span></div>
                             <h2>Renovation</h2>
-                            <p>Transformez vos espaces existants en chefs-d'œuvre modernes avec notre service de rénovation. </p>
+                            <p>Transformez vos espaces ou projets existants en chefs-d'œuvre modernes avec notre service de rénovation. </p>
                             <a href="#" class="btn-custom">Voir Plus+</a>
                         </div>
                     </div>
