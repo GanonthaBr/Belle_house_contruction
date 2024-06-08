@@ -39,7 +39,7 @@
                         <ul class="list-unstyled">
                             <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Expérience et expertise</a></li>
                             <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Innovation constante</a></li>
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Personnalisation</a></li>
+                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Responsabilite Professionelle</a></li>
                             {{-- <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Renovation</a></li> --}}
                         </ul>
                     </div>

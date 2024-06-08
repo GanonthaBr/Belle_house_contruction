@@ -7,18 +7,25 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
+               @foreach ($services as $service)
+                    <div class="col-md-4">
                     <div class="services-wrap ftco-animate">
-                        <div class="img" style="background-image: url(images/services_Architecture.png);"></div>
+                        <div class="img" style="background-image: url({{asset('storage/' . $service->image)}});"></div>
                         <div class="text">
                             <div class="icon"><span class="flaticon-architect"></span></div>
-                            <h2>Architecture</h2>
-                            <p>Notre service d'architecture utilise une approche innovante et créative pour l'esthétique et durabilité. </p>
+                            <h2>{{$service->title}}</h2>
+                            <p>
+                            {{
+                                substr($service->description,0,110)
+                            
+                            }}    ...
+                            </p>
                             <a href="#" class="btn-custom">Voir Plus+</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+               @endforeach
+                {{-- <div class="col-md-4">
                     <div class="services-wrap ftco-animate">
                         <div class="img" style="background-image: url(images/services_Renovation.png);"></div>
                         <div class="text">
@@ -39,7 +46,7 @@
                             <a href="#" class="btn-custom">Voir Plus+</a>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>
