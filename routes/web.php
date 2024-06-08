@@ -23,6 +23,7 @@ Route::get('/contacts', [ContactsController::class, 'index'])->name('contacts');
 Route::get('/services', [ServicesController::class, 'index'])->name('services');
 Route::get('/service/create', [ServicesController::class, 'create'])->name('service.create');
 Route::post('/services', [ServicesController::class, 'store'])->name('service.store');
+Route::get('/service/{id}', [ServicesController::class, 'show'])->name('service.show');
 
 //blogs
 Route::get('/blogs', [BlogController::class, 'index'])->name('blogs');

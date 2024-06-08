@@ -40,4 +40,10 @@ class ServicesController extends Controller
             return redirect()->route('home')->with('service-created', 'Votre service a été ajouté avec succès!');
         }
     }
+    //show
+    public function show($id)
+    {
+        $service = Service::find($id);
+        return view('partials.services.service_details', ['service' => $service]);
+    }
 }
