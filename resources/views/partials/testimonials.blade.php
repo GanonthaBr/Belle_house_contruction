@@ -12,7 +12,7 @@
                     <div class="carousel-testimony owl-carousel ftco-owl">
                         <div class="item">
                             <div class="testimony-wrap py-4 pb-5 d-flex justify-content-between align-items-end">
-                                <div class="user-img" style="background-image: url(images/person_1.jpg)">
+                                <div class="user-img" style="background-image: url(images/person_pholder.png)">
                                     <span class="quote d-flex align-items-center justify-content-center">
                                         <i class="fa fa-quote-left"></i>
                                     </span>
@@ -26,7 +26,7 @@
                         </div>
                         <div class="item">
                             <div class="testimony-wrap py-4 pb-5 d-flex justify-content-between align-items-end">
-                                <div class="user-img" style="background-image: url(images/person_2.jpg)">
+                                <div class="user-img" style="background-image: url(images/person_pholder.png)">
                                     <span class="quote d-flex align-items-center justify-content-center">
                                         <i class="fa fa-quote-left"></i>
                                     </span>
@@ -40,7 +40,7 @@
                         </div>
                         <div class="item">
                             <div class="testimony-wrap py-4 pb-5 d-flex justify-content-between align-items-end">
-                                <div class="user-img" style="background-image: url(images/person_1.jpg)">
+                                <div class="user-img" style="background-image: url(images/person_pholder.png)">
                                     <span class="quote d-flex align-items-center justify-content-center">
                                         <i class="fa fa-quote-left"></i>
                                     </span>
@@ -54,7 +54,7 @@
                         </div>
                         <div class="item">
                             <div class="testimony-wrap py-4 pb-5 d-flex justify-content-between align-items-end">
-                                <div class="user-img" style="background-image: url(images/person_3.jpg)">
+                                <div class="user-img" style="background-image: url(images/person_pholder.png)">
                                     <span class="quote d-flex align-items-center justify-content-center">
                                         <i class="fa fa-quote-left"></i>
                                     </span>
@@ -68,7 +68,7 @@
                         </div>
                         <div class="item">
                             <div class="testimony-wrap py-4 pb-5 d-flex justify-content-between align-items-end">
-                                <div class="user-img" style="background-image: url(images/person_3.jpg)">
+                                <div class="user-img" style="background-image: url(images/person_pholder.png)">
                                     <span class="quote d-flex align-items-center justify-content-center">
                                         <i class="fa fa-quote-left"></i>
                                     </span>

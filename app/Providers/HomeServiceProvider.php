@@ -20,7 +20,7 @@ class HomeServiceProvider extends ServiceProvider
     public function boot(): void
     {
         view()->composer(['partials.projects.index'], function ($view) {
-            $view->with('projects', \App\Models\Project::all());
+            // $view->with('projects', \App\Models\Project::all());
         });
     }
 }

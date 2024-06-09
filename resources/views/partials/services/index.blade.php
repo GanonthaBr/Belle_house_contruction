@@ -24,18 +24,20 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
+           @foreach ($services as $service)
+                <div class="col-md-4">
                 <div class="services-wrap ftco-animate">
-                    <div class="img" style="background-image: url(images/services-1.jpg);"></div>
+                    <div class="img" style="background-image: url({{asset('storage/' . $service->image)}});"></div>
                     <div class="text">
                         <div class="icon"><span class="flaticon-architect"></span></div>
-                        <h2>Architecture</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-                        <a href="#" class="btn-custom">Read more</a>
+                        <h2>{{$service->title}}</h2>
+                        <p>  {{substr($service->description,0,110)}}...</p>
+                        <a href="{{route('service.show',$service->id)}}" class="btn-custom">Read more</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+           @endforeach
+            {{-- <div class="col-md-4">
                 <div class="services-wrap ftco-animate">
                     <div class="img" style="background-image: url(images/services-2.jpg);"></div>
                     <div class="text">
@@ -89,7 +91,7 @@
                         <a href="#" class="btn-custom">Read more</a>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </section>
