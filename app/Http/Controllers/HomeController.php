@@ -11,7 +11,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $projects = Project::all();
+        $projects = Project::orderBy('created_at', 'desc')->take(6)->get();
         $services = Service::all();
         $blogs = Blog::all();
         return view('home', ['projects' => $projects, 'blogs' => $blogs, 'services' => $services]);
