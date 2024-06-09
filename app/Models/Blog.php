@@ -14,4 +14,9 @@ class Blog extends Model
         'image',
         'author',
     ];
+
+    public function images()
+    {
+        return $this->hasMany('App\Models\BlogImages');
+    }
 }

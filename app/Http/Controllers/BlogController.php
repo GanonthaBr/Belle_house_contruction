@@ -39,6 +39,7 @@ class BlogController extends Controller
                 'content' => 'required',
                 'author' => 'nullable',
                 'image' => 'nullable|image|max:5120',
+                'images.*' => 'nullable|image|mimes:jpeg,jpg,png,gif,svg|max:8192'
             ]);
             //image path
             $imagePath = $request->file('image') ? $request->file('image')->store('blog_images', 'public') : null;
@@ -57,7 +58,18 @@ class BlogController extends Controller
             $blog->image = $imagePath;
             $blog->author = $request->author ?? Auth::user()->name;
             $blog->save();
-            Log::info('Blog post created successfully.', ['id' => $blog->id]);
+
+
+            // save images list to the images table;
+            if ($request->file('images')) {
+                foreach ($request->file('images') as $image) {
+                    $imagePaths = $image->store('blog_images_list', 'public');
+                    $blog->images()->create([
+                        'image' => $imagePaths,
+                    ]);
+                }
+            }
+
             return redirect()->route('home')->with('blog-created', 'Votre blog post été ajouté avec succès!');
         } catch (ValidationException $e) {
             Log::error('Error creating blog post: ' . $e->getMessage(), [
