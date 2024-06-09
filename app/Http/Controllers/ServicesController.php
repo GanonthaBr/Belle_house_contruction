@@ -19,6 +19,13 @@ class ServicesController extends Controller
     {
         return view('partials.services.service_create');
     }
+    //show
+    public function show($id)
+    {
+        $service = Service::findOrFail($id);
+        $services = Service::all();
+        return view('partials.services.service_details', ['service' => $service, 'services' => $services]);
+    }
     //store
     public function store(Request $request)
     {
@@ -39,11 +46,5 @@ class ServicesController extends Controller
         } catch (ValidationException $e) {
             return redirect()->route('home')->with('service-created', 'Votre service a été ajouté avec succès!');
         }
-    }
-    //show
-    public function show($id)
-    {
-        $service = Service::find($id);
-        return view('partials.services.service_details', ['service' => $service]);
     }
 }

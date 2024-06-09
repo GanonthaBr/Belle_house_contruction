@@ -30,7 +30,7 @@
                 <div class="col-md-4 d-flex mb-2 mb-md-0">
                     <a class="navbar-brand d-flex align-items-center" href="/">
                         <span>
-                            <img src="images/logo.png" alt="Belle House Construction Company" height="65" width="80">
+                            <img src="{{asset('images/logo.png')}}" alt="Belle House Construction Company" height="65" width="80">
                         </span>
                         <span class="ml-2">Belle House <small style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #61a1d6">ENTREPRISE DE CONSTRUCTION MODERNE</small></span>
                     </a>

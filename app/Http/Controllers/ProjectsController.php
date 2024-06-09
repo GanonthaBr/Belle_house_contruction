@@ -19,6 +19,12 @@ class ProjectsController extends Controller
     {
         return view('partials.projects.project_create');
     }
+    //show by id
+    public function show($id)
+    {
+        $project = Project::findOrFail($id);
+        return view('partials.projects.project_details', ['project' => $project]);
+    }
     //store
     public function store(Request $request)
     {

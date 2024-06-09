@@ -451,6 +451,13 @@ pre code {
     color: inherit;
     word-break: normal;
 }
+/* Extra CSS */
+
+.more-service {
+    border: 1px solid #c2c1bc;
+    transition: border-color 0.3s ease;
+    margin: 2rem;
+}
 
 .container {
     width: 100%;

@@ -23,7 +23,9 @@ Route::get('/contacts', [ContactsController::class, 'index'])->name('contacts');
 Route::get('/services', [ServicesController::class, 'index'])->name('services');
 Route::get('/service/create', [ServicesController::class, 'create'])->name('service.create');
 Route::post('/services', [ServicesController::class, 'store'])->name('service.store');
-Route::get('/service/{id}', [ServicesController::class, 'show'])->name('service.show');
+Route::get('service/{id}', [ServicesController::class, 'show'])->name('service.show');
+
+
 
 //blogs
 Route::get('/blogs', [BlogController::class, 'index'])->name('blogs');
@@ -35,6 +37,7 @@ Route::post('/blogs', [BlogController::class, 'store'])->name('blog.store');
 Route::get('/projects', [ProjectsController::class, 'index'])->name('projects');
 Route::post('/projects', [ProjectsController::class, 'store'])->name('project.store');
 Route::get('/project/create', [ProjectsController::class, 'create'])->name('project.create');
+Route::get('project/{id}', [ProjectsController::class, 'show'])->name('project.show');
 
 //realisations
 Route::get('/realisations', [HomeController::class, 'realisations'])->name('realisations');
