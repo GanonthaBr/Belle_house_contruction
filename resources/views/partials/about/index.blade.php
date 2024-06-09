@@ -30,20 +30,47 @@
                                 Depuis bientôt dix ans, BELLE HOUSE se distingue comme une référence incontournable dans le domaine de l'architecture et de la construction moderne. Forte de son expertise et de son innovation, notre entreprise s’engage à transformer vos rêves en réalité, en créant des espaces qui allient fonctionnalité, esthétique et durabilité.
                             </h3>
                         </div>
-                        <h4>Notre Vision</h4>
+                        {{-- <h4>Notre Vision</h4>
                         <p>
                          Chez BELLE HOUSE, nous croyons que chaque projet est unique, tout comme les aspirations de nos clients. Notre vision est de concevoir et de bâtir des structures qui ne sont pas seulement des habitations ou des bureaux, mais de véritables œuvres d’art qui reflètent votre personnalité et répondent parfaitement à vos besoins.
-                        </p>
+                        </p> --}}
                         {{-- <div class="d-flex video-image align-items-center mt-md-4"> --}}
-                            {{-- <a href="#" class="video img d-flex align-items-center justify-content-center" style="background-image: url(images/about-2.jpg);">
+                        {{-- <a href="#" class="video img d-flex align-items-center justify-content-center" style="background-image: url(images/about-2.jpg);">
                                 <span class="fa fa-play-circle"></span>
                             </a>
                             <h4 class="ml-4">This is how we work on our clients, Watch video</h4> --}}
-                        <h4>Notre Mission</h4>
+                        {{-- <h4>Notre Mission</h4>
                         <p>
                         Notre mission est de fournir des services d'architecture et de construction de la plus haute qualité, en mettant l'accent sur l'innovation, la durabilité et l'excellence. Nous sommes passionnés par l'idée de repousser les limites du design architectural, tout en respectant les délais et les budgets de nos clients.
-                        </p>
+                        </p> --}}
                         {{-- </div> --}}
+
+                        <div class="about-tab">
+
+                            <!-- Tab Navigation -->
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="vision-tab" data-toggle="tab" href="#vision" role="tab" aria-controls="vision" aria-selected="true">Notre Vision</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="mission-tab" data-toggle="tab" href="#mission" role="tab" aria-controls="mission" aria-selected="false">Notre Mission</a>
+                                </li>
+                            </ul>
+
+                            <!-- Tab Content -->
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="vision" role="tabpanel" aria-labelledby="vision-tab">
+                                    <p>
+                                        Chez BELLE HOUSE, nous croyons que chaque projet est unique, tout comme les aspirations de nos clients. Notre vision est de concevoir et de bâtir des structures qui ne sont pas seulement des habitations ou des bureaux, mais de véritables œuvres d’art qui reflètent votre personnalité et répondent parfaitement à vos besoins.
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="mission" role="tabpanel" aria-labelledby="mission-tab">
+                                    <p>
+                                        Notre mission est de fournir des services d'architecture et de construction de la plus haute qualité, en mettant l'accent sur l'innovation, la durabilité et l'excellence. Nous sommes passionnés par l'idée de repousser les limites du design architectural, tout en respectant les délais et les budgets de nos clients.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -108,8 +135,8 @@
     <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
             <div class="col-md-7 text-center heading-section ftco-animate">
-                <span class="subheading">Our Team</span>
-                <h2 class="mb-4">Our Team</h2>
+                <span class="subheading">Notre Equipe</span>
+                <h2 class="mb-4">Notre Equipe</h2>
             </div>
         </div>
         <div class="row">
@@ -308,7 +335,7 @@
         </div>
     </div>
 </section>
-<section class="ftco-section ftco-no-pt ftco-no-pb testimony-section img">
+{{-- <section class="ftco-section ftco-no-pt ftco-no-pb testimony-section img">
         <div class="overlay"></div>
         <div class="container">
             <div class="row ftco-animate justify-content-center">
@@ -394,5 +421,8 @@
                 </div>
             </div>
         </div>
-</section>
+</section> --}}
+@include('partials.testimonials')
+
+
 @endsection

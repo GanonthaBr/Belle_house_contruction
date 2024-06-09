@@ -21,13 +21,6 @@
                            <p>
                                "Découvrez comment nous collaborons main dans la main avec nos clients pour atteindre leurs objectifs. Regardez la vidéo maintenant pour en savoir plus !"
                            </p>
-
-                           {{-- <div class="d-flex video-image align-items-center mt-md-4">
-                                <a href="#" class="video img d-flex align-items-center justify-content-center" style="background-image: url(images/banner-1.jpg);">
-                                    <span class="fa fa-play-circle"></span>
-                                </a>
-                                <h4 class="ml-4">Regardez la vidéo</h4>
-                            </div> --}}
                            <div class="d-flex video-image align-items-center mt-md-4">
                                <iframe width="530" height="190" src="https://www.youtube.com/embed/21zo6jvGelo?modestbranding=1&si=pvTOdwA92AnCY2Fw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                <h4 class="ml-4">Regardez la vidéo</h4>

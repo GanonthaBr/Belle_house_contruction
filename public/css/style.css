@@ -73,6 +73,42 @@ body {
     color: #212529;
     text-align: left;
     background-color: #fff;
+    scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+    /* background: #17468a; */
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
+}
+
+.back-to-top i {
+    font-size: 24px;
+    color: #61a0d5;
+    line-height: 0;
+}
+.back-to-top i:hover {
+    color: #fff;
+}
+.back-to-top:hover {
+    background: #61a0d5;
+    color: #fff;
+}
+
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -457,6 +493,30 @@ pre code {
     border: 1px solid #c2c1bc;
     transition: border-color 0.3s ease;
     margin: 2rem;
+}
+/* about */
+
+.about-tab {
+    width: 100%;
+}
+
+.about-tab .nav .nav-item .nav-link {
+    padding: 8px;
+    font-weight: 600;
+    background: none;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    transition: none;
+    color: #61a0d5;
+    opacity: 0.8;
+}
+
+.about-tab .nav .nav-item .nav-link:hover,
+.about-tab .nav .nav-item .nav-link.active {
+    color: #61a0d5;
+    padding-bottom: 7px;
+    border-bottom: 3px solid #61a0d5;
+    opacity: 1;
 }
 
 .container {

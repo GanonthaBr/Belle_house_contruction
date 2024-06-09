@@ -1,5 +1,5 @@
 (function ($) {
-    "use strict";
+    ("use strict");
 
     $(window).stellar({
         responsive: true,
@@ -85,6 +85,24 @@
 
     $("#dropdown04").on("show.bs.dropdown", function () {
         console.log("show");
+    });
+
+    // Back to top button
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+            $(".back-to-top").fadeIn("slow");
+            $(".back-to-top").css({
+                visibility: "visible",
+                opacity: "1",
+            });
+        } else {
+            $(".back-to-top").fadeOut("slow");
+            $(".back-to-top").css({ visibility: "hidden", opacity: "0" });
+        }
+    });
+    $(".back-to-top").click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 300, "easeInOutExpo");
+        return false;
     });
 
     // scroll

@@ -9,7 +9,7 @@
                         <p class="mb-4">
                             Transformez vos <b>rêves en réalité</b>, n’est qu’un aperçu de notre  <b>savoir-faire</b> et de <br> notre passion pour l'architecture et la construction moderne.
                         </p>
-                        <p><a href="#" class="btn btn-primary">NOS SERVICES</a> <a href="#" class="btn btn-white" data-toggle="modal" data-target="#exampleModalCenter">AVEZ-VOUS UN PROJET ?</a></p>
+                        <p><a href="#services" class="btn btn-primary">NOS SERVICES</a> <a href="#" class="btn btn-white" data-toggle="modal" data-target="#exampleModalCenter">AVEZ-VOUS UN PROJET ?</a></p>
                     </div>
                 </div>
             </div>
