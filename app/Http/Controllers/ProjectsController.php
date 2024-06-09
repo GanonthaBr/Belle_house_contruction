@@ -37,6 +37,7 @@ class ProjectsController extends Controller
                 'maitre_douvrage' => 'nullable',
                 'description' => 'nullable',
                 'image' => 'nullable|image|max:10240',
+                'images.*' => 'nullable|image|mimes:jpeg,jpg,png,gif,svg|max:4096'
 
             ]);
             //getting the requested data
@@ -60,6 +61,16 @@ class ProjectsController extends Controller
 
             //save
             $project->save();
+
+            // save images list to the images table;
+            if ($request->file('images')) {
+                foreach ($request->file('images') as $image) {
+                    $imagePaths = $image->store('project_images_list', 'public');
+                    $project->images()->create([
+                        'image' => $imagePaths,
+                    ]);
+                }
+            }
             return redirect()->route('home');
         } catch (ValidationException $e) {
             return response()->json(['message' => $e->getMessage()]);

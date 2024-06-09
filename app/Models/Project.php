@@ -22,4 +22,10 @@ class Project extends Model
         'maitre_douvrage',
         'description',
     ];
+
+    //add more images
+    public function images()
+    {
+        return $this->hasMany('App\Models\ProjectImages');
+    }
 }
