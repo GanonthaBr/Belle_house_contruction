@@ -14,9 +14,21 @@
                         <div class="text">
                             <div class="icon"><span class="flaticon-architect"></span></div>
                             <h2>{{$service->title}}</h2>
-                            <p>
-                            {{substr($service->description,0,110)}}...
+                            
+                            @if ($service->id ==2)
+                                <p>
+                            {{substr($service->description,0,650)}}
                             </p>
+                            @elseif($service->id==1)
+                            <p>
+                            {{substr($service->description,0,650)}}
+                            </p>
+                            @elseif($service->id==3)
+                            <p>
+                            {{substr($service->description,0,650)}}
+                            </p>
+                            @endif
+
                             <a href="{{route('service.show',$service->id)}}" class="btn-custom">Voir Plus+</a>
                         </div>
                     </div>

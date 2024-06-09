@@ -19,6 +19,12 @@ class BlogController extends Controller
         return view('partials.blog.index', ['blogs' => $blogs]);
     }
 
+    //show
+    public function show($id)
+    {
+        $blog = Blog::find($id);
+        return view('partials.blog.blog_details', ['blog' => $blog]);
+    }
     //create
     public function create()
     {

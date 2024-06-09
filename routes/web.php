@@ -31,6 +31,7 @@ Route::get('service/{id}', [ServicesController::class, 'show'])->name('service.s
 Route::get('/blogs', [BlogController::class, 'index'])->name('blogs');
 Route::get('/blog/create', [BlogController::class, 'create'])->name('blog.create');
 Route::post('/blogs', [BlogController::class, 'store'])->name('blog.store');
+Route::get('/blog/{id}', [BlogController::class, 'show'])->name('blog.show');
 
 
 //projects
