@@ -10,7 +10,7 @@
                  @foreach ($projects as $project)
             <div class="col-md-4">
                 <div class="project">
-                    <a href="#" class="img d-flex align-items-center" style="background-image: url({{asset('storage/' . $project->image)}});">
+                    <a href="{{route('project.show',$project->id)}}" class="img d-flex align-items-center" style="background-image: url({{asset('storage/' . $project->image)}});">
                         <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fa fa-plus"></span></div>
                     </a>
                     <div class="text">
