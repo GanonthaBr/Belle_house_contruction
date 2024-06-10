@@ -26,7 +26,7 @@
         </div>
         <div class="row block-9">
             <div class="col-md-8">
-                <form action="{{route('contact.store')}}" class="p-4 p-md-5 contact-form">
+                <form action="{{route('contact.store')}}"  method="POST" class="p-4 p-md-5 contact-form" enctype="multipart/form-data">
                     @csrf
                     <div class="row">
                         <div class="col-md-6">

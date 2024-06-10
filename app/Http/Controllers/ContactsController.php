@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use App\Models\Modal;
 use Dotenv\Exception\ValidationException;
 use Illuminate\Http\Request;
 
@@ -39,7 +40,40 @@ class ContactsController extends Controller
             $contact->save();
             return redirect()->back();
         } catch (ValidationException $e) {
-            return redirect($e->getMessage());
+            return
+                response()->json(['message' => $e->getMessage()]);
+        }
+    }
+
+    //stores
+
+    public function stores(Request $request)
+    {
+        try {
+            //validate
+            $request->validate([
+                'name' => 'required',
+                'lastname' => 'required',
+                'phone' => 'nullable',
+                'service' => 'nullable',
+                'content' => 'nullable'
+            ]);
+
+            //requests
+            $modal = new Modal();
+            $modal->name = $request->name;
+            $modal->lastname = $request->lastname;
+            $modal->phone = $request->phone;
+            $modal->service = $request->service;
+            $modal->content = $request->content;
+
+            //save
+            $modal->save();
+
+            //return
+            return redirect()->back();
+        } catch (ValidationException $e) {
+            return response()->json(['message' => $e->getMessage()]);
         }
     }
 }

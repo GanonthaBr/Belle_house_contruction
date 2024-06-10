@@ -7,17 +7,18 @@
                     </button>
                 </div>
                 <div class="modal-body p-4 p-md-5">
-                    <form action="#" class="appointment-form ftco-animate">
+                    <form action="{{route('contacts.stores')}}" class="appointment-form ftco-animate" method="POST">
+                        @csrf
                         <h3>Faire une Requete</h3>
                         <div class>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Nom">
+                                <input type="text" class="form-control" placeholder="Nom" name="name">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Prenom">
+                                <input type="text" class="form-control" placeholder="Prenom" name="lastname">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Tel">
+                                <input type="text" class="form-control" placeholder="Tel" name="phone">
                             </div>
                         </div>
                         <div class>
@@ -25,23 +26,19 @@
                                 <div class="form-field">
                                     <div class="select-wrap">
                                         <div class="icon"><span class="fa fa-chevron-down"></span></div>
-                                        <select name id class="form-control">
+                                        <select name="service" id class="form-control">
                                             <option value>Selectionner un Service</option>
                                             <option value>Architecture</option>
                                             <option value>Renovation</option>
                                             <option value>Construction</option>
-                                            <option value>Interior &amp; Exterior</option>
-                                            <option value>Chemical Research</option>
-                                            <option value>Petroleum &amp; Gas</option>
-                                            <option value>Other Services</option>
+                                            <option value>Autre Services</option>
                                         </select>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class>
                             <div class="form-group">
-                                <textarea name id cols="30" rows="4" class="form-control" placeholder="Message"></textarea>
+                                <textarea name id cols="30" rows="4" class="form-control" name="content" placeholder="Message"></textarea>
                             </div>
                             <div class="form-group">
                                 <input type="submit" value="Envoyer Maintenant!" class="btn btn-primary py-3 px-4">
