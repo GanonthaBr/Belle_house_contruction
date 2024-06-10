@@ -19,8 +19,8 @@
     <div class="container">
         <div class="row justify-content-center mb-5 pb-2">
             <div class="col-md-8 text-center heading-section ftco-animate">
-                <span class="subheading">Our Services</span>
-                <h2 class="mb-4">We Offer Services</h2>
+                <span class="subheading">Nos Services</span>
+                <h2 class="mb-4">Les Services nous Offrons</h2>
             </div>
         </div>
         <div class="row">
@@ -32,7 +32,7 @@
                         <div class="icon"><span class="flaticon-architect"></span></div>
                         <h2>{{$service->title}}</h2>
                         <p>  {{substr($service->description,0,110)}}...</p>
-                        <a href="{{route('service.show',$service->id)}}" class="btn-custom">Read more</a>
+                        <a href="{{route('service.show',$service->id)}}" class="btn-custom">Voir Plus+</a>
                     </div>
                 </div>
             </div>
