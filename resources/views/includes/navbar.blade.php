@@ -13,7 +13,7 @@
                     <li class="nav-item"><a href="{{route('blogs')}}" class="nav-link {{ Request::routeIs('blogs') ? 'active' : '' }} ">Blog</a></li>
                     <li class="nav-item"><a href="{{route('contacts')}}" class="nav-link {{ Request::routeIs('contacts') ? 'active' : '' }} ">Contact</a></li>
                 </ul>
-                <a href="#" class="btn-custom" data-toggle="modal" data-target="#exampleModalCenter">Nous Contacter</a>
+                <a href="#" class="btn-custom" data-toggle="modal" data-target="#exampleModalCenter">Espace Client</a>
             </div>
         </div>
     </nav>

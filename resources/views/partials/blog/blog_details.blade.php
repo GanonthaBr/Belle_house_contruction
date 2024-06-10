@@ -23,9 +23,11 @@
         <div class="container d-flex justify-content-center align-items-center">
          
             <div class="row-md-6 m-4">
-                <p>{{$blog->content}}</p>
+                <p>{!!$blog->content!!}</p>
             </div>
         </div>
+        <h3>Tous les Blogs</h3>
+        <a href="{{route('blogs')}}">Voir les autres blogs</a>
     </div>
    
 

@@ -115,6 +115,13 @@
         </svg></div>
 
         {{-- extra libraries --}}
+        {{-- text area formatting: CKEditor --}}
+  <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
+  <script>
+    window.onload = function() {
+      CKEDITOR.replace('content');
+    }
+  </script>
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>

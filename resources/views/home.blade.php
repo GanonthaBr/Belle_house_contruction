@@ -21,7 +21,7 @@
 </section>
 @include('partials.services.services')
 <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter">
-    <div class="img image-overlay" style="background-image: url(images/banner-3.jpg);"></div>
+    <div class="img image-overlay" style="background-image: url(images/banner-6.png);"></div>
     <div class="container">
         <div class="row no-gutters">
             <div class="col-md-6 py-5 bg-secondary aside-stretch">
