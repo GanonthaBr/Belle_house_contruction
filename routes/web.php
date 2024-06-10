@@ -17,6 +17,8 @@ Route::get('/about', [AboutController::class, 'index'])->name('about');
 
 //Contact
 Route::get('/contacts', [ContactsController::class, 'index'])->name('contacts');
+Route::put('/contact', [ContactsController::class, 'store'])->name('contact.store');
+Route::get('/contact/create', [ContactsController::class, 'create'])->name('contact.create');
 
 
 //services

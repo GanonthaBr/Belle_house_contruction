@@ -26,26 +26,27 @@
         </div>
         <div class="row block-9">
             <div class="col-md-8">
-                <form action="#" class="p-4 p-md-5 contact-form">
+                <form action="{{route('contact.store')}}" class="p-4 p-md-5 contact-form">
+                    @csrf
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Votre nom">
+                                <input type="text" class="form-control" name="nom" placeholder="Votre nom">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Email ou Telephone">
+                                <input type="text" class="form-control" name="email" placeholder="Email ou Telephone">
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Object">
+                                <input type="text" class="form-control" name="topic" placeholder="Object">
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
-                                <textarea name id cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                                <textarea name id cols="30" rows="7" class="form-control" name="content" placeholder="Message"></textarea>
                             </div>
                         </div>
                         <div class="col-md-12">
