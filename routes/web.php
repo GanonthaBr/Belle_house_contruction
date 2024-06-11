@@ -1,9 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
-use App\Http\Controllers\BlogController;
+use App\Http\Controllers\ModalController;
 use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\ProjectsController;
 use App\Http\Controllers\ServicesController;
@@ -19,7 +20,7 @@ Route::get('/about', [AboutController::class, 'index'])->name('about');
 Route::get('/contacts', [ContactsController::class, 'index'])->name('contacts');
 Route::get('/contact/create', [ContactsController::class, 'create'])->name('contact.create');
 Route::post('/contacts', [ContactsController::class, 'store'])->name('contact.store');
-Route::post('/contacts', [ContactsController::class, 'stores'])->name('contacts.stores');
+Route::post('/modal', [ModalController::class, 'store'])->name('modal.store');
 
 
 //services

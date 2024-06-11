@@ -15,4 +15,5 @@ class Modal extends Model
         'phone',
         'service',
     ];
+    protected $table = 'modal'; // Explicitly setting the table name
 }
