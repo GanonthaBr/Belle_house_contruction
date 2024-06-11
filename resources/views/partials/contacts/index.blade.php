@@ -26,7 +26,7 @@
         </div>
         <div class="row block-9">
             <div class="col-md-8">
-                <form action="{{route('contact.store')}}"  method="POST" class="p-4 p-md-5 contact-form" enctype="multipart/form-data">
+                <form action="{{route('contact.store')}}" class="p-4 p-md-5 contact-form" enctype="multipart/form-data" method="POST">
                     @csrf
                     <div class="row">
                         <div class="col-md-6">
@@ -46,7 +46,7 @@
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
-                                <textarea name id cols="30" rows="7" class="form-control" name="content" placeholder="Message"></textarea>
+                                <textarea cols="30" rows="7" class="form-control" name="message" placeholder="Message"></textarea>
                             </div>
                         </div>
                         <div class="col-md-12">
@@ -94,12 +94,10 @@
                 </div>
             </div>
             <div class="col-md-12 mb-5">
-                {{-- <div id="map" class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3879.864437826549!2d-0.12775834999999998!3d51.5073509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM5DCsDI1JzEwLjAiTiAwwrAyMyc0Mi4yIlc!5e0!3m2!1sen!2suk!4v1628198441934!5m2!1sen!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div> --}}
-                <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed/v1/place?q=ONG+APIS,+Niamey,+Niger&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
-</div>
+                <div  class="map">
+                    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed/v1/place?q=ONG+APIS,+Niamey,+Niger&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                
             </div>
         </div>
     </div>

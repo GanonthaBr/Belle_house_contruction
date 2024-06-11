@@ -17,7 +17,7 @@ class ModalController extends Controller
                 'lastname' => 'required',
                 'phone' => 'nullable',
                 'service' => 'nullable',
-                'content' => 'nullable'
+                'contentmessage' => 'nullable'
             ]);
 
             //requests

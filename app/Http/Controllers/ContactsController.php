@@ -23,7 +23,7 @@ class ContactsController extends Controller
         try {
             //validate input
             $request->validate([
-                'content' => 'required',
+                'message' => 'required',
                 'nom' => 'required',
                 'email' => 'nullable',
                 'topic' => 'nullable'
@@ -32,9 +32,11 @@ class ContactsController extends Controller
             //requests
             $contact = new Contact();
             $contact->nom = $request->nom;
-            $contact->content = $request->content;
+            $contact->content = $request->message;
             $contact->topic = $request->topic;
             $contact->email = $request->email;
+            // dd($request->all());
+
 
             $contact->save();
             return redirect()->back();
