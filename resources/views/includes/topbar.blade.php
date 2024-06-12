@@ -45,13 +45,17 @@
                     </div>
                 </div>
                 <div class="col-md-4 d-flex topper mb-md-0 align-items-center">
-                    <div class="icon d-flex justify-content-center align-items-center"><span class="fa fa-paper-plane"></span>
+                    <div class=" icon d-flex justify-content-center align-items-center"><span class="fa fa-paper-plane"></span>
                     </div>
-                    <div class="text pl-3 pl-md-3">
+                    <div class=" text pl-3 pl-md-3">
                         <p class="hr"><span>Localisation</span></p>
                         <p class="con">Quartier Bobiel, Niamey-Niger</p>
                     </div>
+                    {{-- <div class="col-md-2">
+                        <p>Immobiliers</p>
+                    </div> --}}
                 </div>
+               
             </div>
         </div>
     </div>

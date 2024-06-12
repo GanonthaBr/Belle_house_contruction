@@ -6,10 +6,10 @@
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item"><a href="/" class="nav-link {{Request::is('/') ? 'active':''}}" >Accueil</a></li>
-                    <li class="nav-item"><a href="{{route('about')}}" class="nav-link {{ Request::routeIs('about') ? 'active' : '' }} ">A propos</a></li>
                     <li class="nav-item"><a href="{{route('services')}}" class="nav-link {{ Request::routeIs('services') ? 'active' : '' }} ">Services</a></li>
                     <li class="nav-item"><a href="{{route('projects')}}" class="nav-link {{ Request::routeIs('projects') ? 'active' : '' }} ">Projets</a></li>
-                    <li class="nav-item"><a href="{{route('realisations')}}" class="nav-link {{ Request::routeIs('realisations') ? 'active' : '' }} ">Réalisation</a></li>
+                    <li class="nav-item"><a href="{{route('about')}}" class="nav-link {{ Request::routeIs('about') ? 'active' : '' }} ">A propos</a></li>
+                    {{-- <li class="nav-item"><a href="{{route('realisations')}}" class="nav-link {{ Request::routeIs('realisations') ? 'active' : '' }} ">Réalisation</a></li> --}}
                     <li class="nav-item"><a href="{{route('blogs')}}" class="nav-link {{ Request::routeIs('blogs') ? 'active' : '' }} ">Blog</a></li>
                     <li class="nav-item"><a href="{{route('contacts')}}" class="nav-link {{ Request::routeIs('contacts') ? 'active' : '' }} ">Contact</a></li>
                 </ul>

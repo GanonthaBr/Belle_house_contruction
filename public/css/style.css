@@ -75,7 +75,26 @@ body {
     background-color: #fff;
     scroll-behavior: smooth;
 }
-
+.card {
+    margin-top: 5rem;
+}
+.card-item {
+    border: 1px solid #c2c1bc;
+    transition: border-color 0.3s ease;
+    margin: 0.3rem;
+    background: #61a1d51d;
+    border-radius: 5px;
+    padding: 0.2rem;
+}
+.card-body li {
+    list-style: decimal;
+}
+.card-body li:hover a {
+    color: #61a0d5;
+    transition: 0.3s ease-in;
+    /* add properties so that on hover it moves a bit to the right */
+    padding-left: 5px;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/

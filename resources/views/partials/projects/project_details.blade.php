@@ -26,7 +26,7 @@
 
                             <h3><b>Details du Projet:</b></h3>
                             <div class="d-flex left-content-between mb-3"><i class="fa fa-check text-primary pt-1" style="margin-left: 10px;"></i><span style="padding-left: 10px"> <strong>Superficie :</strong>{{$project->surface}} m²</span></div>
-                            <div class="d-flex left-content-between mb-3"><i class="fa fa-check text-primary pt-1" style="margin-left: 10px;"></i><span style="padding-left: 10px"> <strong>Type :</strong>{{$project->type}} m²</span></div>
+                            <div class="d-flex left-content-between mb-3"><i class="fa fa-check text-primary pt-1" style="margin-left: 10px;"></i><span style="padding-left: 10px"> <strong>Tache :</strong>{{$project->type}} m²</span></div>
                             <div class="d-flex left-content-between mb-3"><i class="fa fa-check text-primary pt-1" style="margin-left: 10px;" ></i><span style="padding-left: 10px"><strong>Maître d'ouvrage :</strong> {{$project->maitre_douvrage}}</span></div>
                             <div class="d-flex left-content-between mb-3"><i class="fa fa-check text-primary pt-1" style="margin-left: 10px;" ></i><span style="padding-left: 10px"><strong>Maître d'oeuvre :</strong> {{$project->maitre_doeuvre}}</span></div>
                             <div class="d-flex left-content-between mb-3"><i class="fa fa-check text-primary pt-1" style="margin-left: 10px;" ></i><span style="padding-left: 10px"><strong>Année :</strong>{{ \Carbon\Carbon::parse($project->year)->format('Y') }}</span></div>

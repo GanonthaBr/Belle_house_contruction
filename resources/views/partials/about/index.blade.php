@@ -145,26 +145,26 @@
                     <div class="flipper">
                         <div class="front" style="background-image: url(../../images/team-1.html);">
                             <div class="box">
-                                <h2>Ryan Anderson</h2>
-                                <p>Head Engineer</p>
+                                <h2>AGABA Moses</h2>
+                                <p>PDG</p>
                             </div>
                         </div>
                         <div class="back">
 
                             <blockquote>
-                                <p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text &rdquo;</p>
+                                <p>&ldquo;En charge de la gestion de l'entreprise et de toutes ses actions &rdquo;</p>
                             </blockquote>
                             <div class="author d-flex">
                                 <div class="image align-self-center">
-                                    <img src="images/team-1.jpg" alt>
+                                    <img src="images/person_pholder.png" alt>
                                 </div>
-                                <div class="name align-self-center ml-3">Ryan Anderson <span class="position">Head Engineer</span></div>
+                                <div class="name align-self-center ml-3">AGABA Moses<span class="position">PDG</span></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-6">
+            {{-- <div class="col-lg-3 col-sm-6">
                 <div class="block-2 ftco-animate">
                     <div class="flipper">
                         <div class="front" style="background-image: url(../../images/team-2.html);">
@@ -331,7 +331,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </section>
