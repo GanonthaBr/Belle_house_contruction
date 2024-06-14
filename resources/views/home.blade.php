@@ -64,28 +64,7 @@
 @include('partials.testimonials')
 @include('partials.blog.blogs')
 {{-- Partners --}}
-
-
-<section class="">
-    <div class="partners-container container">
-
-        <div class="row  section-title pb-3 mb-5 mx-auto">
-            <div class="col-md-10 heading-section text-center ftco-animate">
-                <span class="subheading">Nos Partenaires </span>
-                <h2 class="mb-4">Dernières mises à jour du blog</h2>
-            </div>
-
-        </div>
-
-        <div class="partners-scroll">
-            @foreach ($blogs as $blog)
-            <div class="partner-item">
-                <img src="{{asset('storage/' . $blog->image)}}" alt="{{$blog->title}}">
-            </div>
-            @endforeach
-        </div>
-    </div>
-</section>
+@include('partials.partners.partners');
 
 
 

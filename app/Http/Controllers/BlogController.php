@@ -72,10 +72,7 @@ class BlogController extends Controller
 
             return redirect()->route('home')->with('blog-created', 'Votre blog post été ajouté avec succès!');
         } catch (ValidationException $e) {
-            Log::error('Error creating blog post: ' . $e->getMessage(), [
-                'stack' => $e->getTraceAsString(),
-                'input' => $request->all(),
-            ]);
+
             return response()->json(['message' => $e->getMessage()]);
         }
     }

@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ModalController;
 use App\Http\Controllers\ContactsController;
+use App\Http\Controllers\PartnerController;
 use App\Http\Controllers\ProjectsController;
 use App\Http\Controllers\ServicesController;
 
@@ -46,3 +47,9 @@ Route::get('project/{id}', [ProjectsController::class, 'show'])->name('project.s
 
 //realisations
 Route::get('/realisations', [HomeController::class, 'realisations'])->name('realisations');
+
+// partners
+Route::get('/partners', [PartnerController::class, 'index'])->name('partners');
+Route::get('partner/create', [PartnerController::class, 'create'])->name('partner.create');
+Route::post('/partners', [PartnerController::class, 'store'])->name('partner.store');
+Route::delete('partner/{id}', [PartnerController::class, 'destroy'])->name('partner.destroy');
