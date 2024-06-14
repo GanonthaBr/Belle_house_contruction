@@ -95,6 +95,45 @@ body {
     /* add properties so that on hover it moves a bit to the right */
     padding-left: 5px;
 }
+/* Partners */
+.partners-container {
+    overflow: hidden;
+    position: relative;
+    padding: 3rem 0;
+}
+
+.partners-scroll {
+    display: flex;
+    flex-direction: row;
+    animation: scroll linear infinite;
+    animation-duration: 10s; /* Adjust this for faster or slower scrolling */
+}
+
+.partner-item {
+    flex: 0;
+    margin: 0 10rem; /* Space between logos */
+}
+.partner-item img {
+    height: 100px;
+    width: 100px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@media (max-width: 768px) {
+    .partner-item img {
+        width: 80%; /* Smaller logos on smaller screens */
+    }
+    .partners-scroll {
+        animation-duration: 20s; /* Faster scroll on smaller screens */
+    }
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/

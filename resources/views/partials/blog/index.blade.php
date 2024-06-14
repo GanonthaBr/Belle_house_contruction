@@ -15,6 +15,7 @@
 </section>
 <section class="ftco-section bg-light">
     <div class="container">
+        <h2>Liste de Nos Blog Posts</h2>
         <div class="row d-flex">
              @foreach ($blogs as $blog)
                     
