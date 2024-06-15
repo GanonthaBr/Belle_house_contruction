@@ -106,7 +106,7 @@ body {
     display: flex;
     flex-direction: row;
     animation: scroll linear infinite;
-    animation-duration: 10s; /* Adjust this for faster or slower scrolling */
+    animation-duration: 30s; /* Adjust this for faster or slower scrolling */
 }
 
 .partner-item {

@@ -64,7 +64,7 @@
 @include('partials.testimonials')
 @include('partials.blog.blogs')
 {{-- Partners --}}
-@include('partials.partners.partners');
+@include('partials.partners.partners')
 
 
 
