@@ -12,7 +12,7 @@
         <div class="partners-scroll">
             @foreach ($partners as $partner)
             <div class="partner-item">
-                <img src="{{asset('storage/' . $partner->image)}}" alt="{{$partner->title}}">
+                <img src="{{asset('storage/' . $partner->image)}}" alt="{{$partner->name}}">
             </div>
             @endforeach
         </div>
