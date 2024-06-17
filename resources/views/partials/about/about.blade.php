@@ -23,7 +23,7 @@
                            </p>
                            <div class="d-flex video-image align-items-center mt-md-4">
                                <iframe width="530" height="190" src="https://www.youtube.com/embed/21zo6jvGelo?modestbranding=1&si=pvTOdwA92AnCY2Fw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                               <h4 class="ml-4">Regardez la vidéo</h4>
+                               <h4 class="ml-4 regarder-video">Regardez la vidéo</h4>
                            </div>
                        </div>
                    </div>

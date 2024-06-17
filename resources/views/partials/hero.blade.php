@@ -5,7 +5,7 @@
             <div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
                 <div class="col-lg-12 ftco-animate">
                     <div class="mt-5">
-                        <h1 class="mb-4" style="font-size: 55px ;  " > <b>L’ÉLÉGANCE</b> <br>ET <b>LE CONFORT</b> DE NOS RÉALISATIONS</h1>
+                        <h1 class="mb-4" style="font-size: 3rem ;  " > <b>L’ÉLÉGANCE</b> <br>ET <b>LE CONFORT</b> DE NOS RÉALISATIONS</h1>
                         <p class="mb-4">
                             Transformez vos <b>rêves en réalité</b>, n’est qu’un aperçu de notre  <b>savoir-faire</b> et de <br> notre passion pour l'architecture et la construction moderne.
                         </p>

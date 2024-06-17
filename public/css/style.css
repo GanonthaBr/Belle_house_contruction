@@ -134,6 +134,16 @@ body {
         animation-duration: 20s; /* Faster scroll on smaller screens */
     }
 }
+/*About*/
+.regarder-video {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .regarder-video {
+        display: block;
+    }
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/

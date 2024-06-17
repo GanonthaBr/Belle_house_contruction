@@ -31,3 +31,6 @@ II - Espace client
 
 1. suivi du service des client
 2.
+
+LARAVEL IDE HELPER
+composer require --dev barryvdh/laravel-ide-helper --with-all-dependencies
