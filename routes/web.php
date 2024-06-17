@@ -8,6 +8,7 @@ use App\Http\Controllers\ModalController;
 use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\PartnerController;
 use App\Http\Controllers\ProjectsController;
+use App\Http\Controllers\RealisationController;
 use App\Http\Controllers\ServicesController;
 
 //Home 
@@ -47,6 +48,9 @@ Route::get('project/{id}', [ProjectsController::class, 'show'])->name('project.s
 
 //realisations
 Route::get('/realisations', [HomeController::class, 'realisations'])->name('realisations');
+Route::get('/create', [RealisationController::class, 'create'])->name('realisation.create');
+Route::post('/realisation', [RealisationController::class, 'store'])->name('realisation.store');
+Route::get('/realisation/{id}', [RealisationController::class, 'show'])->name('realisation.show');
 
 // partners
 Route::get('/partners', [PartnerController::class, 'index'])->name('partners');
