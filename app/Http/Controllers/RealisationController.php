@@ -8,12 +8,24 @@ use Dotenv\Exception\ValidationException;
 
 class RealisationController extends Controller
 {
+    //index
+    public function index()
+    {
+        $realisations = Realisation::all();
+        return view('partials.realisations.index', ['realisations' => $realisations]);
+    }
     //create
     public function create()
     {
         return view('partials.realisations.create_realisation');
     }
 
+    //show
+    public function show($id)
+    {
+        $realisation = Realisation::findOrFail($id);
+        return view('partials.realisations.realisation_details', ['realisation' => $realisation]);
+    }
     // store
     public function store(Request $request)
     {
@@ -34,7 +46,7 @@ class RealisationController extends Controller
             ]);
             //getting the requested data
             //image path
-            $imagePath = $request->file('image') ? $request->file('image')->store('project_images', 'public') : null;
+            $imagePath = $request->file('image') ? $request->file('image')->store('realisation_images', 'public') : null;
 
             //create new Project
             $realisation = new Realisation();
@@ -54,7 +66,7 @@ class RealisationController extends Controller
             // save images list to the images table;
             if ($request->file('images')) {
                 foreach ($request->file('images') as $image) {
-                    $imagePaths = $image->store('project_images_list', 'public');
+                    $imagePaths = $image->store('realisation_images_list', 'public');
                     $realisation->images()->create([
                         'image' => $imagePaths,
                     ]);

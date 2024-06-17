@@ -6,22 +6,22 @@
                     <h2 class="mb-4">Dernieres Realisations</h2>
                 </div>
             </div>
-            <div class="row">
-                @foreach ($realisations as $realisation)
-                    <div class="col-md-4">
-                    <div class="project">
-                        <a href="{{asset('storage/' . $realisation->image)}}" class="img image-popup d-flex align-items-center" style="background-image: url({{asset('stoarge/' . $realisation->image)}});">
-                            <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fa fa-plus"></span></div>
-                        </a>
-                        <div class="text">
-                            <span class="subheading"> {{$realisation->title}} </span>
-                            <h3>{{$realisation->type}}</h3>
-                            <p><span class="fa fa-map-marker mr-1"></span>{{$realisation->area}}</p>
-                        </div>
+           <div class="row">
+            @foreach ($realisations as $realisation)
+                
+            <div class="col-md-4">
+                <div class="project">
+                    <a href="{{route('realisation.show',$realisation->id)}}" class="img d-flex align-items-center" style="background-image: url({{asset('storage/' . $realisation->image)}});">
+                        <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fa fa-plus"></span></div>
+                    </a>
+                    <div class="text">
+                        <span class="subheading">{{$realisation->type}}</span>
+                        <h3>{{$realisation->name}}</h3>
+                        <p><span class="fa fa-map-marker mr-1"></span> {{$realisation->area }}, {{$realisation->city}}, {{$realisation->country}}</p> 
                     </div>
                 </div>
-                @endforeach
-              
             </div>
+            @endforeach
+        </div>
         </div>
     </section>

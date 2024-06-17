@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Blog;
 use App\Models\Partner;
 use App\Models\Project;
+use App\Models\Realisation;
 use App\Models\Service;
 use Illuminate\Http\Request;
 
@@ -14,12 +15,9 @@ class HomeController extends Controller
     {
         $projects = Project::orderBy('created_at', 'desc')->take(6)->get();
         $services = Service::all();
+        $realisations = Realisation::orderBy('created_at', 'desc')->take(6)->get();
         $partners = Partner::all();
         $blogs = Blog::all();
-        return view('home', ['projects' => $projects, 'partners' => $partners, 'blogs' => $blogs, 'services' => $services]);
-    }
-    public function realisations()
-    {
-        return view('partials.realisations.index');
+        return view('home', ['projects' => $projects, 'partners' => $partners, 'blogs' => $blogs, 'realisations' => $realisations, 'services' => $services]);
     }
 }

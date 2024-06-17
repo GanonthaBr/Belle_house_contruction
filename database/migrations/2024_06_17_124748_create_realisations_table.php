@@ -22,7 +22,6 @@ return new class extends Migration
             $table->string('maitre_doeuvre')->nullable();
             $table->string('video')->nullable();
             $table->string('image')->nullable();
-            $table->string('images')->nullable();
             $table->timestamps();
         });
     }

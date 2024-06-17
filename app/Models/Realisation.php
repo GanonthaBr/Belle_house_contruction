@@ -21,6 +21,6 @@ class Realisation extends Model
     ];
     public function images()
     {
-        return $this->hasMany(RealisationImages::class);
+        return $this->hasMany('App\Models\RealisationImages');
     }
 }

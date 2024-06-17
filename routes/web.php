@@ -47,9 +47,9 @@ Route::get('/project/create', [ProjectsController::class, 'create'])->name('proj
 Route::get('project/{id}', [ProjectsController::class, 'show'])->name('project.show');
 
 //realisations
-Route::get('/realisations', [HomeController::class, 'realisations'])->name('realisations');
-Route::get('/create', [RealisationController::class, 'create'])->name('realisation.create');
-Route::post('/realisation', [RealisationController::class, 'store'])->name('realisation.store');
+Route::get('/realisations', [RealisationController::class, 'index'])->name('realisations');
+Route::get('realisation/create', [RealisationController::class, 'create'])->name('realisation.create');
+Route::post('/realisations', [RealisationController::class, 'store'])->name('realisation.store');
 Route::get('/realisation/{id}', [RealisationController::class, 'show'])->name('realisation.show');
 
 // partners
