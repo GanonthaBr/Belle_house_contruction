@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\Http\Controllers\Controller;
 use App\Models\User;
-use Illuminate\Foundation\Auth\RegistersUsers;
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use Exception;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Foundation\Auth\RegistersUsers;
 
 class RegisterController extends Controller
 {
@@ -61,6 +63,32 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\Models\User
      */
+    //register from blog
+    public function registerBlog(Request $request)
+    {
+        try {
+            //valide the request data
+            $request->validate([
+                'name' => ['required', 'string', 'max:255'],
+                'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+                'password' => ['required', 'string', 'min:8', 'confirmed'],
+
+            ]);
+            //create a new user
+            $user = User::create([
+                'name' => $request->name,
+                'email' => $request->email,
+                'password' => Hash::make($request->password),
+            ]);
+            //login the user
+            auth()->login($user);
+            //redirect back
+            // json(['message' => 'Compte crée avec succès. Connectez-vous pour commenter.']);
+            return redirect()->back();
+        } catch (Exception $e) {
+            return response()->json(['message' => $e->getMessage()]);
+        }
+    }
     protected function create(array $data)
     {
         return User::create([

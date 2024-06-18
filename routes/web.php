@@ -1,15 +1,18 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ModalController;
-use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\PartnerController;
+use App\Http\Controllers\CommentController;
+use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\ProjectsController;
-use App\Http\Controllers\RealisationController;
 use App\Http\Controllers\ServicesController;
+use App\Http\Controllers\RealisationController;
+use App\Http\Controllers\Auth\RegisterController;
 
 //Home 
 Route::get('/', [HomeController::class, 'index'])->name('home');
@@ -61,3 +64,8 @@ Route::delete('partner/{id}', [PartnerController::class, 'destroy'])->name('part
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::post('/register-from-blog', [RegisterController::class, 'registerBlog'])->name('registerFromBlog');
+
+// comments
+Route::post('/comments', [CommentController::class, 'store'])->name('comments.store');
+Route::delete('/comment/{id}', [CommentController::class, 'destroy'])->name('comments.destroy');

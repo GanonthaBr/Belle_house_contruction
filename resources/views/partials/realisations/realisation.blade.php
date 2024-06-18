@@ -7,7 +7,16 @@
                 </div>
             </div>
            <div class="row">
-            @foreach ($realisations as $realisation)
+            @if ($realisations->count()==0)
+                <div class="col-md-12">
+                    <div class="project">
+                        <div class="text">
+                            <h3>Aucune realisation pour le moment</h3>
+                        </div>
+                    </div>
+                </div>
+            @else 
+                 @foreach ($realisations as $realisation)
                 
             <div class="col-md-4">
                 <div class="project">
@@ -22,6 +31,8 @@
                 </div>
             </div>
             @endforeach
+            @endif
+           
         </div>
         </div>
     </section>

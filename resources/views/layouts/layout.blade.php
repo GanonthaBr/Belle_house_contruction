@@ -95,6 +95,62 @@
             throw fetch("/cdn-cgi/zaraz/t"), e;
         };
     </script>
+    <style>
+        /* login modal  */
+
+.login-card {
+    display: none;
+    position: fixed; /* or 'fixed' */
+    top: 50%; /* center the card vertically */
+    left: 50%; /* center the card horizontally */
+    transform: translate(
+        -50%,
+        -50%
+    ); /* adjust the card's position to its center */
+    z-index: 10000;
+    height: 400px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #17468a;
+    color: #fff;
+}
+.login-card h3 {
+    color: #fff;
+}
+.login-card span {
+    font-size: 8;
+    font-style: italic;
+}
+.login-card button {
+    width: 90%;
+    margin: 10px;
+    background: #fff;
+    color: #61a0d5;
+    font-weight: bold;
+}
+.login-card button:hover {
+    color: #61a0d5;
+    background: #fff;
+}
+.login-card .close {
+    z-index: 100001;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    /* font-size: 40px; */
+    /* height: 100px; */
+    padding: 5px;
+    cursor: pointer;
+    border: #fff 1px solid;
+    border-radius: 100%;
+}
+.login-card .register-btn {
+    cursor: pointer;
+}
+    </style>
 </head>
 
 <body>
