@@ -57,3 +57,7 @@ Route::get('/partners', [PartnerController::class, 'index'])->name('partners');
 Route::get('partner/create', [PartnerController::class, 'create'])->name('partner.create');
 Route::post('/partners', [PartnerController::class, 'store'])->name('partner.store');
 Route::delete('partner/{id}', [PartnerController::class, 'destroy'])->name('partner.destroy');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
