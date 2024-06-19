@@ -11,7 +11,7 @@
                     
                 <div class="col-lg-4 ftco-animate">
                     <div class="blog-entry">
-                        <a href="blog-single.html" class="block-20" style="background-image: url({{asset('storage/' . $blog->image)}});">
+                        <a href="{{route('blog.show',$blog->id)}}" class="block-20" style="background-image: url({{asset('storage/' . $blog->image)}});">
                         </a>
                         <div class="text d-block">
                             <div class="meta">
