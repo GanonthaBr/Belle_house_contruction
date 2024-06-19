@@ -57,7 +57,6 @@
                         <!-- cross to close the modal -->
                         <span class="close">
                             <i class="fas fa-times"></i>
-
                         </span>
 
                         <div class="modal-body">

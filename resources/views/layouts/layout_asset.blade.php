@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="{{asset('css/flaticon.css')}}">
     {{-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"> --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            rel="stylesheet"
+        />
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <script nonce="991464ec-edd5-44f2-b742-13c23523bc94">
         try {
@@ -107,11 +111,11 @@
         -50%
     ); /* adjust the card's position to its center */
     z-index: 10000;
-    height: 400px;
+    height: 500px;
     width: 300px;
     padding: 10px;
     border-radius: 5px;
-    background: #17468a;
+    background: #61a0d5;
     color: #fff;
 }
 .login-card h3 {
@@ -134,13 +138,10 @@
 }
 .login-card .close {
     z-index: 100001;
-
     position: absolute;
     top: 0;
     right: 0;
     color: #fff;
-    /* font-size: 40px; */
-    /* height: 100px; */
     padding: 5px;
     cursor: pointer;
     border: #fff 1px solid;
@@ -167,13 +168,68 @@
 }
 .comments button {
     color: #fff;
-    background-color: #11579c;
+    background-color: #61a0d5;
     margin-top: 20px;
 }
 .comments button:hover {
     color: #fff;
 }
 
+
+/* register modal  */
+
+.register-card {
+    display: none;
+    position: fixed; /* or 'fixed' */
+    top: 50%; /* center the card vertically */
+    left: 50%; /* center the card horizontally */
+    transform: translate(
+        -50%,
+        -50%
+    ); /* adjust the card's position to its center */
+    z-index: 10000;
+    height: 95%;
+    width: 300px;
+    padding: 8px;
+    border-radius: 5px;
+    background: #61a0d5;
+    color: #fff;
+}
+.register-card h3 {
+    color: #fff;
+    font-size: 14;
+}
+.register-card span {
+    font-size: 8;
+    font-style: italic;
+}
+.register-card button {
+    width: 90%;
+    margin: 8px;
+    background: #fff;
+    color: #17468a;
+    font-weight: bold;
+}
+.register-card button:hover {
+    color: #17468a;
+    background: #fff;
+}
+.register-card .fermer {
+    z-index: 100001;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    /* font-size: 40px; */
+    /* height: 100px; */
+    padding: 5px;
+    cursor: pointer;
+    border: #fff 1px solid;
+    border-radius: 100%;
+}
+.register-card .login-btn {
+    cursor: pointer;
+}
     </style>
 </head>
 

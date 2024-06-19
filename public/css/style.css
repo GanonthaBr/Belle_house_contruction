@@ -88,11 +88,11 @@ body {
         -50%
     ); /* adjust the card's position to its center */
     z-index: 10000;
-    height: max-content;
+    height: 95%;
     width: 300px;
     padding: 8px;
     border-radius: 5px;
-    background: #17468a;
+    background: #61a0d5;
     color: #fff;
 }
 .register-card h3 {

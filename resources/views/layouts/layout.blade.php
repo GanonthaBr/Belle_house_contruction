@@ -119,6 +119,62 @@
         .comments button:hover {
             color: #fff;
         }
+
+        
+/* register modal  */
+
+.register-card {
+    display: none;
+    position: fixed; /* or 'fixed' */
+    top: 50%; /* center the card vertically */
+    left: 50%; /* center the card horizontally */
+    transform: translate(
+        -50%,
+        -50%
+    ); /* adjust the card's position to its center */
+    z-index: 10000;
+    height: 95%;
+    width: 300px;
+    padding: 8px;
+    border-radius: 5px;
+    background: #61a0d5;
+    color: #fff;
+}
+.register-card h3 {
+    color: #fff;
+    font-size: 14;
+}
+.register-card span {
+    font-size: 8;
+    font-style: italic;
+}
+.register-card button {
+    width: 90%;
+    margin: 8px;
+    background: #fff;
+    color: #17468a;
+    font-weight: bold;
+}
+.register-card button:hover {
+    color: #17468a;
+    background: #fff;
+}
+.register-card .fermer {
+    z-index: 100001;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    /* font-size: 40px; */
+    /* height: 100px; */
+    padding: 5px;
+    cursor: pointer;
+    border: #fff 1px solid;
+    border-radius: 100%;
+}
+.register-card .login-btn {
+    cursor: pointer;
+}
     </style>
 </head>
 
