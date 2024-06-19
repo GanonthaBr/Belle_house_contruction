@@ -6,8 +6,8 @@
     <div class="container">
         <div class="row no-gutters slider-text align-items-end justify-content-start">
             <div class="col-md-9 ftco-animate pb-5">
-                <p class="breadcrumbs"><span class="mr-2"><a href="/">Accueil <i class="fa fa-chevron-right"></i></a></span> <span>Nos projects <i class="fa fa-chevron-right"></i></span></p>
-                <h1 class="mb-3 bread">Nos projects -> details</h1>
+                <p class="breadcrumbs"><span class="mr-2"><a href="/">Accueil <i class="fa fa-chevron-right"></i></a></span> <span>Nos Realisations <i class="fa fa-chevron-right"></i></span></p>
+                <h1 class="mb-3 bread">Nos Realisations -> details</h1>
             </div>
         </div>
     </div>
@@ -24,7 +24,7 @@
                         <!-- Add your list of items here -->
                         <ul style="list-style-type: none; padding: 0;">
 
-                            <h3><b>Details du Projet:</b></h3>
+                            <h3><b>Details:</b></h3>
                             <div class="d-flex left-content-between mb-3"><i class="fa fa-check text-primary pt-1" style="margin-left: 10px;"></i><span style="padding-left: 10px"> <strong>Superficie :</strong>{{$realisation->surface}} m²</span></div>
                             <div class="d-flex left-content-between mb-3"><i class="fa fa-check text-primary pt-1" style="margin-left: 10px;"></i><span style="padding-left: 10px"> <strong>Tache :</strong>{{$realisation->task}} m²</span></div>
                             <div class="d-flex left-content-between mb-3"><i class="fa fa-check text-primary pt-1" style="margin-left: 10px;"></i><span style="padding-left: 10px"><strong>Maître d'ouvrage :</strong> {{$realisation->maitre_douvrage}}</span></div>
@@ -33,7 +33,7 @@
                             <div class="d-flex left-content-between mb-3"><i class="fa fa-check text-primary pt-1" style="margin-left: 10px;"></i><span style="padding-left: 10px"><strong>Ville :</strong> {{$realisation->city}}</span></div>
                             <div class="d-flex left-content-between mb-3"><i class="fa fa-check text-primary pt-1" style="margin-left: 10px;"></i><span style="padding-left: 10px"><strong>Pays :</strong> {{$realisation->country}}</span></div>
                     </div>
-                    <h3><b>Description du Projet</b></h3>
+                    <h3><b>Description</b></h3>
                     <p>
 
                         {{$realisation->description}}
@@ -42,21 +42,38 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6 col-sm-12 pl-sm-3">
                 @if($realisation->images->count()==0)
                 <div class="m-12">
                     <p class="text-center mt-4 alert-success">Pas d'images supplémentaires</p>
                 </div>
-                @endif
-                <div class="row">
-                    @foreach($realisation->images as $image)
-                    <div class="col-md-4 d-flex justify-content-start">
-                        <a href="{{asset('storage/' . $image->image)}}" data-lightbox="realisation-images">
-                            <img src="{{asset('storage/' . $image->image)}}" alt="image {{$image->id}}" class="img-fluid" height="200" width="200" />
-                        </a>
+                @else
+                <div class="row" style="margin-left: 50px;">
+                    <div class="row">
+                        <h2>Images</h2>
                     </div>
-                    @endforeach
+                    <div class="row">
+                        @foreach($realisation->images as $image)
+                        <div class="col-md-4 d-flex justify-content-start">
+                            <a href="{{asset('storage/' . $image->image)}}" data-lightbox="realisation-images">
+                                <img src="{{asset('storage/' . $image->image)}}" alt="image {{$image->id}}" class="img-fluid" height="200" width="200" />
+                            </a>
+                        </div>
+                        @endforeach
+                    </div>
 
+                </div>
+                @endif
+
+                <div class="row container">
+                    <div class="row col-md-12">
+                        <h2>Videos</h2>
+                    </div>
+                    <div class="row col-md-12">
+                        <div class="d-flex video-image align-items-center col-md-12">
+                            <iframe width="100%" height="200" src="{{'https://www.youtube.com/embed/21zo6jvGelo?modestbranding=1&si=' . $realisation->video}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

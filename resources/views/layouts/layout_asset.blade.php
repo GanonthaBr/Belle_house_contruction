@@ -149,6 +149,31 @@
 .login-card .register-btn {
     cursor: pointer;
 }
+/* comments */
+.comment {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    background: #f5f4f4;
+}
+.comments {
+    margin-top: 20px;
+}
+.comment-added {
+    font-size: 5;
+    font-style: italic;
+}
+.comments button {
+    color: #fff;
+    background-color: #11579c;
+    margin-top: 20px;
+}
+.comments button:hover {
+    color: #fff;
+}
+
     </style>
 </head>
 
