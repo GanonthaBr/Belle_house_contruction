@@ -14,7 +14,7 @@ class HomeController extends Controller
     public function index()
     {
         $projects = Project::orderBy('created_at', 'desc')->take(6)->get();
-        $services = Service::all();
+        $services = Service::orderBy('created_at', 'asc')->take(3)->get();
         $realisations = Realisation::orderBy('created_at', 'desc')->take(6)->get();
         $partners = Partner::all();
         $blogs = Blog::all();
