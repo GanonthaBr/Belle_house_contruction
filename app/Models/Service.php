@@ -11,4 +11,9 @@ class Service extends Model
     public $fillable = [
         'image', 'title', 'description',
     ];
+
+    public function images()
+    {
+        return $this->hasMany('App\Models\ServiceImage');
+    }
 }

@@ -29,12 +29,15 @@ class ServicesController extends Controller
     //store
     public function store(Request $request)
     {
+
         try {
-            $request->validate([
-                'image' => 'required',
-                'title' => 'required',
-                'description' => 'required',
-            ]);
+            // $request->validate([
+            //     'image' => 'required',
+            //     'title' => 'required',
+            //     'description' => 'nullable',
+            //     'images.*' => 'nullable|image|mimes:jpeg,jpg,png,gif,svg|max:4096'
+            // ]);
+            // die($request->all());
             //imagePath
             $imagePath = $request->file('image') ? $request->file('image')->store('services_images', 'public') : null;
             //request
@@ -42,7 +45,20 @@ class ServicesController extends Controller
             $service->image = $imagePath;
             $service->title = $request->title;
             $service->description = $request->description;
+
             $service->save();
+            // die($request->all());
+
+            // save images list to the images table;
+            if ($request->file('images')) {
+                foreach ($request->file('images') as $image) {
+                    $imagePaths = $image->store('service_images_list', 'public');
+                    $service->images()->create([
+                        'image' => $imagePaths,
+                    ]);
+                }
+            }
+            return redirect()->route('home');
         } catch (ValidationException $e) {
             return redirect()->route('home')->with('service-created', 'Votre service a été ajouté avec succès!');
         }
