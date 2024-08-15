@@ -20,4 +20,9 @@ class HomeController extends Controller
         $blogs = Blog::all();
         return view('home', ['projects' => $projects, 'partners' => $partners, 'blogs' => $blogs, 'realisations' => $realisations, 'services' => $services]);
     }
+
+    public function admin()
+    {
+        return view('admin');
+    }
 }

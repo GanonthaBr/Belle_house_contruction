@@ -31,6 +31,25 @@
             </div>
             @endforeach
         </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                @if($service->images->count()==0)
+                <div class="m-12">
+                    <p class="text-center mt-4 alert-success">Pas d'images supplémentaires</p>
+                </div>
+                @endif
+                <div class="row">
+                    @foreach($service->images as $image)
+                    <div class="col-md-4 d-flex justify-content-start">
+                        <a href="{{asset('storage/' . $image->image)}}" data-lightbox="service-images">
+                            <img src="{{asset('storage/' . $image->image)}}" alt="image {{$image->id}}" class="img-fluid" height="200" width="200" />
+                        </a>
+                    </div>
+                    @endforeach
+
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>

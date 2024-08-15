@@ -62,12 +62,12 @@
         <div class="container-fluid bg-primary">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 aside-stretch py-3">
+                    <div class="col-md-12 aside-stretch py-3">
                         <p class="mb-0">
                             Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
                             <script>
                                 document.write(new Date().getFullYear());
-                            </script>, Belle House, Tout Droit réservé | Site conçu par <a  target="_blank" href="https://www.linkedin.com/in/bruno-ganontha-payang/" target="_blank">Ganontha Payang Bruno</a>
+                            </script>, Belle House, Tout Droit ré servé | Site conçu par <a  target="_blank" href="https://www.linkedin.com/in/bruno-ganontha-payang/" target="_blank">Ganontha Payang Bruno</a>
                         </p
                     </div>
                 </div>

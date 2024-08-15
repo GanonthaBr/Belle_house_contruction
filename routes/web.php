@@ -69,3 +69,6 @@ Route::post('/register-from-blog', [RegisterController::class, 'registerBlog'])-
 // comments
 Route::post('/comments', [CommentController::class, 'store'])->name('comments.store');
 Route::delete('/comment/{id}', [CommentController::class, 'destroy'])->name('comments.destroy');
+
+//admin
+Route::get('/bhadmin', [HomeController::class, 'admin'])->name('admin');
