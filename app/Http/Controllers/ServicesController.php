@@ -63,4 +63,26 @@ class ServicesController extends Controller
             return redirect()->route('home')->with('service-created', 'Votre service a été ajouté avec succès!');
         }
     }
+    //edit
+    public function edit($id)
+    {
+        $service = Service::findOrFail($id);
+        return view('partials.services.service_edit', ['service' => $service]);
+    }
+    //update
+    public function update(Request $request, $id)
+    {
+        $service = Service::findOrFail($id);
+        $service->title = $request->title;
+        $service->description = $request->description;
+        $service->save();
+        return redirect()->route('home');
+    }
+    //delete
+    public function destroy($id)
+    {
+        $service = Service::findOrFail($id);
+        $service->delete();
+        return redirect()->route('home');
+    }
 }

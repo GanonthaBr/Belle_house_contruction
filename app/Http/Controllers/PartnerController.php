@@ -49,4 +49,30 @@ class PartnerController extends Controller
             return response()->json(['message' => $e->getMessage()]);
         }
     }
+    //edit
+    public function edit($id)
+    {
+        $partner = Partner::findOrFail($id);
+        return view('partials.partners.edit_partner', ['partner' => $partner]);
+    }
+    //update
+    public function update(Request $request, $id)
+    {
+        try {
+            $request->validate([
+                'name' => 'required',
+                'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            ]);
+            //image path
+            $imagePath = $request->file('image') ? $request->file('image')->store('blog_images', 'public') : null;
+
+            $partner = Partner::findOrFail($id);
+            $partner->name = $request->name;
+            $partner->image = $imagePath;
+            $partner->save();
+            return redirect()->route('home')->with('partner-updated', 'Votre partenaire a été mis à jour avec succès!');
+        } catch (ValidationException $e) {
+            return response()->json(['message' => $e->getMessage()]);
+        }
+    }
 }
