@@ -290,7 +290,7 @@
       <!-- End Sidebar -->
 
       <div class="main-panel">
-        <div class="main-header">
+        {{-- <div class="main-header">
           <div class="main-header-logo">
             <!-- Logo Header -->
             <div class="logo-header" data-background-color="dark">
@@ -670,8 +670,8 @@
             </div>
           </nav>
           <!-- End Navbar -->
-        </div>
-
+        </div> --}}
+        @include('partials.admin.mainheader')
         <div class="container">
           <div class="page-inner">
             <div
@@ -679,7 +679,7 @@
             >
               <div>
                 <h3 class="fw-bold mb-3">Dashboard</h3>
-                <h6 class="op-7 mb-2">Free Bootstrap 5 Admin Dashboard</h6>
+                <h6 class="op-7 mb-2">Page Admin, Belle House Construction Moderne</h6>
               </div>
               <div class="ms-md-auto py-2 py-md-0">
                 <a href="#" class="btn btn-label-info btn-round me-2">Manage</a>
@@ -1294,33 +1294,7 @@
           </div>
         </div>
 
-        <footer class="footer">
-          <div class="container-fluid d-flex justify-content-between">
-            <nav class="pull-left">
-              <ul class="nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="http://www.themekita.com">
-                    ThemeKita
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"> Help </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"> Licenses </a>
-                </li>
-              </ul>
-            </nav>
-            <div class="copyright">
-              2024, made with <i class="fa fa-heart heart text-danger"></i> by
-              <a href="http://www.themekita.com">ThemeKita</a>
-            </div>
-            <div>
-              Distributed by
-              <a target="_blank" href="https://themewagon.com/">ThemeWagon</a>.
-            </div>
-          </div>
-        </footer>
+       @include('partials.admin.footer')
       </div>
 
       <!-- Custom template | don't include it in your project! -->
