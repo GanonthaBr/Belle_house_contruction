@@ -124,7 +124,7 @@ class BlogController extends Controller
                     ]);
                 }
             }
-            return redirect()->route('home')->with('blog-updated', 'Votre blog post a été mis à jour avec succès!');
+            return redirect()->route('allblogs')->with('blog-updated', 'Votre blog post a été mis à jour avec succès!');
         } catch (ValidationException $e) {
             return response()->json(['message' => $e->getMessage()]);
         }
@@ -134,6 +134,7 @@ class BlogController extends Controller
     {
         $blog = Blog::findOrFail($id);
         $blog->delete();
-        return redirect()->route('home')->with('blog-deleted', 'Votre blog post a été supprimé avec succès!');
+
+        return redirect()->route('allblogs')->with('blog-deleted', 'Votre blog post a été supprimé avec succès!');
     }
 }

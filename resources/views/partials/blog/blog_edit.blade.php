@@ -13,7 +13,9 @@
         </div>
         @endif
         {{-- create form --}}
-        <form action="{{ route('blog.store') }}" method="POST" enctype="multipart/form-data">
+        <form action="{{ route('blog.update',$blog->id) }}" method="POST" enctype="multipart/form-data">
+            @method('PUT')
+
             @csrf
             <div class="mb-3">
                 <label for="title" class="form-label">Titre</label>

@@ -3,7 +3,7 @@
 					<!-- Logo Header -->
 					<div class="logo-header" data-background-color="dark">
 
-						<a href="../index.html" class="logo">
+						<a href="{{route('admin')}}" class="logo">
 							<img src="{{asset('images/logo.png')}}" alt="navbar brand" class="navbar-brand" height="20">
 						</a>
 						<div class="nav-toggle">
@@ -180,7 +180,7 @@
 							<li class="nav-item topbar-user dropdown hidden-caret">
 								<a class="dropdown-toggle profile-pic" data-bs-toggle="dropdown" href="#" aria-expanded="false">
 									<div class="avatar-sm">
-										<img src="../assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle">
+										<img src="{{asset('images/logo.png')}}" alt="..." class="avatar-img rounded-circle">
 									</div>
 									<span class="profile-username">
 										<span class="op-7">Bonjour,</span> <span class="fw-bold">Admin</span>

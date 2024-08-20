@@ -500,3 +500,16 @@ $("#activeUsersChart").sparkline(
         barColor: "rgba(255,255,255,.3)",
     }
 );
+// sumbit delete form
+// Get all confirm delete buttons
+var confirmDeleteButtons = document.querySelectorAll(".confirm-delete");
+// console.log(confirmDeleteButtons);
+var formId;
+// Loop through all confirm delete buttons
+for (var i = 0; i < confirmDeleteButtons.length; i++) {
+    // Add click event listener to each confirm delete button
+    confirmDeleteButtons[i].addEventListener("click", function () {
+        // Get the form id from the data-form attribute
+        formId = this.getAttribute("data-form");
+    });
+}
