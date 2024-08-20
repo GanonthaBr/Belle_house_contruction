@@ -45,6 +45,7 @@ Route::get('/blog/{id}', [BlogController::class, 'show'])->name('blog.show');
 Route::get('/blog/{id}/edit', [BlogController::class, 'edit'])->name('blog.edit');
 Route::put('/blog/{id}', [BlogController::class, 'update'])->name('blog.update');
 Route::delete('/blog/{id}', [BlogController::class, 'destroy'])->name('blog.destroy');
+Route::get('/allblogs', [BlogController::class, 'allblogs'])->name('allblogs');
 
 
 //projects
