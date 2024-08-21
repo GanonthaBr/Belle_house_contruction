@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Models\Blog;
+use App\Models\Contact;
 use App\Models\Partner;
 use App\Models\Project;
-use App\Models\Realisation;
 use App\Models\Service;
-use Illuminate\Http\Request;
+use App\Models\Realisation;
+
 
 class HomeController extends Controller
 {
@@ -23,6 +24,30 @@ class HomeController extends Controller
 
     public function admin()
     {
-        return view('admin');
+        $projects = Project::all();
+        $services = Service::all();
+        $blogs = Blog::all();
+        $realisations = Realisation::all();
+        $partners = Partner::all();
+        $contacts = Contact::all();
+        $project_number = $projects->count();
+        $service_number = $services->count();
+        $realisation_number = $realisations->count();
+        $partner_number = $partners->count();
+        $blog_number = $blogs->count();
+        return view('admin', [
+            'projects' => $partner_number,
+            'services' => $service_number,
+            'blogs' => $blog_number,
+            'realisations' => $realisation_number,
+            'partners' => $partner_number,
+            '$contacts' => $contacts
+        ]);
+    }
+    public function contacts()
+    {
+        $contacts = Contact::all();
+        dd($contacts);
+        return view('partials.admin.mainheader', ['contacts' => $contacts]);
     }
 }
