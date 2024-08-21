@@ -68,6 +68,9 @@ $countm = 0;
 										<div class="message-notif-scroll scrollbar-outer">
 											<div class="notif-center">
 											@foreach ($newMessages as $msg)
+											@if ($countm == 3)
+          									@break
+          									@endif
 												<a href="#">
 													<div class="notif-img"> 
 														<img src="{{asset('images/logo.png')}}" alt="Img Profile">
@@ -80,7 +83,10 @@ $countm = 0;
 														<span class="time">5 minutes ago</span> 
 													</div>
 												</a>
-											@endforeach										
+											@php
+          									$countm++;
+          									@endphp
+											@endforeach									
 										</div>
 									</li>
 									<li>
