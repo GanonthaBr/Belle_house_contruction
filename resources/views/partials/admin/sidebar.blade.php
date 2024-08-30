@@ -103,7 +103,7 @@
 										</a>
 									</li>
 									<li>
-										<a href="../tables/datatables.html">
+										<a href="{{route('blog.create')}}">
 											<span class="sub-item">Ajouter une Publication</span>
 										</a>
 									</li>
@@ -140,12 +140,12 @@
 							<div class="collapse" id="maps">
 								<ul class="nav nav-collapse">
 									<li>
-										<a href="../maps/googlemaps.html">
+										<a href="{{route('allpartners')}}">
 											<span class="sub-item">Tous nos Partenaires</span>
 										</a>
 									</li>
 									<li>
-										<a href="../maps/jsvectormap.html">
+										<a href="{{route('partner.create')}}">
 											<span class="sub-item">Ajouter nouveau Partenaire</span>
 										</a>
 									</li>
