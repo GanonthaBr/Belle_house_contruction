@@ -23,7 +23,7 @@ class RealisationController extends Controller
     //create
     public function create()
     {
-        return view('partials.realisations.create_realisation');
+        return view('partials.admin.create_realisation');
     }
 
     //show
