@@ -65,6 +65,7 @@ Route::get('/realisation/{id}', [RealisationController::class, 'show'])->name('r
 Route::get('/realisation/{id}/edit', [RealisationController::class, 'edit'])->name('realisation.edit');
 Route::put('/realisation/{id}', [RealisationController::class, 'update'])->name('realisation.update');
 Route::delete('/realisation/{id}', [RealisationController::class, 'destroy'])->name('realisation.destroy');
+Route::get('/allrealisations', [RealisationController::class, 'allrealisations'])->name('allrealisations');
 
 // partners
 Route::get('/partners', [PartnerController::class, 'index'])->name('partners');

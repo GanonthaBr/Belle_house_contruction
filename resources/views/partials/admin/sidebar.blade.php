@@ -56,7 +56,7 @@
 							<div class="collapse" id="sidebarLayouts">
 								<ul class="nav nav-collapse">
 									<li>
-										<a href="../sidebar-style-2.html">
+										<a href="{{route('allrealisations')}}">
 											<span class="sub-item">Liste des realisations</span>
 										</a>
 									</li>

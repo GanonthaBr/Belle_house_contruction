@@ -14,6 +14,12 @@ class RealisationController extends Controller
         $realisations = Realisation::all();
         return view('partials.realisations.index', ['realisations' => $realisations]);
     }
+    //all realisations
+    public function allrealisations()
+    {
+        $realisation_list = Realisation::all();
+        return view('partials.admin.realisation_list', ['realisation_list' => $realisation_list]);
+    }
     //create
     public function create()
     {
