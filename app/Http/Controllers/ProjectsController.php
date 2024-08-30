@@ -13,11 +13,17 @@ class ProjectsController extends Controller
         $projects  = Project::all();
         return view('partials.projects.index', ['projects' => $projects]);
     }
+    //all projects
+    public function allprojects()
+    {
+        $project_list = Project::all();
+        return view('partials.admin.project_list', ['project_list' => $project_list]);
+    }
 
     //create
     public function create()
     {
-        return view('partials.projects.project_create');
+        return view('partials.admin.project_create');
     }
     //show by id
     public function show($id)

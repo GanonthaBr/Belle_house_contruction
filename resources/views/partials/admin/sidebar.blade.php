@@ -61,7 +61,7 @@
 										</a>
 									</li>
 									<li>
-										<a href="../icon-menu.html">
+										<a href="{{route('realisation.create')}}">
 											<span class="sub-item">Ajouter une realisations</span>
 										</a>
 									</li>
@@ -77,7 +77,7 @@
 							<div class="collapse" id="forms">
 								<ul class="nav nav-collapse">
 									<li>
-										<a href="../forms/forms.html">
+										<a href="{{route('allprojects')}}">
 											<span class="sub-item">Liste des Projets</span>
 										</a>
 									</li>

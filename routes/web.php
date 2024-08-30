@@ -56,6 +56,7 @@ Route::get('project/{id}', [ProjectsController::class, 'show'])->name('project.s
 Route::get('project/{id}/edit', [ProjectsController::class, 'edit'])->name('project.edit');
 Route::put('project/{id}', [ProjectsController::class, 'update'])->name('project.update');
 Route::delete('project/{id}', [ProjectsController::class, 'destroy'])->name('project.destroy');
+Route::get('/allprojects', [ProjectsController::class, 'allprojects'])->name('allprojects');
 
 //realisations
 Route::get('/realisations', [RealisationController::class, 'index'])->name('realisations');
