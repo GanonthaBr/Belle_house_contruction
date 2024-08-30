@@ -14,10 +14,16 @@ class PartnerController extends Controller
         $partners  = Partner::all();
         return view('partials.partners.partners', ['partners' => $partners]);
     }
+    //all partners
+    public function allpartners()
+    {
+        $partner_list = Partner::all();
+        return view('partials.admin.partner_list', ['partner_list' => $partner_list]);
+    }
     //create
     public function create()
     {
-        return view('partials.partners.create_partner');
+        return view('partials.admin.create_partner');
     }
 
     //delete

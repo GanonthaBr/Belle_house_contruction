@@ -82,7 +82,7 @@
 										</a>
 									</li>
 									<li>
-										<a href="../forms/forms.html">
+										<a href="{{route('project.create')}}">
 											<span class="sub-item">Ajouter un Projet</span>
 										</a>
 									</li>
