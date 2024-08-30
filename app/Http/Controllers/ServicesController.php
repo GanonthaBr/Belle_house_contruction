@@ -14,10 +14,16 @@ class ServicesController extends Controller
         return view('partials.services.index', ['services' => $services]);
     }
 
+    //all services
+    public function allservices()
+    {
+        $service_list = Service::all();
+        return view('partials.admin.service_list', ['service_list' => $service_list]);
+    }
     //create
     public function create()
     {
-        return view('partials.services.service_create');
+        return view('partials.admin.service_create');
     }
     //show
     public function show($id)

@@ -119,12 +119,12 @@
 							<div class="collapse" id="tables">
 								<ul class="nav nav-collapse">
 									<li>
-										<a href="../tables/tables.html">
+										<a href="{{route('allservices')}}">
 											<span class="sub-item">Liste des services</span>
 										</a>
 									</li>
 									<li>
-										<a href="../tables/datatables.html">
+										<a href="{{route('service.create')}}">
 											<span class="sub-item">Ajouter un service</span>
 										</a>
 									</li>

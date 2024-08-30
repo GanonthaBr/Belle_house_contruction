@@ -36,6 +36,7 @@ Route::get('service/{id}', [ServicesController::class, 'show'])->name('service.s
 Route::get('service/{id}/edit', [ServicesController::class, 'edit'])->name('service.edit');
 Route::put('service/{id}', [ServicesController::class, 'update'])->name('service.update');
 Route::delete('service/{id}', [ServicesController::class, 'destroy'])->name('service.destroy');
+Route::get('allservices', [ServicesController::class, 'allservices'])->name('allservices');
 
 //blogs
 Route::get('/blogs', [BlogController::class, 'index'])->name('blogs');
