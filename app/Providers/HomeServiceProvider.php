@@ -19,9 +19,11 @@ class HomeServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        view()->composer(['partials.blog.blog_details', 'partials.admin.mainheader', 'partials.admin.project_list'], function ($view) {
+        view()->composer(['partials.blog.blog_details', 'partials.admin.mainheader', 'partials.admin.project_list', 'partials.admin.realisation_list', 'partials.admin.service_list'], function ($view) {
             $view->with('blogs', \App\Models\Blog::all()->take(5))
                 ->with('projects', \App\Models\Project::all())
+                ->with('realisations', \App\Models\Realisation::all())
+                ->with('services', \App\Models\Service::all())
 
                 ->with('messages', \App\Models\Contact::latest()->get()->map(
                     function ($message) {
