@@ -6,6 +6,7 @@
         <div class="col-md-2">
         </div>
         <div class="col-md-10">
+            @if($services->count())
             <table style="padding-left: 5rem">
                 <thead>
                     <tr>
@@ -28,7 +29,10 @@
                     @endforeach
                 </tbody>
             </table>
-            <a href="{{route('service.create')}}" class="btn btn-primary">Ajouter un nouveau projet </a>
+            <a href="{{route('service.create')}}" class="btn btn-primary">Ajouter un nouveau service </a>
+            @else
+                <p class="txt text-bg-warning" >Aucun service trouvé</p>
+            @endif
         </div>
         <div class="col-md-0">
         </div>
