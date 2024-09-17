@@ -1,18 +1,13 @@
-@extends('layouts.admin_main')
-@section('adminmain')
 
-{{-- <section class="hero-wrap hero-wrap-2" style="background-image: url('{{ asset('images/banner-1.png') }}');" data-stellar-background-ratio="0.5">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row no-gutters slider-text align-items-end justify-content-start">
-            <div class="col-md-9 ftco-animate pb-5">
-                <p class="breadcrumbs"><span class="mr-2"><a href="/">Accueil <i class="fa fa-chevron-right"></i></a></span> <span>Services <i class="fa fa-chevron-right"></i></span></p>
-                <h1 class="mb-3 bread">Services -> Ajouter</h1>
-            </div>
-        </div>
-    </div>
-</section> --}}
-    <div class="container">
+
+@extends('partials.admin.layout_admin')
+@section('admin')
+<div class="wrapper">
+  @include('partials.admin.sidebar')
+  <!-- End Sidebar -->
+  <div class="main-panel">
+    @include('partials.admin.mainheader')
+<div class="container">
      <form action="{{ route('service.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="mb-3">
@@ -33,6 +28,9 @@
                 <input type="file" class="form-control" id="images" name="images[]" multiple>
             </div>
             <button type="submit" class="btn btn-primary">Publier</button>
-    </form>
+         </form>
+    </div>
+@include('partials.admin.footer')
+  </div>
 </div>
 @endsection

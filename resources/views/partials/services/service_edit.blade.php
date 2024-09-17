@@ -1,6 +1,10 @@
-@extends('layouts.admin_main')
-@section('adminmain')
-
+@extends('partials.admin.layout_admin')
+@section('admin')
+<div class="wrapper">
+  @include('partials.admin.sidebar')
+  <!-- End Sidebar -->
+  <div class="main-panel">
+    @include('partials.admin.mainheader')
 <div class="container">
     <form action="{{ route('service.update') }}" method="POST" enctype="multipart/form-data">
         @csrf
@@ -24,5 +28,7 @@
         <button type="submit" class="btn btn-primary">Publier</button>
     </form>
 </div>
-
+@include('partials.admin.footer')
+  </div>
+</div>
 @endsection
