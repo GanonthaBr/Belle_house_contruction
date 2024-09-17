@@ -48,7 +48,8 @@
 				</li>
 
 				<li class="nav-item">
-					<a data-bs-toggle="collapse" href="#sidebarLayouts">
+					<a data-bs-toggle="collapse">
+						<!-- href="#sidebarLayouts" -->
 						<i class="fas fa-th-list"></i>
 						<p>Les Realisations</p>
 						<span class="caret"></span>
@@ -69,7 +70,8 @@
 					</div>
 				</li>
 				<li class="nav-item">
-					<a data-bs-toggle="collapse" href="#forms">
+					<a data-bs-toggle="collapse">
+						<!-- href="#forms" -->
 						<i class="fas fa-pen-square"></i>
 						<p>Les Projets</p>
 						<span class="caret"></span>
@@ -90,7 +92,8 @@
 					</div>
 				</li>
 				<li class="nav-item">
-					<a data-bs-toggle="collapse" href="#tables">
+					<a data-bs-toggle="collapse">
+						<!-- href="#tables" -->
 						<i class="fas fa-table"></i>
 						<p>Blog Post</p>
 						<span class="caret"></span>
@@ -111,7 +114,8 @@
 					</div>
 				</li>
 				<li class="nav-item">
-					<a data-bs-toggle="collapse" href="#tables">
+					<a data-bs-toggle="collapse">
+						<!-- href="#tables" -->
 						<i class="fas fa-table"></i>
 						<p>Nos Services</p>
 						<span class="caret"></span>
@@ -132,7 +136,8 @@
 					</div>
 				</li>
 				<li class="nav-item">
-					<a data-bs-toggle="collapse" href="#maps">
+					<a data-bs-toggle="collapse">
+						<!-- href="#maps" -->
 						<i class="fas fa-map-marker-alt"></i>
 						<p>Partenaires</p>
 						<span class="caret"></span>
