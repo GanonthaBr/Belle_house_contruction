@@ -78,7 +78,7 @@ class RealisationController extends Controller
                     ]);
                 }
             }
-            return redirect()->route('home');
+            return view('partials.admin.realisation_list');
         } catch (ValidationException $e) {
             return response()->json(['message' => $e->getMessage()]);
         }
@@ -129,7 +129,7 @@ class RealisationController extends Controller
                     ]);
                 }
             }
-            return redirect()->route('home');
+            return redirect()->view('partials.admin.realisation_list');
         } catch (ValidationException $e) {
             return response()->json(['message' => $e->getMessage()]);
         }
@@ -140,6 +140,6 @@ class RealisationController extends Controller
     {
         $realisation = Realisation::findOrFail($id);
         $realisation->delete();
-        return redirect()->route('home');
+        return redirect()->view('partials.admin.realisation_list');
     }
 }
