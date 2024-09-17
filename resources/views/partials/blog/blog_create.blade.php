@@ -1,6 +1,6 @@
 @extends('layouts.admin_main')
 @section('adminmain')
-<main class="container">
+<div class="container">
     {{-- create a form to add new blog with title, image and content --}}
     <div class="container-fluid px-4">
         <h1 class="mt-4">Ajouter un blog</h1>
@@ -37,5 +37,5 @@
             </div>
             <button type="submit" class="btn btn-primary">Ajouter</button>
         </form>
-</main>
+    </div>
 @endsection

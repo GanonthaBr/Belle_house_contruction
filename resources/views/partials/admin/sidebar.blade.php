@@ -3,7 +3,6 @@
 	<div class="sidebar-logo">
 		<!-- Logo Header -->
 		<div class="logo-header" data-background-color="dark">
-
 			<a href="{{route('admin')}}" class="logo">
 				<img src="{{asset('images/logo.png')}}" alt="navbar brand" class="navbar-brand" height="20" style="background: #fff">
 			</a>
@@ -30,15 +29,6 @@
 						<p>Menu</p>
 						<span class="caret"></span>
 					</a>
-					{{-- <div class="collapse" id="dashboard">
-								<ul class="nav nav-collapse">
-									<li>
-										<a href="../../demo1/index.html">
-											<span class="sub-item">Dashboard 1</span>
-										</a>
-									</li>
-								</ul>
-							</div> --}}
 				</li>
 				<li class="nav-section">
 					<span class="sidebar-mini-icon">
@@ -48,8 +38,7 @@
 				</li>
 
 				<li class="nav-item">
-					<a data-bs-toggle="collapse">
-						<!-- href="#sidebarLayouts" -->
+					<a data-bs-toggle="collapse" href="#sidebarLayouts">
 						<i class="fas fa-th-list"></i>
 						<p>Les Realisations</p>
 						<span class="caret"></span>
@@ -70,8 +59,7 @@
 					</div>
 				</li>
 				<li class="nav-item">
-					<a data-bs-toggle="collapse">
-						<!-- href="#forms" -->
+					<a data-bs-toggle="collapse" href="#forms">
 						<i class="fas fa-pen-square"></i>
 						<p>Les Projets</p>
 						<span class="caret"></span>
@@ -92,8 +80,7 @@
 					</div>
 				</li>
 				<li class="nav-item">
-					<a data-bs-toggle="collapse">
-						<!-- href="#tables" -->
+					<a data-bs-toggle="collapse" href="#tables">
 						<i class="fas fa-table"></i>
 						<p>Blog Post</p>
 						<span class="caret"></span>
@@ -114,8 +101,7 @@
 					</div>
 				</li>
 				<li class="nav-item">
-					<a data-bs-toggle="collapse">
-						<!-- href="#tables" -->
+					<a data-bs-toggle="collapse" href="#tables">
 						<i class="fas fa-table"></i>
 						<p>Nos Services</p>
 						<span class="caret"></span>
@@ -136,8 +122,7 @@
 					</div>
 				</li>
 				<li class="nav-item">
-					<a data-bs-toggle="collapse">
-						<!-- href="#maps" -->
+					<a data-bs-toggle="collapse" href="#maps">
 						<i class="fas fa-map-marker-alt"></i>
 						<p>Partenaires</p>
 						<span class="caret"></span>
@@ -156,11 +141,7 @@
 							</li>
 						</ul>
 					</div>
-
 				</li>
-
-
-
 			</ul>
 		</div>
 	</div>

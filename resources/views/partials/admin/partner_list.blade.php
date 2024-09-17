@@ -10,16 +10,16 @@
             <table style="padding-left: 5rem">
                 <thead>
                     <tr>
-                        <td>Title</td>
-                        <td>Description</td>
+                        <td>Nom</td>
+                        
                         <td>Actions</td>
                     </tr>
                 </thead>
                 <tbody>
                     @foreach ($partners as $partner)
                     <tr>
-                        <td>{{$partner->title}}</td>
-                        <td>{{substr($partner->description,0,50)}}</td>
+                        <td>{{$partner->name}}</td>
+                       
                         
                         <td>
                             <button class="btn btn-info"> <a href="{{route('partner.edit', $partner->id)}}" style="color: #fff; font-weight:bold">Modifier</a> </button>

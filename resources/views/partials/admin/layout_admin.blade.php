@@ -41,6 +41,16 @@
     <!-- CSS Just for demo purpose, don't include it in your project -->
     {{-- <link rel="stylesheet" href="assets/css/demo.css" /> --}}
   </head>
+  <style>
+	th{
+		background-color: #61A1D6;
+		color: #fff
+	}
+	tr,td{
+		border: #61A1D6 1px solid;
+		padding: 5px
+	}
+</style>
   <body>
     @yield('admin')
    <!--   Core JS Files   -->
