@@ -1,5 +1,5 @@
-@extends('layouts.layout_asset')
-@section('content-show')
+@extends('layouts.admin_main')
+@section('adminmain')
 <main class="container">
     {{-- create a form to add new blog with title, image and content --}}
     <div class="container-fluid px-4">

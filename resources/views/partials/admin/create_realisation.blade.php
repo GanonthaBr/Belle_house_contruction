@@ -1,7 +1,7 @@
-@extends('layouts.layout_asset')
-@section('content-show')
+@extends('layouts.admin_main')
+@section('adminmain')
 
-<section class="hero-wrap hero-wrap-2" style="background-image: url('{{asset('images/banner-1.png')}}')" data-stellar-background-ratio="0.5">
+{{-- <section class="hero-wrap hero-wrap-2" style="background-image: url('{{asset('images/banner-1.png')}}')" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
         <div class="row no-gutters slider-text align-items-end justify-content-start">
@@ -9,11 +9,11 @@
                 <p class="breadcrumbs"><span class="mr-2"><a href="/">Accueil <i class="fa fa-chevron-right"></i></a></span> <span>Nos projects <i class="fa fa-chevron-right"></i></span></p>
                 <h1 class="mb-3 bread">Nos realisations -> Ajouter</h1>
             </div>
-        </div>
+        </div> 
     </div>
-</section>
+</section> --}}
 
-    <div class="container">
+<div class="container">
      <form action="{{ route('realisation.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="mb-3">
