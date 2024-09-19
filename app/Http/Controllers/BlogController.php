@@ -75,7 +75,7 @@ class BlogController extends Controller
                 }
             }
 
-            return redirect()->route('home')->with('blog-created', 'Votre blog post été ajouté avec succès!');
+            return redirect()->route('allblogs')->with('blog-created', 'Votre blog post été ajouté avec succès!');
         } catch (ValidationException $e) {
 
             return response()->json(['message' => $e->getMessage()]);
