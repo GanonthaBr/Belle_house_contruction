@@ -6,7 +6,7 @@
   <div class="main-panel">
     @include('partials.admin.mainheader')
 <div class="container">
-    <form action="{{ route('service.update') }}" method="POST" enctype="multipart/form-data">
+    <form action="{{ route('service.update',$service->id) }}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="mb-3">
             <label for="title" class="form-label">Title:</label>

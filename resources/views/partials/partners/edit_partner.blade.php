@@ -11,7 +11,7 @@
         </div>
         @endif
         {{-- create form --}}
-        <form action="{{ route('partner.update') }}" method="POST" enctype="multipart/form-data">
+        <form action="{{ route('partner.update', $partner->id) }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="mb-3">
                 <label for="name" class="form-label">Name</label>

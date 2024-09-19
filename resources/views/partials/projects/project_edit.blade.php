@@ -2,7 +2,7 @@
 @section('adminmain')
 
 <div class="container">
-    <form action="{{ route('project.update') }}" method="POST" enctype="multipart/form-data">
+    <form action="{{ route('project.update', $project->id) }}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="mb-3">
             <label for="name" class="form-label">Name:</label>
