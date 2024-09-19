@@ -3,6 +3,7 @@
 
 
 <div class="container">
+    <div class="container-fluid px-4">
      <form action="{{ route('realisation.update', $realisation->id) }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="mb-3">
@@ -33,19 +34,11 @@
             <div class="mb-3">
                 <label for="year" class="form-label">Annee:</label>
                 <input type="text" class="form-control" id="year" name="year" placeholder="Entrer l'annee du projet" value="{{$realisation->year}}" required>
-            </div>
-            {{-- <div class="mb-3">
-                <label for="usage" class="form-label">usage:</label>
-                <input type="text" class="form-control" id="usage" name="usage" placeholder="Entrer l'utilisation" required>
-            </div> --}}
+            </div>         
             <div class="mb-3">
                 <label for="maitre_doeuvre" class="form-label">Maitre doeuvre:</label>
                 <input type="text" class="form-control" id="maitre_doeuvre" name="maitre_doeuvre" placeholder="Maitre d'oeuvre" value="{{$realisation->maitre_doeuvre}}" required>
             </div>
-            {{-- <div class="mb-3">
-                <label for="maitre_douvrage" class="form-label">Maitre douvrage:</label>
-                <input type="text" class="form-control" id="maitre_douvrage" name="maitre_douvrage" placeholde="Maitre d'ouvrage" required>
-            </div> --}}
             <div class="mb-3">
                 <label for="video" class="form-label">Lien de la video:</label>
                 <textarea type="text" class="form-control" id="video" name="video" placeholder="Lien Youtube de la video"  ></textarea>
@@ -61,5 +54,6 @@
             </div>
             <button type="submit" class="btn btn-primary">Publier</button>
     </form>
+    </div>
 </div>
 @endsection

@@ -6,6 +6,7 @@
   <div class="main-panel">
     @include('partials.admin.mainheader')
 <div class="container">
+    <div class="container-fluid px-4">
     <form action="{{ route('service.update',$service->id) }}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="mb-3">
@@ -27,6 +28,7 @@
         </div>
         <button type="submit" class="btn btn-primary">Publier</button>
     </form>
+    </div>
 </div>
 @include('partials.admin.footer')
   </div>
