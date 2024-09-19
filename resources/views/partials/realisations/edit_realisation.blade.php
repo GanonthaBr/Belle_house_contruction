@@ -1,8 +1,11 @@
-@extends('layouts.admin_main')
-@section('adminmain')
-
-
-<div class="container">
+@extends('partials.admin.layout_admin')
+@section('admin')
+<div class="wrapper">
+    @include('partials.admin.sidebar')
+    <!-- End Sidebar -->
+    <div class="main-panel">
+        @include('partials.admin.mainheader')
+       <div class="container">
     <div class="container-fluid px-4">
      <form action="{{ route('realisation.update', $realisation->id) }}" method="POST" enctype="multipart/form-data">
             @csrf
@@ -26,22 +29,17 @@
                 <label for="country" class="form-label">Pays:</label>
                 <input type="text" class="form-control" id="country" name="country" placeholder="Entrer le Pays" value="{{$realisation->country}}" required>
             </div>
-           
-            {{-- <div class="mb-3">
-                <label for="surface" class="form-label">Surface:</label>
-                <input type="text" class="form-control" id="surface" name="surface" placeholder="Entrer la surface" required>
-            </div> --}}
             <div class="mb-3">
                 <label for="year" class="form-label">Annee:</label>
                 <input type="text" class="form-control" id="year" name="year" placeholder="Entrer l'annee du projet" value="{{$realisation->year}}" required>
-            </div>         
+            </div>
             <div class="mb-3">
                 <label for="maitre_doeuvre" class="form-label">Maitre doeuvre:</label>
                 <input type="text" class="form-control" id="maitre_doeuvre" name="maitre_doeuvre" placeholder="Maitre d'oeuvre" value="{{$realisation->maitre_doeuvre}}" required>
             </div>
             <div class="mb-3">
                 <label for="video" class="form-label">Lien de la video:</label>
-                <textarea type="text" class="form-control" id="video" name="video" placeholder="Lien Youtube de la video"  ></textarea>
+                <textarea type="text" class="form-control" id="video" name="video" {{$realisation->video}} placeholder="Lien Youtube de la video"  ></textarea>
             </div>
             <div class="mb-3">
                 <label for="image" class="form-label">Image:</label>
@@ -54,6 +52,9 @@
             </div>
             <button type="submit" class="btn btn-primary">Publier</button>
     </form>
+    </div>
+</div>
+        @include('partials.admin.footer')
     </div>
 </div>
 @endsection

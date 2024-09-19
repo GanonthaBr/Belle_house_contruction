@@ -1,7 +1,11 @@
-@extends('layouts.admin_main')
-@section('adminmain')
-
-<div class="container">
+@extends('partials.admin.layout_admin')
+@section('admin')
+<div class="wrapper">
+    @include('partials.admin.sidebar')
+    <!-- End Sidebar -->
+    <div class="main-panel">
+        @include('partials.admin.mainheader')
+        <div class="container">
     <div class="container-fluid px-4">
     <form action="{{ route('project.update', $project->id) }}" method="POST" enctype="multipart/form-data">
         @csrf
@@ -63,5 +67,7 @@
     </form>
     </div>
 </div>
-
+        @include('partials.admin.footer')
+    </div>
+</div>
 @endsection

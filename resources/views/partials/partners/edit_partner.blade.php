@@ -1,6 +1,11 @@
-@extends('layouts.admin_main')
-@section('adminmain')
-<main class="container">
+@extends('partials.admin.layout_admin')
+@section('admin')
+<div class="wrapper">
+    @include('partials.admin.sidebar')
+    <!-- End Sidebar -->
+    <div class="main-panel">
+        @include('partials.admin.mainheader')
+     <div class="container">
     {{-- create a form to add new partner with title, image and content --}}
     <div class="container-fluid px-4">
         <h1 class="mt-4">Modifier un partner</h1>
@@ -11,7 +16,7 @@
         </div>
         @endif
         {{-- create form --}}
-        <form action="{{ route('partner.update', $partner->id) }}" method="POST" enctype="multipart/form-data">
+        <form action="{{ route('partner.update',$partner->id) }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
@@ -26,6 +31,8 @@
             <button type="submit" class="btn btn-primary">Ajouter</button>
         </form>
     </div>
-</main>
-
+</div>
+        @include('partials.admin.footer')
+    </div>
+</div>
 @endsection

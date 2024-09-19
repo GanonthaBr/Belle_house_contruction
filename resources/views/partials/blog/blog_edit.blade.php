@@ -1,7 +1,11 @@
-@extends('layouts.admin_main')
-@section('adminmain')
-
-<div class="container">
+@extends('partials.admin.layout_admin')
+@section('admin')
+<div class="wrapper">
+    @include('partials.admin.sidebar')
+    <!-- End Sidebar -->
+    <div class="main-panel">
+        @include('partials.admin.mainheader')
+        <div class="container">
     <div class="page-inner">
           {{-- create a form to add new blog with title, image and content --}}
     <div class="container-fluid px-4">
@@ -41,6 +45,9 @@
             </div>
             <button type="submit" class="btn btn-primary">Sauvegarder</button>
         </form>
+    </div>
+</div>
+        @include('partials.admin.footer')
     </div>
 </div>
 @endsection
