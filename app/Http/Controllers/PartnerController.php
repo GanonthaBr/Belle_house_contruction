@@ -50,7 +50,7 @@ class PartnerController extends Controller
             $partner->name = $request->name;
             $partner->image = $imagePath;
             $partner->save();
-            return redirect()->route('home')->with('partner-created', 'Votre partenaire a été ajouté avec succès!');
+            return redirect()->route('allpartners')->with('partner-created', 'Votre partenaire a été ajouté avec succès!');
         } catch (ValidationException $e) {
             return response()->json(['message' => $e->getMessage()]);
         }
@@ -76,7 +76,7 @@ class PartnerController extends Controller
             $partner->name = $request->name;
             $partner->image = $imagePath;
             $partner->save();
-            return redirect()->route('home')->with('partner-updated', 'Votre partenaire a été mis à jour avec succès!');
+            return redirect()->route('allpartners')->with('partner-updated', 'Votre partenaire a été mis à jour avec succès!');
         } catch (ValidationException $e) {
             return response()->json(['message' => $e->getMessage()]);
         }

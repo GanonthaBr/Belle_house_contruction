@@ -23,7 +23,7 @@ class ServicesController extends Controller
     //create
     public function create()
     {
-        return view('partials.admin.service_create');
+        return view('partials.services.service_create');
     }
     //show
     public function show($id)
@@ -64,9 +64,9 @@ class ServicesController extends Controller
                     ]);
                 }
             }
-            return redirect()->route('home');
+            return redirect()->route('allservices');
         } catch (ValidationException $e) {
-            return redirect()->route('home')->with('service-created', 'Votre service a été ajouté avec succès!');
+            return redirect()->route('allservices')->with('service-error', 'Une erreur est parvenue!');
         }
     }
     //edit
@@ -82,13 +82,13 @@ class ServicesController extends Controller
         $service->title = $request->title;
         $service->description = $request->description;
         $service->save();
-        return redirect()->route('home');
+        return redirect()->route('allservices');
     }
     //delete
     public function destroy($id)
     {
         $service = Service::findOrFail($id);
         $service->delete();
-        return redirect()->route('home');
+        return redirect()->route('allservices');
     }
 }

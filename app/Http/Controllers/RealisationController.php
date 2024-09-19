@@ -129,7 +129,7 @@ class RealisationController extends Controller
                     ]);
                 }
             }
-            return redirect()->view('partials.admin.realisation_list');
+            return redirect()->route('allrealisations')->with('success', 'Realisation created');
         } catch (ValidationException $e) {
             return response()->json(['message' => $e->getMessage()]);
         }

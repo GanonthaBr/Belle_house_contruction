@@ -83,7 +83,7 @@ class ProjectsController extends Controller
                     ]);
                 }
             }
-            return redirect()->route('home');
+            return redirect()->route('allprojects');
         } catch (ValidationException $e) {
             return response()->json(['message' => $e->getMessage()]);
         }
@@ -144,7 +144,7 @@ class ProjectsController extends Controller
                     ]);
                 }
             }
-            return redirect()->route('home');
+            return redirect()->route('allprojects');
         } catch (ValidationException $e) {
             return response()->json(['message' => $e->getMessage()]);
         }
@@ -155,6 +155,6 @@ class ProjectsController extends Controller
     {
         $project = Project::findOrFail($id);
         $project->delete();
-        return redirect()->route('home');
+        return redirect()->route('allprojects');
     }
 }
