@@ -74,7 +74,7 @@ Route::get('/partners', [PartnerController::class, 'index'])->name('partners');
 Route::get('partner/create', [PartnerController::class, 'create'])->name('partner.create');
 Route::post('/partners', [PartnerController::class, 'store'])->name('partner.store');
 Route::get('/partner/{id}/edit', [PartnerController::class, 'edit'])->name('partner.edit');
-Route::get('/partner/{id}', [PartnerController::class, 'update'])->name('partner.update');
+Route::put('/partner/{id}', [PartnerController::class, 'update'])->name('partner.update');
 Route::delete('partner/{id}', [PartnerController::class, 'destroy'])->name('partner.destroy');
 Route::get('allpartners', [PartnerController::class, 'allpartners'])->name('allpartners');
 

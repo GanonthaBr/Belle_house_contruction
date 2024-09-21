@@ -18,6 +18,8 @@
         {{-- create form --}}
         <form action="{{ route('partner.update',$partner->id) }}" method="POST" enctype="multipart/form-data">
             @csrf
+            @method('PUT')
+            {{-- display error message if there are any validation errors --}}
             <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
                 <input type="text" class="form-control" id="name" name="name" value="{{$partner->name}}">
