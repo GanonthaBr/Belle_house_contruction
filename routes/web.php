@@ -35,7 +35,7 @@ Route::post('/services', [ServicesController::class, 'store'])->name('service.st
 Route::get('service/{id}', [ServicesController::class, 'show'])->name('service.show');
 Route::get('service/{id}/edit', [ServicesController::class, 'edit'])->name('service.edit');
 Route::put('service/{id}', [ServicesController::class, 'update'])->name('service.update');
-Route::delete('/service/delete/{id}', [ServicesController::class, 'destroy'])->name('service.destroy');
+Route::delete('service/delete/{id}', [ServicesController::class, 'destroy'])->name('service.destroy');
 Route::get('allservices', [ServicesController::class, 'allservices'])->name('allservices');
 
 //blogs
@@ -45,7 +45,7 @@ Route::post('/blogs', [BlogController::class, 'store'])->name('blog.store');
 Route::get('/blog/{id}', [BlogController::class, 'show'])->name('blog.show');
 Route::get('/blog/{id}/edit', [BlogController::class, 'edit'])->name('blog.edit');
 Route::put('/blog/{id}', [BlogController::class, 'update'])->name('blog.update');
-Route::delete('/blog/delete/{id}', [BlogController::class, 'destroy'])->name('blog.destroy');
+Route::delete('/blog/{id}', [BlogController::class, 'destroy'])->name('blog.destroy');
 Route::get('/allblogs', [BlogController::class, 'allblogs'])->name('allblogs');
 
 
@@ -56,7 +56,7 @@ Route::get('/project/create', [ProjectsController::class, 'create'])->name('proj
 Route::get('project/{id}', [ProjectsController::class, 'show'])->name('project.show');
 Route::get('project/{id}/edit', [ProjectsController::class, 'edit'])->name('project.edit');
 Route::put('project/{id}', [ProjectsController::class, 'update'])->name('project.update');
-Route::delete('project/{id}', [ProjectsController::class, 'destroy'])->name('project.destroy');
+Route::delete('/project/delete/{id}', [ProjectsController::class, 'destroy'])->name('project.destroy');
 Route::get('/allprojects', [ProjectsController::class, 'allprojects'])->name('allprojects');
 
 //realisations
