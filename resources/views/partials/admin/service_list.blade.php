@@ -32,9 +32,7 @@
                                         @method('DELETE')
                                         <input type="submit" class="btn btn-danger confirm-delete" data-form="deleteForm{{$service->id}}" data-toggle="modal" data-target="#deleteModal{{$service->id}}" />
                                     </form>
-                                    <!-- <button class="btn btn-danger">
-                                        <a href="{{route('service.destroy', $service->id)}}" style="color: #fff; font-weight:bold">Supprimer</a>
-                                    </button> -->
+                                   
                                 </td>
                             </tr>
                             @endforeach
