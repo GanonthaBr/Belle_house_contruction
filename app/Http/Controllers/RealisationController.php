@@ -140,6 +140,6 @@ class RealisationController extends Controller
     {
         $realisation = Realisation::findOrFail($id);
         $realisation->delete();
-        return redirect()->view('partials.admin.realisation_list');
+        return redirect()->route('allrealisations')->with('delete-success', 'Deleted with success');
     }
 }

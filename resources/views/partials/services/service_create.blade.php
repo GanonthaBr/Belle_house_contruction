@@ -7,6 +7,7 @@
         @include('partials.admin.mainheader')
         <div class="container">
             <div class="container-fluid px-4">
+                <h1 class="mt-4">Ajouter un Service</h1>
                 <form action="{{ route('service.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="mb-3">
@@ -19,7 +20,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="image" class="form-label">Image:</label>
-                        <input type="file" class="form-control" id="image" name="image">
+                        <input type="file" class="form-control" id="image" name="image" required>
                     </div>
                     {{-- more images --}}
                     <div class="mb-3">

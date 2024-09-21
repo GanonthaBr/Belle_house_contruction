@@ -35,7 +35,7 @@ Route::post('/services', [ServicesController::class, 'store'])->name('service.st
 Route::get('service/{id}', [ServicesController::class, 'show'])->name('service.show');
 Route::get('service/{id}/edit', [ServicesController::class, 'edit'])->name('service.edit');
 Route::put('service/{id}', [ServicesController::class, 'update'])->name('service.update');
-Route::delete('service/{id}', [ServicesController::class, 'destroy'])->name('service.destroy');
+Route::delete('/service/delete/{id}', [ServicesController::class, 'destroy'])->name('service.destroy');
 Route::get('allservices', [ServicesController::class, 'allservices'])->name('allservices');
 
 //blogs
@@ -66,7 +66,7 @@ Route::post('/realisations', [RealisationController::class, 'store'])->name('rea
 Route::get('/realisation/{id}', [RealisationController::class, 'show'])->name('realisation.show');
 Route::get('/realisation/{id}/edit', [RealisationController::class, 'edit'])->name('realisation.edit');
 Route::put('/realisation/{id}', [RealisationController::class, 'update'])->name('realisation.update');
-Route::delete('/realisation/{id}', [RealisationController::class, 'destroy'])->name('realisation.destroy');
+Route::delete('realisation/{id}', [RealisationController::class, 'destroy'])->name('realisation.destroy');
 Route::get('/allrealisations', [RealisationController::class, 'allrealisations'])->name('allrealisations');
 
 // partners
