@@ -9,6 +9,7 @@
     <div class="container-fluid px-4">
      <form action="{{ route('realisation.update', $realisation->id) }}" method="POST" enctype="multipart/form-data">
             @csrf
+            @method('PUT')
             <div class="mb-3">
                 <label for="name" class="form-label">Name:</label>
                 <input type="text" class="form-control" id="name" name="name" placeholder="Entrer le nom du project: exemple: BH01" value="{{$realisation->name}}" required>
@@ -39,7 +40,7 @@
             </div>
             <div class="mb-3">
                 <label for="video" class="form-label">Lien de la video:</label>
-                <textarea type="text" class="form-control" id="video" name="video" {{$realisation->video}} placeholder="Lien Youtube de la video"  ></textarea>
+                <input type="text" class="form-control" id="video" name="video" value="{{$realisation->video}}" placeholder="Lien Youtube de la video"/>
             </div>
             <div class="mb-3">
                 <label for="image" class="form-label">Image:</label>
@@ -50,7 +51,7 @@
                 <label for="images" class="form-label">Plus d'images</label>
                 <input type="file" class="form-control" id="images" name="images[]" multiple>
             </div>
-            <button type="submit" class="btn btn-primary">Publier</button>
+            <button type="submit" class="btn btn-primary">Sauvegarder</button>
     </form>
     </div>
 </div>
