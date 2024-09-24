@@ -3,8 +3,9 @@
 	<div class="sidebar-logo">
 		<!-- Logo Header -->
 		<div class="logo-header" data-background-color="dark">
+
 			<a href="{{route('admin')}}" class="logo">
-				<img src="{{asset('images/logo.png')}}" alt="navbar brand" class="navbar-brand" height="20" style="background: #fff">
+				<img src="{{asset('public/images/logo.png')}}" alt="navbar brand" class="navbar-brand" height="20" style="background: #fff">
 			</a>
 			<div class="nav-toggle">
 				<button class="btn btn-toggle toggle-sidebar">
@@ -24,7 +25,7 @@
 		<div class="sidebar-content">
 			<ul class="nav nav-secondary">
 				<li class="nav-item">
-					<a data-bs-toggle="collapse" class="collapsed" aria-expanded="false">
+					<a data-bs-toggle="collapse" href="{{route('admin')}}" class="collapsed" aria-expanded="false">
 						<i class="fas fa-home"></i>
 						<p>Menu</p>
 						<span class="caret"></span>
@@ -36,14 +37,14 @@
 					</span>
 					<h4 class="text-section">Composants</h4>
 				</li>
-
 				<li class="nav-item">
-					<a data-bs-toggle="collapse" href="#sidebarLayouts">
+					{{-- data-bs-target="#forms-nav" data-bs-toggle="collapse"  --}}
+					<a data-bs-toggle="collapse" data-bs-target="#sidebarLayouts"  href="#">
 						<i class="fas fa-th-list"></i>
 						<p>Les Realisations</p>
 						<span class="caret"></span>
 					</a>
-					<div class="collapse" id="sidebarLayouts">
+					<div class="collapse" id="sidebarLayouts" >
 						<ul class="nav nav-collapse">
 							<li>
 								<a href="{{route('allrealisations')}}">
@@ -59,7 +60,7 @@
 					</div>
 				</li>
 				<li class="nav-item">
-					<a data-bs-toggle="collapse" href="#forms">
+					<a data-bs-toggle="collapse" data-bs-target="#forms" href="#">
 						<i class="fas fa-pen-square"></i>
 						<p>Les Projets</p>
 						<span class="caret"></span>
@@ -80,7 +81,7 @@
 					</div>
 				</li>
 				<li class="nav-item">
-					<a data-bs-toggle="collapse" href="#tables">
+					<a data-bs-toggle="collapse" data-bs-target="#tables" href="#">
 						<i class="fas fa-table"></i>
 						<p>Blog Post</p>
 						<span class="caret"></span>
@@ -101,12 +102,12 @@
 					</div>
 				</li>
 				<li class="nav-item">
-					<a data-bs-toggle="collapse" href="#tables">
+					<a data-bs-toggle="collapse" data-bs-target="#tables01" href="#">
 						<i class="fas fa-table"></i>
 						<p>Nos Services</p>
 						<span class="caret"></span>
 					</a>
-					<div class="collapse" id="tables">
+					<div class="collapse" id="tables01">
 						<ul class="nav nav-collapse">
 							<li>
 								<a href="{{route('allservices')}}">
@@ -122,7 +123,7 @@
 					</div>
 				</li>
 				<li class="nav-item">
-					<a data-bs-toggle="collapse" href="#maps">
+					<a data-bs-toggle="collapse" data-bs-target="#maps" href="#">
 						<i class="fas fa-map-marker-alt"></i>
 						<p>Partenaires</p>
 						<span class="caret"></span>
@@ -141,6 +142,10 @@
 							</li>
 						</ul>
 					</div>
+
+				</li>
+				<li class="nav-item">
+					<a href="{{route('messages')}}">Messages >></a>
 				</li>
 			</ul>
 		</div>
