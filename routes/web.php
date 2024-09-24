@@ -23,9 +23,13 @@ Route::get('/about', [AboutController::class, 'index'])->name('about');
 
 //Contact
 Route::get('/contacts', [ContactsController::class, 'index'])->name('contacts');
+Route::get('/messages', [ContactsController::class, 'messages'])->name('messages');
+Route::delete('/messages/{id}', [ContactsController::class, 'delete'])->name('message.destroy');
+Route::get('/messages/{id}', [ContactsController::class, 'show'])->name('message.show');
 Route::get('/contact/create', [ContactsController::class, 'create'])->name('contact.create');
 Route::post('/contacts', [ContactsController::class, 'store'])->name('contact.store');
 Route::post('/modal', [ModalController::class, 'store'])->name('modal.store');
+
 
 
 //services
