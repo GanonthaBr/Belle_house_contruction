@@ -10,7 +10,7 @@ class ProjectsController extends Controller
 {
     public function index()
     {
-        $projects  = Project::all();
+        $projects  = Project::orderBy('created_at', 'desc')->get();
         return view('partials.projects.index', ['projects' => $projects]);
     }
     //all projects

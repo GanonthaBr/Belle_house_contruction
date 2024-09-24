@@ -47,7 +47,7 @@ class HomeController extends Controller
     public function contacts()
     {
         $contacts = Contact::all();
-        dd($contacts);
+        // dd($contacts);
         return view('partials.admin.mainheader', ['contacts' => $contacts]);
     }
 }

@@ -46,7 +46,20 @@ class ContactsController extends Controller
         }
     }
 
-    //stores
-
-
+    //show
+    public function delete(Request $request, $id)
+    {
+        $message = Contact::findOrFail($id);
+        $message->delete();
+        return redirect()->route('admin')->with('message-deleted', 'Message supprime avec succes!');
+    }
+    public function messages(Request $request)
+    {
+        return view('partials.admin.messages_list');
+    }
+    public function show(Request $request, $id)
+    {
+        $message = Contact::findOrFail($id);
+        return view('partials.admin.message_details', ['message' => $message]);
+    }
 }
