@@ -4,6 +4,12 @@
   @include('partials.admin.sidebar')
   <!-- End Sidebar -->
   <div class="main-panel">
+     {{-- display success message if blog is created --}}
+                @if (session()->has('message-deleted'))
+                <div class="alert alert-danger" role="alert">
+                    {{ session()->get('message-deleted') }}
+                </div>
+                @endif
     @include('partials.admin.mainheader')
     <div class="container">
       <div class="page-inner">
