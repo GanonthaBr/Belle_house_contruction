@@ -4,10 +4,11 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\HomeController;
+use App\Http\Middleware\AdminMiddleware;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ModalController;
-use App\Http\Controllers\PartnerController;
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\PartnerController;
 use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\ProjectsController;
 use App\Http\Controllers\ServicesController;
@@ -92,4 +93,4 @@ Route::post('/comments', [CommentController::class, 'store'])->name('comments.st
 Route::delete('/comment/{id}', [CommentController::class, 'destroy'])->name('comments.destroy');
 
 //admin
-Route::get('/bhadmin', [HomeController::class, 'admin'])->name('admin');
+Route::get('/bhadmin', [HomeController::class, 'admin'])->name('admin')->middleware(AdminMiddleware::class);
