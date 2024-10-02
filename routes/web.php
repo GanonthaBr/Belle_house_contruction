@@ -132,3 +132,10 @@ Route::delete('/comment/{id}', [CommentController::class, 'destroy'])->name('com
 Route::get('/services', [ServicesController::class, 'index'])->name('services');
 Route::get('service/{id}', [ServicesController::class, 'show'])->name('service.show');
 Route::get('allservices', [ServicesController::class, 'allservices'])->name('allservices');
+
+
+//stats
+Route::get('/stats', [HomeController::class, 'stats'])->name('stats');
+Route::post('/stats', [HomeController::class, 'stats_store'])->name('stats.store');
+Route::get('/stats/edit/{id}', [HomeController::class, 'stats_edit'])->name('stats.edit');
+Route::put('/stats/{id}', [HomeController::class, 'stats_update'])->name('stats.update');
