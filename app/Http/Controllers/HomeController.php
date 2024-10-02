@@ -8,6 +8,7 @@ use App\Models\Partner;
 use App\Models\Project;
 use App\Models\Service;
 use App\Models\Realisation;
+use Symfony\Component\HttpFoundation\Request;
 
 
 class HomeController extends Controller
@@ -49,5 +50,27 @@ class HomeController extends Controller
         $contacts = Contact::all();
         // dd($contacts);
         return view('partials.admin.mainheader', ['contacts' => $contacts]);
+    }
+
+
+    //stats
+    public function stats()
+    {
+        return 'yes';
+    }
+
+    public function stats_store(Request $request)
+    {
+        return 'stats';
+    }
+
+    public function stats_edit()
+    {
+        return 'stats form edit';
+    }
+
+    public function stats_update(Request $request, $id)
+    {
+        return 'stats update';
     }
 }
