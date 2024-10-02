@@ -4,7 +4,7 @@
 
 
 
-<section class="hero-wrap hero-wrap-2" style="background-image: url('images/banner-1.png');" data-stellar-background-ratio="0.5">
+<section class="hero-wrap hero-wrap-2" style="background-image: url('public/images/banner-1.png');" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
         <div class="row no-gutters slider-text align-items-end justify-content-start">
@@ -21,7 +21,7 @@
             <div class="col-md-7 heading-section text-center ftco-animate">
                 <span class="subheading">Nous contacter</span>
                 <h2 class="mb-4">Envoyez un message pour votre requete</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                <p>Utilisez ce formulaire ci dessous pour nous envoyer vos requêtes!</p>
             </div>
         </div>
         <div class="row block-9">
@@ -64,7 +64,7 @@
                             <span class="fa fa-map-marker"></span>
                         </div>
                         <div class="text">
-                            <p><span>Adresse:</span> Quartier Bobiel, Niamey-Niger</p>
+                            <p><span>Adresse:</span> Quartier Koubia, Niamey-Niger</p>
                         </div>
                     </div>
                     <div class="dbox w-100 d-flex ftco-animate">
@@ -94,10 +94,10 @@
                 </div>
             </div>
             <div class="col-md-12 mb-5">
-                <div  class="map">
+                <div class="map">
                     <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed/v1/place?q=ONG+APIS,+Niamey,+Niger&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-                
+
             </div>
         </div>
     </div>
