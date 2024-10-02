@@ -17,7 +17,6 @@
                         <h2 class="ftco-heading-2">Liens Importants</h2>
                         <div class="d-flex">
                             <ul class="list-unstyled mr-md-4">
-                                
                                 <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Accueil</a></li>
                                 <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>A Propos</a></li>
                                 <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Services</a></li>
@@ -50,7 +49,7 @@
                         <h2 class="ftco-heading-2">Avez-vous une Question?</h2>
                         <div class="block-23 mb-3">
                             <ul>
-                                <li><span class="fa fa-map-marker mr-3"></span><span class="text">Quartier Bobiel, Niamey - Niger</span></li>
+                                <li><span class="fa fa-map-marker mr-3"></span><span class="text">Quartier Koubia, Niamey - Niger</span></li>
                                 <li><a href="#"><span class="fa fa-phone mr-3"></span><span class="text">+227 92 08 50 50</span></a></li>
                                 <li><a href="mailto:contact@bellehouseniger.com"><span class="fa fa-paper-plane mr-3"></span><span class="text"><span class="__cf_email__" data-cfemail="2841464e476851475d5a4c4745494146064b4745">Contact@bellehouseniger.com</span></span></a></li>
                             </ul>
@@ -67,7 +66,7 @@
                             Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
                             <script>
                                 document.write(new Date().getFullYear());
-                            </script>, Belle House, Tout Droit ré servé | Site conçu par <a  target="_blank" href="https://www.linkedin.com/in/bruno-ganontha-payang/" target="_blank">Ganontha Payang Bruno</a>
+                            </script>, Belle House, Tout Droit réservé | Site conçu par <a  target="_blank" href="https://www.linkedin.com/in/bruno-ganontha-payang/" target="_blank">Ganontha Payang Bruno</a>
                         </p
                     </div>
                 </div>
