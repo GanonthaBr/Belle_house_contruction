@@ -193,7 +193,7 @@
 }
 
 body[data-background-color="dark"] .demo-icon .icon-preview {
-    color: #969696;
+    color: #fff;
 }
 
 .demo-icon .icon-class {
