@@ -38,7 +38,7 @@ class ContactsController extends Controller
             // dd($request->all());
 
 
-            $contact->save();
+            // $contact->save();
             return redirect()->back();
         } catch (ValidationException $e) {
             return
