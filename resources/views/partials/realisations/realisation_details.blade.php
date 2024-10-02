@@ -1,7 +1,7 @@
 @extends('layouts.layout_asset')
 
 @section('content-show')
-<section class="hero-wrap hero-wrap-2" style="background-image: url('{{ asset('images/banner-1.png') }}');" data-stellar-background-ratio="0.5">
+<section class="hero-wrap hero-wrap-2" style="background-image: url('{{ asset('public/images/banner-1.png') }}');" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
         <div class="row no-gutters slider-text align-items-end justify-content-start">
@@ -18,7 +18,7 @@
         <div class="container row d-flex justify-content-center align-items-center">
             <div class="col-md-6 col-sm-12">
                 <h2>{{$realisation->name }} </h2>
-                <img src="{{asset('storage/' . $realisation->image)}}" alt="{{$realisation->id}}" class="img-fluid">
+                <img src="{{asset('public/storage/' . $realisation->image)}}" alt="{{$realisation->id}}" class="img-fluid">
                 <div class="card bg-light rounded">
                     <div class="card-body">
                         <!-- Add your list of items here -->
@@ -26,7 +26,7 @@
 
                             <h3><b>Details:</b></h3>
                             <div class="d-flex left-content-between mb-3"><i class="fa fa-check text-primary pt-1" style="margin-left: 10px;"></i><span style="padding-left: 10px"> <strong>Superficie :</strong>{{$realisation->surface}} m²</span></div>
-                            <div class="d-flex left-content-between mb-3"><i class="fa fa-check text-primary pt-1" style="margin-left: 10px;"></i><span style="padding-left: 10px"> <strong>Tache :</strong>{{$realisation->task}} m²</span></div>
+                            <div class="d-flex left-content-between mb-3"><i class="fa fa-check text-primary pt-1" style="margin-left: 10px;"></i><span style="padding-left: 10px"> <strong>Tache :</strong>{{$realisation->task}}</span></div>
                             <div class="d-flex left-content-between mb-3"><i class="fa fa-check text-primary pt-1" style="margin-left: 10px;"></i><span style="padding-left: 10px"><strong>Maître d'ouvrage :</strong> {{$realisation->maitre_douvrage}}</span></div>
                             <div class="d-flex left-content-between mb-3"><i class="fa fa-check text-primary pt-1" style="margin-left: 10px;"></i><span style="padding-left: 10px"><strong>Année :</strong>{{ \Carbon\Carbon::parse($realisation->year)->format('Y') }}</span></div>
                             <div class="d-flex left-content-between mb-3"><i class="fa fa-check text-primary pt-1" style="margin-left: 10px;"></i><span style="padding-left: 10px"> <strong>Quartier :</strong> {{$realisation->area}}</span></div>
@@ -54,9 +54,9 @@
                     </div>
                     <div class="row">
                         @foreach($realisation->images as $image)
-                        <div class="col-md-4 d-flex justify-content-start">
-                            <a href="{{asset('storage/' . $image->image)}}" data-lightbox="realisation-images">
-                                <img src="{{asset('storage/' . $image->image)}}" alt="image {{$image->id}}" class="img-fluid" height="200" width="200" />
+                        <div class="col-md-12 d-flex justify-content-start">
+                            <a href="{{asset('public/storage/' . $image->image)}}" data-lightbox="realisation-images">
+                                <img src="{{asset('public/storage/' . $image->image)}}" alt="image {{$image->id}}" class="img-fluid" height="200" width="200" />
                             </a>
                         </div>
                         @endforeach
@@ -65,16 +65,6 @@
                 </div>
                 @endif
 
-                <div class="row container">
-                    <div class="row col-md-12">
-                        <h2>Videos</h2>
-                    </div>
-                    <div class="row col-md-12">
-                        <div class="d-flex video-image align-items-center col-md-12">
-                            <iframe width="100%" height="200" src="{{'https://www.youtube.com/embed/21zo6jvGelo?modestbranding=1&si=' . $realisation->video}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 
