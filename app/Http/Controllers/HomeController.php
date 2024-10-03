@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\About;
 use App\Models\Blog;
 use App\Models\Stats;
 use App\Models\Contact;
@@ -22,7 +23,8 @@ class HomeController extends Controller
         $realisations = Realisation::orderBy('created_at', 'desc')->take(6)->get();
         $partners = Partner::all();
         $blogs = Blog::all();
-        return view('home', ['projects' => $projects, 'partners' => $partners, 'blogs' => $blogs, 'realisations' => $realisations, 'services' => $services]);
+        $stats = Stats::all();
+        return view('home', ['projects' => $projects, 'partners' => $partners, 'blogs' => $blogs, 'realisations' => $realisations, 'services' => $services, 'stats' => $stats]);
     }
 
     public function admin()
@@ -59,7 +61,8 @@ class HomeController extends Controller
     public function stats()
     {
         $stats = Stats::all();
-        return view('partials.admin.stats.index', ['stats' => $stats]);
+        $abouts = About::all();
+        return view('partials.admin.stats.index', ['stats' => $stats, 'abouts' => $abouts]);
     }
 
 
@@ -72,17 +75,21 @@ class HomeController extends Controller
 
     public function stats_update(Request $request, $id)
     {
-        $request->validate([
-            'projets' => 'required',
-            'clients' => 'required'
-        ]);
+        try {
+            $request->validate([
+                'projets' => 'required',
+                'clients' => 'required'
+            ]);
 
-        $stats = Stats::find($id);
+            $stats = Stats::find($id);
 
-        $stats->projects = $request->projets;
-        $stats->clients = $request->clients;
-        $stats->save();
+            $stats->projects = $request->projets;
+            $stats->clients = $request->clients;
+            $stats->save();
 
-        return redirect()->route('stats')->with('success', 'Statistiques mises à jour avec succès');
+            return redirect()->route('stats')->with('success', 'Statistiques mises à jour avec succès');
+        } catch (\Throwable) {
+            return redirect()->route('stats')->with('error', 'Erreur lors de la mise à jour des statistiques');
+        }
     }
 }

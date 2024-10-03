@@ -30,21 +30,6 @@
                                 Depuis bientôt dix ans, BELLE HOUSE se distingue comme une référence incontournable dans le domaine de l'architecture et de la construction moderne. Forte de son expertise et de son innovation, notre entreprise s’engage à transformer vos rêves en réalité, en créant des espaces qui allient fonctionnalité, esthétique et durabilité.
                             </h3>
                         </div>
-                        {{-- <h4>Notre Vision</h4>
-                        <p>
-                         Chez BELLE HOUSE, nous croyons que chaque projet est unique, tout comme les aspirations de nos clients. Notre vision est de concevoir et de bâtir des structures qui ne sont pas seulement des habitations ou des bureaux, mais de véritables œuvres d’art qui reflètent votre personnalité et répondent parfaitement à vos besoins.
-                        </p> --}}
-                        {{-- <div class="d-flex video-image align-items-center mt-md-4"> --}}
-                        {{-- <a href="#" class="video img d-flex align-items-center justify-content-center" style="background-image: url(images/about-2.jpg);">
-                                <span class="fa fa-play-circle"></span>
-                            </a>
-                            <h4 class="ml-4">This is how we work on our clients, Watch video</h4> --}}
-                        {{-- <h4>Notre Mission</h4>
-                        <p>
-                        Notre mission est de fournir des services d'architecture et de construction de la plus haute qualité, en mettant l'accent sur l'innovation, la durabilité et l'excellence. Nous sommes passionnés par l'idée de repousser les limites du design architectural, tout en respectant les délais et les budgets de nos clients.
-                        </p> --}}
-                        {{-- </div> --}}
-
                         <div class="about-tab">
 
                             <!-- Tab Navigation -->
@@ -100,19 +85,22 @@
                     <span class="subheading">BELLE HOUSE</span>
                     <h2 class="mb-4">ENTREPRISE DE CONSTRUCTION MODERNE</h2>
                     <h4>MEILLEURES ENTREPRISES DE CONSTRUCTIONS MODERNES EN AFRIQUE DE L’OUEST<h4>
-                            <p>
-                                Leader reconnue dans le domaine de la construction moderne en Afrique de l'Ouest, notre entreprise se distingue par son engagement inébranlable envers l'excellence, l'innovation et la durabilité.
-                                Avec une expertise unique dans la conception et la réalisation de projets architecturaux complexes, nous avons une approche multidisciplinaire offrant des solutions novatrices, qui repoussent les limites de l'ingénierie et de l'architecture.
-                            </p>
+                    <p>
+                        Leader reconnue dans le domaine de la construction moderne en Afrique de l'Ouest, notre entreprise se distingue par son engagement inébranlable envers l'excellence, l'innovation et la durabilité.
+                        Avec une expertise unique dans la conception et la réalisation de projets architecturaux complexes, nous avons une approche multidisciplinaire offrant des solutions novatrices, qui repoussent les limites de l'ingénierie et de l'architecture.
+                    </p>
                 </div>
             </div>
             <div class="col-md-6 d-flex align-items-center">
                 <div class="row">
+                    @foreach ($stats as $stat)
+                        
+                
                     <div class="col-md-12 d-flex counter-wrap ftco-animate">
                         <div class="block-18 bg-primary d-flex align-items-center justify-content-between">
                             <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-engineer"></span></div>
                             <div class="text">
-                                <strong class="number" data-number="100">0</strong>
+                                <strong class="number" data-number="{{$stat->projects}}">0</strong>
                                 <span>Projets Terminés</span>
                             </div>
                         </div>
@@ -121,11 +109,13 @@
                         <div class="block-18 d-flex align-items-center justify-content-between">
                             <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-worker-1"></span></div>
                             <div class="text">
-                                <strong class="number" data-number="230">0</strong>
+                                <strong class="number" data-number="{{$stat->clients}}">0</strong>
                                 <span>Clients Satisfaits</span>
                             </div>
                         </div>
                     </div>
+
+                    @endforeach
                 </div>
             </div>
         </div>

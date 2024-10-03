@@ -76,8 +76,6 @@ Route::group(['middleware' => ['auth']], function () {
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 
-//About
-Route::get('/about', [AboutController::class, 'index'])->name('about');
 
 //Contact
 Route::get('/contacts', [ContactsController::class, 'index'])->name('contacts');
@@ -138,3 +136,8 @@ Route::get('allservices', [ServicesController::class, 'allservices'])->name('all
 Route::get('/stats', [HomeController::class, 'stats'])->name('stats');
 Route::get('/stats/edit/{id}', [HomeController::class, 'stats_edit'])->name('stats.edit');
 Route::put('/stats/{id}', [HomeController::class, 'stats_update'])->name('stats.update');
+
+//About
+Route::get('/about', [AboutController::class, 'index'])->name('about');
+Route::get('/about/edit/{id}', [AboutController::class, 'edit'])->name('about.edit');
+Route::put('/about/{id}', [AboutController::class, 'update'])->name('about.update');

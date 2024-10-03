@@ -37,11 +37,14 @@
             </div>
             <div class="col-md-6 d-flex align-items-center">
                 <div class="row">
+                    @foreach ($stats as $stat)
+                        
+                    
                     <div class="col-md-12 d-flex counter-wrap ftco-animate">
                         <div class="block-18 bg-primary d-flex align-items-center justify-content-between">
                             <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-engineer"></span></div>
                             <div class="text">
-                                <strong class="number" data-number="155">0</strong>
+                                <strong class="number" data-number="{{$stat->projects}}">0</strong>
                                 <span>Projets Terminés</span>
                             </div>
                         </div>
@@ -50,11 +53,13 @@
                         <div class="block-18 d-flex align-items-center justify-content-between">
                             <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-worker-1"></span></div>
                             <div class="text">
-                                <strong class="number" data-number="170">0</strong>
+                                <strong class="number" data-number="{{$stat->clients}}">0</strong>
                                 <span>Clients Satisfaits</span>
                             </div>
                         </div>
                     </div>
+
+                    @endforeach
                 </div>
             </div>
         </div>

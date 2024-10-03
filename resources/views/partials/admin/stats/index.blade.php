@@ -26,12 +26,12 @@
                             </tr>
                         </thead>
                         <tbody>
-                        @foreach ($stats as $stat)
+                        @foreach ($stats as $about)
                             
                        
                             <tr>
-                                <td>{{$stat->projects}}</td>
-                                <td>{{$stat->clients}}</td>
+                                <td>{{$about->projects}}</td>
+                                <td>{{$about->clients}}</td>
                                
                             </tr>
                         
@@ -40,7 +40,41 @@
                         
                     </table>
                    <div>
-                    <a href="{{route('stats.edit',$stat->id)}}">Mettre à jour les infos</a>
+                    <a href="{{route('stats.edit',$about->id)}}">Mettre à jour les infos</a>
+                   </div>
+                </div>
+                <div class="container pt-4 pb-4">
+                    <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-4 pb-4">
+                    <h3>About </h3> <br>
+                </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 25%;"> Titre</th>
+                                <th style="width: 25%;">Description</th>
+                                <th style="width: 25%;">Vision</th>
+                                <th style="width: 25%;">Mission</th>
+                            
+                            </tr>
+                        </thead>
+                        <tbody>
+                       @foreach ($abouts as $about)
+                           
+                    
+                            <tr>
+                                <td>{{$about->title}}</td>
+                                <td>{{$about->description}}</td>
+                                <td>{{$about->vision}}</td>
+                                <td>{{$about->mission}}</td>
+                               
+                            </tr>
+                        
+                         @endforeach
+                        </tbody>
+                        
+                    </table>
+                   <div>
+                    <a href="{{route('stats.edit',$about->id)}}">Mettre à jour les infos</a>
                    </div>
                 </div>
             </div>
