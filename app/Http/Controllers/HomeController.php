@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Models\Blog;
+use App\Models\Stats;
 use App\Models\Contact;
 use App\Models\Partner;
 use App\Models\Project;
 use App\Models\Service;
 use App\Models\Realisation;
-use Symfony\Component\HttpFoundation\Request;
+use Illuminate\Http\Request;
+
 
 
 class HomeController extends Controller
@@ -56,21 +58,31 @@ class HomeController extends Controller
     //stats
     public function stats()
     {
-        return 'yes';
+        $stats = Stats::all();
+        return view('partials.admin.stats.index', ['stats' => $stats]);
     }
 
-    public function stats_store(Request $request)
-    {
-        return 'stats';
-    }
 
-    public function stats_edit()
+
+    public function stats_edit($id)
     {
-        return 'stats form edit';
+        $stats = Stats::find($id);
+        return view('partials.admin.stats.update_stats');
     }
 
     public function stats_update(Request $request, $id)
     {
-        return 'stats update';
+        $request->validate([
+            'projets' => 'required',
+            'clients' => 'required'
+        ]);
+
+        $stats = Stats::find($id);
+
+        $stats->projects = $request->projets;
+        $stats->clients = $request->clients;
+        $stats->save();
+
+        return redirect()->route('stats')->with('success', 'Statistiques mises à jour avec succès');
     }
 }
