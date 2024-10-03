@@ -38,9 +38,10 @@ class AboutController extends Controller
             $about->mission = $request->mission;
             $about->vision = $request->vision;
             $about->save();
-            return redirect()->route('about.edit')->with('success', 'Les details sont mis à jour avec succès');
-        } catch (\Throwable) {
-            return redirect()->route('about.edit')->with('error', 'Erreur lors de la mise à jour des details');
+            return redirect()->route('stats')->with('success', 'Les details sont mis à jour avec succès');
+        } catch (\Throwable $e) {
+            // dd($e);
+            return redirect()->route('stats')->with('error', 'Erreur lors de la mise à jour des details');
         }
     }
 }

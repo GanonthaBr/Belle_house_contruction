@@ -7,19 +7,10 @@
         @include('partials.admin.mainheader')
         <div class="container">
             <div class="row">
-                {{-- display success message if blog is created --}}
-                @if (session()->has('success'))
-                <div class="alert alert-success" role="alert">
-                    {{ session()->get('success') }}
-                </div>
-                @elseif (session()->has('error'))
-                <div class="alert alert-danger" role="alert">
-                    {{ session()->get('error') }}
-                </div>
-                @endif
+
                 <div class="col-md-2"></div>
                 <div class="col-md-10">
-                    <h1 class="mt-4">Modifier les statistiques</h1>
+                    <h1 class="mt-4">Modifications les statistiques</h1>
                     <form action="{{ route('about.update', $about->id) }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')

@@ -13,6 +13,16 @@
                     {{ session()->get('success') }}
                 </div>
                 @endif
+                 {{-- display success message if blog is created --}}
+                @if (session()->has('success'))
+                <div class="alert alert-success" role="alert">
+                    {{ session()->get('success') }}
+                </div>
+                @elseif (session()->has('error'))
+                <div class="alert alert-danger" role="alert">
+                    {{ session()->get('error') }}
+                </div>
+                @endif
                 <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-4 pb-4">
                     <h3>Les Statistiques </h3> <br>
                 </div>
@@ -69,14 +79,15 @@
                                
                             </tr>
                         
-                         @endforeach
+                        
                         </tbody>
                         
                     </table>
                    <div>
-                    <a href="{{route('stats.edit',$about->id)}}">Mettre à jour les infos</a>
+                    <a href="{{route('about.edit',$about->id)}}">Mettre à jour les infos</a>
                    </div>
                 </div>
+                 @endforeach
             </div>
 
 
