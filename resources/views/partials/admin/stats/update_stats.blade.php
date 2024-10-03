@@ -6,19 +6,28 @@
     <div class="main-panel">
         @include('partials.admin.mainheader')
         <div class="container">
-            <form action="{{ route('stats.update') }}" method="POST" enctype="multipart/form-data">
-                @csrf
-                <div class="mb-3">
-                    <label for="projets" class="form-label">Projets:</label>
-                    <input type="text" class="form-control" id="projets" name="projets" required value="{{$stats->projets}}" >
+
+
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-10">
+                    <h1 class="mt-4">Modifier les statistiques</h1>
+                    <form action="{{ route('stats.update', $stats->id) }}" method="POST" enctype="multipart/form-data">
+                        @csrf
+                        @method('PUT')
+                        <div class="mb-3">
+                            <label for="projets" class="form-label">Projets:</label>
+                            <input type="text" class="form-control" id="projets" name="projets" required value="{{$stats->projects}}">
+                        </div>
+                        <div class="mb-3">
+                            <label for="clients" class="form-label">Clients:</label>
+                            <input type="text" class="form-control" id="clients" name="clients" required value="{{$stats->clients}}">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Sauvegarder</button>
+                    </form>
                 </div>
-                <div class="mb-3">
-                    <label for="clients" class="form-label">Clients:</label>
-                    <input type="text" class="form-control" id="clients" name="clients"  required value="{{$stats->clients}}" >
-                </div>
-                
-                <button type="submit" class="btn btn-primary">Sauvegarder</button>
-            </form>
+            </div>
         </div>
         @include('partials.admin.footer')
     </div>

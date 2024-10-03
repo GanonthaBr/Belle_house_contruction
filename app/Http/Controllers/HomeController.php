@@ -67,7 +67,7 @@ class HomeController extends Controller
     public function stats_edit($id)
     {
         $stats = Stats::find($id);
-        return view('partials.admin.stats.update_stats');
+        return view('partials.admin.stats.update_stats', ['stats' => $stats]);
     }
 
     public function stats_update(Request $request, $id)

@@ -20,23 +20,28 @@
                     <table>
                         <thead>
                             <tr>
-                                <th style="width: 50%;">Projets Termines</th>
+                                <th style="width: 50%;"> Projets Terminés</th>
                                 <th style="width: 50%;">Clients satisfaits</th>
                             
                             </tr>
                         </thead>
                         <tbody>
-                        
+                        @foreach ($stats as $stat)
+                            
+                       
                             <tr>
-                                <td>{{$stats->projets}}</td>
-                                <td>{{$stats->clients}}</td>
+                                <td>{{$stat->projects}}</td>
+                                <td>{{$stat->clients}}</td>
                                
                             </tr>
                         
-                           
+                        @endforeach
                         </tbody>
+                        
                     </table>
-                   
+                   <div>
+                    <a href="{{route('stats.edit',$stat->id)}}">Mettre à jour les infos</a>
+                   </div>
                 </div>
             </div>
 
