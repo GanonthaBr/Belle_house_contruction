@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('stats', function (Blueprint $table) {
             $table->id();
-            $table->integer('projects');
-            $table->integer('clients');
+            $table->integer('projects')->default(0);
+            $table->integer('clients')->default(0);
             $table->timestamps();
         });
     }
