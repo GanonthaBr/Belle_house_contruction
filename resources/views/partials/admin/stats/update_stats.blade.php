@@ -9,8 +9,8 @@
             <form action="{{ route('stats.update') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="mb-3">
-                    <label for="projet" class="form-label">Projets:</label>
-                    <input type="text" class="form-control" id="projet" name="projet" required value="{{$stats->projets}}" >
+                    <label for="projets" class="form-label">Projets:</label>
+                    <input type="text" class="form-control" id="projets" name="projets" required value="{{$stats->projets}}" >
                 </div>
                 <div class="mb-3">
                     <label for="clients" class="form-label">Clients:</label>

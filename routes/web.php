@@ -136,6 +136,5 @@ Route::get('allservices', [ServicesController::class, 'allservices'])->name('all
 
 //stats
 Route::get('/stats', [HomeController::class, 'stats'])->name('stats');
-Route::post('/stats', [HomeController::class, 'stats_store'])->name('stats.store');
 Route::get('/stats/edit/{id}', [HomeController::class, 'stats_edit'])->name('stats.edit');
 Route::put('/stats/{id}', [HomeController::class, 'stats_update'])->name('stats.update');
