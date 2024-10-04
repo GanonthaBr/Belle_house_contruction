@@ -2,14 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\About;
 use App\Models\Blog;
+use App\Models\About;
 use App\Models\Stats;
 use App\Models\Contact;
 use App\Models\Partner;
 use App\Models\Project;
 use App\Models\Service;
 use App\Models\Realisation;
+use App\Models\Testimonial;
 use Illuminate\Http\Request;
 
 
@@ -90,6 +91,61 @@ class HomeController extends Controller
             return redirect()->route('stats')->with('success', 'Statistiques mises à jour avec succès');
         } catch (\Throwable) {
             return redirect()->route('stats')->with('error', 'Erreur lors de la mise à jour des statistiques');
+        }
+    }
+
+    //testimonials
+    public function testimonials()
+    {
+        $testimonials = Testimonial::all();
+        return view('partials.admin.testimonials.index', ['testimonials' => $testimonials]);
+    }
+    public function testimonials_edit($id)
+    {
+        $testimonial = Testimonial::find($id);
+        return view('partials.admin.testimonials.update_testimonials', ['testimonial' => $testimonial]);
+    }
+    public function testimonials_store(Request $request)
+    {
+        try {
+            $request->validate([
+                'name' => 'required',
+                'message' => 'required',
+                'image' => 'required'
+            ]);
+
+            $testimonial = new Testimonial();
+
+            $testimonial->name = $request->name;
+            $testimonial->message = $request->message;
+            $testimonial->image = $request->image;
+            $testimonial->save();
+
+            return redirect()->route('testimonials')->with('success', 'Témoignage ajouté avec succès');
+        } catch (\Throwable) {
+            return redirect()->route('testimonials')->with('error', 'Erreur lors de l\'ajout du témoignage');
+        }
+    }
+
+    public function testimonials_update(Request $request, $id)
+    {
+        try {
+            $request->validate([
+                'name' => 'required',
+                'message' => 'required',
+                'image' => 'required'
+            ]);
+
+            $testimonial = Testimonial::find($id);
+
+            $testimonial->name = $request->name;
+            $testimonial->message = $request->message;
+            $testimonial->image = $request->image;
+            $testimonial->save();
+
+            return redirect()->route('testimonials')->with('success', 'Témoignage mis à jour avec succès');
+        } catch (\Throwable) {
+            return redirect()->route('testimonials')->with('error', 'Erreur lors de la mise à jour du témoignage');
         }
     }
 }

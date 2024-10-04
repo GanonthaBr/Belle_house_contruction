@@ -141,3 +141,10 @@ Route::put('/stats/{id}', [HomeController::class, 'stats_update'])->name('stats.
 Route::get('/about', [AboutController::class, 'index'])->name('about');
 Route::get('/about/edit/{id}', [AboutController::class, 'edit'])->name('about.edit');
 Route::put('/about/{id}', [AboutController::class, 'update'])->name('about.update');
+
+
+//testimonials
+Route::get('/testimonials', [HomeController::class, 'testimonials'])->name('testimonials');
+Route::get('/testimonials/edit/{id}', [HomeController::class, 'testimonials_edit'])->name('testimonial.edit');
+Route::put('/testimonials/{id}', [HomeController::class, 'testimonials_update'])->name('testimonial.update');
+Route::delete('/testimonials/{id}', [HomeController::class, 'testimonials_destroy'])->name('testimonial.destroy');
