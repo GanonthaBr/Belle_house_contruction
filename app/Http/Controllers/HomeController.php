@@ -94,11 +94,13 @@ class HomeController extends Controller
         }
     }
 
+
+
     //testimonials
     public function testimonials()
     {
         $testimonials = Testimonial::all();
-        return view('partials.admin.testimonials.index', ['testimonials' => $testimonials]);
+        return view('partials.testimonials', ['testimonials' => $testimonials]);
     }
     public function testimonials_edit($id)
     {
@@ -108,6 +110,7 @@ class HomeController extends Controller
     public function testimonials_store(Request $request)
     {
         try {
+
             $request->validate([
                 'name' => 'required',
                 'message' => 'required',
@@ -115,7 +118,6 @@ class HomeController extends Controller
             ]);
 
             $testimonial = new Testimonial();
-
             $testimonial->name = $request->name;
             $testimonial->message = $request->message;
             $testimonial->image = $request->image;

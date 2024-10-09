@@ -33,25 +33,21 @@
                         </thead>
                         <tbody>
                         @foreach ($testimonials as $testimonial)
-                            
-                       
                             <tr>
-                                <td>{{$testimonial->projects}}</td>
+                                <td>{{$testimonial->message}}</td>
                                 <td>{{$testimonial->clients}}</td>
-                            </tr>
-                            <td>
+                                <td>
                                     <a href="{{route('testimonial.edit', $testimonial->id)}}" class="btn btn-primary">Modifier</a>
-                                  
                                     <form id="deleteForm{{$testimonial->id}}" action="{{ route('testimonial.destroy', $testimonial->id) }}" method="POST" class="d-inline">
                                         @csrf
                                         @method('DELETE')
                                         <input type="submit" class="btn btn-danger confirm-delete" data-form="deleteForm{{$testimonial->id}}" data-toggle="modal" data-target="#deleteModal{{$testimonial->id}}" />
                                     </form>
                                 </td>
-                        
+                            </tr>
                         @endforeach
                         <!-- Delete Confirmation Modal -->
-                            <div class="modal fade" id="deleteModal{{$testimonials->id}}" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="deleteModal{{$testimonial->id}}" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -65,7 +61,7 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler </button>
-                                            <button type="button" class="btn btn-danger confirmDelete" id="confirmDelete{{$testimonials->id}}">OUI </button>
+                                            <button type="button" class="btn btn-danger confirmDelete" id="confirmDelete{{$testimonial->id}}">OUI </button>
                                         </div>
                                     </div>
                                 </div>
