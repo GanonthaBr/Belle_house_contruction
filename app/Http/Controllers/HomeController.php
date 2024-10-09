@@ -106,7 +106,7 @@ class HomeController extends Controller
     {
         return view('partials.admin.testimonials.create_testimonials');
     }
-    public function testimonials_edit($id)
+    public function testimonial_edit($id)
     {
         $testimonial = Testimonial::find($id);
         return view('partials.admin.testimonials.update_testimonials', ['testimonial' => $testimonial]);
@@ -133,7 +133,7 @@ class HomeController extends Controller
         }
     }
 
-    public function testimonials_update(Request $request, $id)
+    public function testimonial_update(Request $request, $id)
     {
         try {
             $request->validate([
