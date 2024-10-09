@@ -11,6 +11,7 @@ use App\Models\Project;
 use App\Models\Service;
 use App\Models\Realisation;
 use App\Models\Testimonial;
+use Dotenv\Exception\ValidationException;
 use Illuminate\Http\Request;
 
 
@@ -137,9 +138,9 @@ class HomeController extends Controller
     {
         try {
             $request->validate([
-                'name' => 'required',
-                'message' => 'required',
-                'image' => 'required'
+                'name' => 'nullable',
+                'message' => 'nullable',
+                'image' => 'nullable'
             ]);
 
             $testimonial = Testimonial::find($id);
@@ -150,8 +151,17 @@ class HomeController extends Controller
             $testimonial->save();
 
             return redirect()->route('testimonials')->with('success', 'Témoignage mis à jour avec succès');
-        } catch (\Throwable) {
+        } catch (ValidationException $e) {
+            return redirect()->route('testimonials')->with('error', $e->getMessage());
+        } catch (\Throwable $e) {
+            dd($e->getMessage());
             return redirect()->route('testimonials')->with('error', 'Erreur lors de la mise à jour du témoignage');
         }
+    }
+    public function testimonial_destroy($id)
+    {
+        $testimonial = Testimonial::find($id);
+        $testimonial->delete();
+        return redirect()->route('testimonials')->with('success', 'Témoignage supprimé avec succès');
     }
 }
