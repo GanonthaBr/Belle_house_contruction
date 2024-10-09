@@ -19,7 +19,7 @@
                 </div>
                 @endif
                 <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-4 pb-4">
-                    <h3>Les Statistiques </h3> <br>
+                    <h3>Les Temoignages </h3> <br>
                 </div>
                 <div class="container pt-4 pb-4">
                     <table>
@@ -73,41 +73,7 @@
                     <a href="{{route('stats.edit',$testimonial->id)}}">Mettre à jour les infos</a>
                    </div>
                 </div>
-                <div class="container pt-4 pb-4">
-                    <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-4 pb-4">
-                    <h3>testimonial </h3> <br>
-                </div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th style="width: 25%;"> Titre</th>
-                                <th style="width: 25%;">Description</th>
-                                <th style="width: 25%;">Vision</th>
-                                <th style="width: 25%;">Mission</th>
-                            
-                            </tr>
-                        </thead>
-                        <tbody>
-                       @foreach ($testimonials as $testimonial)
-                           
-                    
-                            <tr>
-                                <td>{{$testimonial->title}}</td>
-                                <td>{{$testimonial->description}}</td>
-                                <td>{{$testimonial->vision}}</td>
-                                <td>{{$testimonial->mission}}</td>
-                               
-                            </tr>
-                        
-                        
-                        </tbody>
-                        
-                    </table>
-                   <div>
-                    <a href="{{route('testimonial.edit',$testimonial->id)}}">Mettre à jour les infos</a>
-                   </div>
-                </div>
-                 @endforeach
+               
             </div>
 
 
