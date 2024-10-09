@@ -34,8 +34,8 @@
                         <tbody>
                         @foreach ($testimonials as $testimonial)
                             <tr>
+                                <td>{{$testimonial->name}}</td>
                                 <td>{{$testimonial->message}}</td>
-                                <td>{{$testimonial->clients}}</td>
                                 <td>
                                     <a href="{{route('testimonial.edit', $testimonial->id)}}" class="btn btn-primary">Modifier</a>
                                     <form id="deleteForm{{$testimonial->id}}" action="{{ route('testimonial.destroy', $testimonial->id) }}" method="POST" class="d-inline">
@@ -72,6 +72,9 @@
                    <div>
                     <a href="{{route('stats.edit',$testimonial->id)}}">Mettre à jour les infos</a>
                    </div>
+                </div>
+                <div class="">
+                    <a href="{{route('testimonial.create')}}" class="btn btn-primary">Ajouter un temoignage</a>
                 </div>
                
             </div>

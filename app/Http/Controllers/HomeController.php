@@ -100,14 +100,18 @@ class HomeController extends Controller
     public function testimonials()
     {
         $testimonials = Testimonial::all();
-        return view('partials.testimonials', ['testimonials' => $testimonials]);
+        return view('partials.admin.testimonials.testimonials_list', ['testimonials' => $testimonials]);
+    }
+    public function testimonial_create()
+    {
+        return view('partials.admin.testimonials.create_testimonials');
     }
     public function testimonials_edit($id)
     {
         $testimonial = Testimonial::find($id);
         return view('partials.admin.testimonials.update_testimonials', ['testimonial' => $testimonial]);
     }
-    public function testimonials_store(Request $request)
+    public function testimonial_store(Request $request)
     {
         try {
 
