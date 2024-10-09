@@ -21,7 +21,17 @@ use App\Http\Controllers\Auth\RegisterController;
 
 //protected Routes
 Route::group(['middleware' => ['auth']], function () {
+
     //the routes go here...
+    // testimonials
+    Route::get('/testimonials', [HomeController::class, 'testimonials'])->name('testimonial');
+    Route::get('/testimonial/create', [HomeController::class, 'testimonial_create'])->name('testimonial.create');
+    Route::post('/testimonials', [HomeController::class, 'testimonial_store'])->name('testimonial.store');
+    Route::get('/testimonial/{id}/edit', [HomeController::class, 'testimonial_edit'])->name('testimonial.edit');
+    Route::put('/testimonial/{id}', [HomeController::class, 'testimonial_update'])->name('testimonial.update');
+    Route::delete('/testimonial/{id}', [HomeController::class, 'testimonial_destroy'])->name('testimonial.destroy');
+
+
     Route::get('/bhadmin', [HomeController::class, 'admin'])->name('admin');
     Route::get('realisation/create', [RealisationController::class, 'create'])->name('realisation.create');
     Route::post('/realisations', [RealisationController::class, 'store'])->name('realisation.store');
@@ -143,8 +153,4 @@ Route::get('/about/edit/{id}', [AboutController::class, 'edit'])->name('about.ed
 Route::put('/about/{id}', [AboutController::class, 'update'])->name('about.update');
 
 
-//testimonials
-Route::get('/testimonials', [HomeController::class, 'testimonials'])->name('testimonials');
-Route::get('/testimonials/edit/{id}', [HomeController::class, 'testimonials_edit'])->name('testimonial.edit');
-Route::put('/testimonials/{id}', [HomeController::class, 'testimonials_update'])->name('testimonial.update');
-Route::delete('/testimonials/{id}', [HomeController::class, 'testimonials_destroy'])->name('testimonial.destroy');
+//testimonial
