@@ -10,31 +10,31 @@
                 @csrf
                 <div class="mb-3">
                     <label for="name" class="form-label">Name:</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Entrer le nom du project: exemple: BH01" required>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Entrer le nom" required>
                 </div>
                 <div class="mb-3">
                     <label for="position" class="form-label">Position:</label>
-                    <input type="text" class="form-control" id="position" name="position" placeholder="Entrer la tache effectuee " required>
+                    <input type="text" class="form-control" id="position" name="position" required>
                 </div>
                 <div class="mb-3">
                     <label for="facebook" class="form-label">Quartier:</label>
-                    <input type="text" class="form-control" id="facebook" name="facebook" placeholder="Entrer le quartier" required>
+                    <input type="text" class="form-control" id="facebook" name="facebook" placeholder="Entrer le lien du compte Facebook (optionel) " required>
                 </div>
                 <div class="mb-3">
                     <label for="twitter" class="form-label">Ville:</label>
-                    <input type="text" class="form-control" id="twitter" name="twitter" placeholder="Entrer la ville" required>
+                    <input type="text" class="form-control" id="twitter" name="twitter" placeholder="Entrer le lien du compte Twitter (optionel) " required>
                 </div>
                 <div class="mb-3">
                     <label for="linkedin" class="form-label">Pays:</label>
-                    <input type="text" class="form-control" id="linkedin" name="linkedin" placeholder="Entrer le Pays" required>
+                    <input type="text" class="form-control" id="linkedin" name="linkedin" placeholder="Entrer le lien du compte LinkedIn (optionel) " required>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Annee:</label>
-                    <input type="text" class="form-control" id="email" name="email" placeholder="Entrer l'annee du projet" required>
+                    <input type="text" class="form-control" id="email" name="email" placeholder="Entrer l'adresse email" required>
                 </div>
                 <div class="mb-3">
                     <label for="phone" class="form-label">Maitre doeuvre:</label>
-                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Maitre d'oeuvre" required>
+                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Numero de phone" required>
                 </div>
                
                 <div class="mb-3">
