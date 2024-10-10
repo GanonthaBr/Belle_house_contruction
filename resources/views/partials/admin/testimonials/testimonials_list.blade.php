@@ -22,6 +22,7 @@
                     <h3>Les Temoignages </h3> <br>
                 </div>
                 <div class="container pt-4 pb-4">
+                    @if ($testimonials->count())
                     <table>
                         <thead>
                             <tr>
@@ -45,8 +46,7 @@
                                     </form>
                                 </td>
                             </tr>
-                        @endforeach
-                        <!-- Delete Confirmation Modal -->
+                             <!-- Delete Confirmation Modal -->
                             <div class="modal fade" id="deleteModal{{$testimonial->id}}" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
@@ -66,12 +66,17 @@
                                     </div>
                                 </div>
                             </div>
+                        @endforeach
+                       
                         </tbody>
                         
                     </table>
-                   <div>
-                    <a href="{{route('stats.edit',$testimonial->id)}}">Mettre à jour les infos</a>
-                   </div>
+                    @else
+                    <div class="alert alert-info" role="alert">
+                        Aucun temoignage n'a été trouvé
+                    </div>
+                    @endif
+                  
                 </div>
                 <div class="">
                     <a href="{{route('testimonial.create')}}" class="btn btn-primary">Ajouter un temoignage</a>
