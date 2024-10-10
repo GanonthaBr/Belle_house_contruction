@@ -10,31 +10,31 @@
                 @csrf
                 <div class="mb-3">
                     <label for="name" class="form-label">Name:</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Entrer le nom" required>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Entrer le nom" >
                 </div>
                 <div class="mb-3">
                     <label for="position" class="form-label">Position:</label>
-                    <input type="text" class="form-control" id="position" name="position" required>
+                    <input type="text" class="form-control" id="position" name="position" >
                 </div>
                 <div class="mb-3">
                     <label for="facebook" class="form-label">Facebook:</label>
-                    <input type="text" class="form-control" id="facebook" name="facebook" placeholder="Entrer le lien du compte Facebook (optionel) " required>
+                    <input type="text" class="form-control" id="facebook" name="facebook" placeholder="Entrer le lien du compte Facebook (optionel) " >
                 </div>
                 <div class="mb-3">
                     <label for="twitter" class="form-label">Twiiter:</label>
-                    <input type="text" class="form-control" id="twitter" name="twitter" placeholder="Entrer le lien du compte Twitter (optionel) " required>
+                    <input type="text" class="form-control" id="twitter" name="twitter" placeholder="Entrer le lien du compte Twitter (optionel) " >
                 </div>
                 <div class="mb-3">
                     <label for="linkedin" class="form-label">LinkedIn:</label>
-                    <input type="text" class="form-control" id="linkedin" name="linkedin" placeholder="Entrer le lien du compte LinkedIn (optionel) " required>
+                    <input type="text" class="form-control" id="linkedin" name="linkedin" placeholder="Entrer le lien du compte LinkedIn (optionel) " >
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email:</label>
-                    <input type="text" class="form-control" id="email" name="email" placeholder="Entrer l'adresse email" required>
+                    <input type="text" class="form-control" id="email" name="email" placeholder="Entrer l'adresse email" >
                 </div>
                 <div class="mb-3">
                     <label for="phone" class="form-label">Phone:</label>
-                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Numero de phone" required>
+                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Numero de phone" >
                 </div>
                
                 <div class="mb-3">

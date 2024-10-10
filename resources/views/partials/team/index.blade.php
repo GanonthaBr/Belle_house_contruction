@@ -7,30 +7,39 @@
             </div>
         </div>
         <div class="row">
+            @if ($teams->count())
+            @foreach ($teams as $team)
             <div class="col-lg-3 col-sm-6">
                 <div class="block-2 ftco-animate">
                     <div class="flipper">
                         <div class="front" style="background-image: url(../../images/team-1.html);">
                             <div class="box">
-                                <h2>AGABA Moses</h2>
-                                <p>PDG</p>
+                                <h2>{{$team->name}}</h2>
+                                <p>{{$team->position}}</p>
                             </div>
                         </div>
                         <div class="back">
 
                             <blockquote>
-                                <p>&ldquo;En charge de la gestion de l'entreprise et de toutes ses actions &rdquo;</p>
+                                <p>&ldquo;{{$team->email}} &rdquo;</p>
                             </blockquote>
                             <div class="author d-flex">
                                 <div class="image align-self-center">
-                                    <img src="images/person_pholder.png" alt>
+                                    <img src="{{asset('public/storage/' . $team->image)}}" alt="{{$team->name}}">
                                 </div>
-                                <div class="name align-self-center ml-3">AGABA Moses<span class="position">PDG</span></div>
+                                <div class="name align-self-center ml-3">{{$team->name}}<span class="position">{{$team->position}}</span></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            @endforeach
+            @else
+            <div class="alert alert-danger" role="alert">
+                Aucun membre de l'équipe trouvé
+            </div>
+            @endif
+
             {{-- <div class="col-lg-3 col-sm-6">
                 <div class="block-2 ftco-animate">
                     <div class="flipper">

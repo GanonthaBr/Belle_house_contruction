@@ -11,31 +11,31 @@
                 @method('PUT')
                 <div class="mb-3">
                     <label for="name" class="form-label">Name:</label>
-                    <input type="text" class="form-control" id="name" name="name"  value="{{$team->name}}" required>
+                    <input type="text" class="form-control" id="name" name="name"  value="{{$team->name}}" >
                 </div>
                 <div class="mb-3">
                     <label for="position" class="form-label">Position:</label>
-                    <input type="text" class="form-control" id="position" name="position" value="{{$team->position}}" required>
+                    <input type="text" class="form-control" id="position" name="position" value="{{$team->position}}" >
                 </div>
                 <div class="mb-3">
                     <label for="facebook" class="form-label">Facebook:</label>
-                    <input type="text" class="form-control" id="facebook" name="facebook" value="{{$team->facebook}}" required>
+                    <input type="text" class="form-control" id="facebook" name="facebook" value="{{$team->facebook}}" >
                 </div>
                 <div class="mb-3">
                     <label for="twitter" class="form-label">Twitter:</label>
-                    <input type="text" class="form-control" id="twitter" name="twitter" value="{{$team->twitter}}" required>
+                    <input type="text" class="form-control" id="twitter" name="twitter" value="{{$team->twitter}}" >
                 </div>
                 <div class="mb-3">
                     <label for="linkedin" class="form-label">LinkedIn:</label>
-                    <input type="text" class="form-control" id="linkedin" name="linkedin" value="{{$team->linkedin}}" required>
+                    <input type="text" class="form-control" id="linkedin" name="linkedin" value="{{$team->linkedin}}" >
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email:</label>
-                    <input type="text" class="form-control" id="email" name="email" value="{{$team->email}}" required>
+                    <input type="text" class="form-control" id="email" name="email" value="{{$team->email}}" >
                 </div>
                 <div class="mb-3">
                     <label for="phone" class="form-label">Phone:</label>
-                    <input type="text" class="form-control" id="phone" name="phone" value="{{$team->phone}}" required>
+                    <input type="text" class="form-control" id="phone" name="phone" value="{{$team->phone}}" >
                 </div>
                
                 <div class="mb-3">
