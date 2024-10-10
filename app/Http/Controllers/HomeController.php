@@ -178,7 +178,7 @@ class HomeController extends Controller
     public function allteam()
     {
         $teams = Team::all();
-        return view('partials.admin.team.index', ['teams' => $teams]);
+        return view('partials.admin.team_list', ['teams' => $teams]);
     }
 
     //create

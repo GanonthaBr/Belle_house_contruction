@@ -23,11 +23,9 @@ use App\Http\Controllers\Auth\RegisterController;
 Route::group(['middleware' => ['auth']], function () {
 
     //the routes go here...
-    //Team
-    Route::get('/team', [HomeController::class, 'allteam'])->name('team_list');
 
     // testimonials
-    Route::get('/testimonials', [HomeController::class, 'testimonials'])->name('testimonial');
+    Route::get('/testimonials', [HomeController::class, 'testimonials'])->name('testimonials');
     Route::get('/testimonial/create', [HomeController::class, 'testimonial_create'])->name('testimonial.create');
     Route::post('/testimonials', [HomeController::class, 'testimonial_store'])->name('testimonial.store');
     Route::get('/testimonial/{id}/edit', [HomeController::class, 'testimonial_edit'])->name('testimonial.edit');
@@ -163,3 +161,7 @@ Route::post('/team', [HomeController::class, 'team_store'])->name('team.store');
 Route::get('/team/{id}/edit', [HomeController::class, 'team_edit'])->name('team.edit');
 Route::put('/team/{id}', [HomeController::class, 'team_update'])->name('team.update');
 Route::delete('/team/{id}', [HomeController::class, 'team_destroy'])->name('team.destroy');
+
+
+//Team
+Route::get('/team', [HomeController::class, 'allteam'])->name('teamlist');
