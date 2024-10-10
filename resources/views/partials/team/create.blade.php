@@ -17,23 +17,23 @@
                     <input type="text" class="form-control" id="position" name="position" required>
                 </div>
                 <div class="mb-3">
-                    <label for="facebook" class="form-label">Quartier:</label>
+                    <label for="facebook" class="form-label">Facebook:</label>
                     <input type="text" class="form-control" id="facebook" name="facebook" placeholder="Entrer le lien du compte Facebook (optionel) " required>
                 </div>
                 <div class="mb-3">
-                    <label for="twitter" class="form-label">Ville:</label>
+                    <label for="twitter" class="form-label">Twiiter:</label>
                     <input type="text" class="form-control" id="twitter" name="twitter" placeholder="Entrer le lien du compte Twitter (optionel) " required>
                 </div>
                 <div class="mb-3">
-                    <label for="linkedin" class="form-label">Pays:</label>
+                    <label for="linkedin" class="form-label">LinkedIn:</label>
                     <input type="text" class="form-control" id="linkedin" name="linkedin" placeholder="Entrer le lien du compte LinkedIn (optionel) " required>
                 </div>
                 <div class="mb-3">
-                    <label for="email" class="form-label">Annee:</label>
+                    <label for="email" class="form-label">Email:</label>
                     <input type="text" class="form-control" id="email" name="email" placeholder="Entrer l'adresse email" required>
                 </div>
                 <div class="mb-3">
-                    <label for="phone" class="form-label">Maitre doeuvre:</label>
+                    <label for="phone" class="form-label">Phone:</label>
                     <input type="text" class="form-control" id="phone" name="phone" placeholder="Numero de phone" required>
                 </div>
                

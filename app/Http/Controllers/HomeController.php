@@ -214,9 +214,9 @@ class HomeController extends Controller
             $team->phone = $request->phone;
             $team->save();
 
-            return redirect()->route('team_list')->with('success', 'Membre ajouté avec succès');
+            return redirect()->route('teamlist')->with('success', 'Membre ajouté avec succès');
         } catch (\Throwable) {
-            return redirect()->route('team_list')->with('error', 'Erreur lors de l\'ajout du membre');
+            return redirect()->route('teamlist')->with('error', 'Erreur lors de l\'ajout du membre');
         }
     }
     //edit
@@ -254,9 +254,9 @@ class HomeController extends Controller
             $team->phone = $request->phone;
             $team->save();
 
-            return redirect()->route('team_list')->with('success', 'Membre mis à jour avec succès');
+            return redirect()->route('teamlist')->with('success', 'Membre mis à jour avec succès');
         } catch (\Throwable) {
-            return redirect()->route('team_list')->with('error', 'Erreur lors de la mise à jour du membre');
+            return redirect()->route('teamlist')->with('error', 'Erreur lors de la mise à jour du membre');
         }
     }
     //destroy
@@ -265,9 +265,9 @@ class HomeController extends Controller
         try {
             $team = Team::find($id);
             $team->delete();
-            return redirect()->route('team_list')->with('success', 'Membre supprimé avec succès');
+            return redirect()->route('teamlist')->with('success', 'Membre supprimé avec succès');
         } catch (\Throwable) {
-            return redirect()->route('team_list')->with('error', 'Erreur lors de la suppression du membre');
+            return redirect()->route('teamlist')->with('error', 'Erreur lors de la suppression du membre');
         }
     }
 }

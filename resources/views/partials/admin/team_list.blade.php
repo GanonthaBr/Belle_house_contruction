@@ -37,7 +37,7 @@
                         @foreach ($teams as $team)
                             <tr>
                                 <td>{{$team->name}}</td>
-                                <td>{{$team->postion}}</td>
+                                <td>{{$team->position}}</td>
                                 <td>{{$team->email}}</td>
                                 <td>
                                     <a href="{{route('team.edit', $team->id)}}" class="btn btn-primary">Modifier</a>
