@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Blog;
+use App\Models\Team;
 use App\Models\About;
 use App\Models\Stats;
 use App\Models\Contact;
@@ -11,8 +12,8 @@ use App\Models\Project;
 use App\Models\Service;
 use App\Models\Realisation;
 use App\Models\Testimonial;
-use Dotenv\Exception\ValidationException;
 use Illuminate\Http\Request;
+use Dotenv\Exception\ValidationException;
 
 
 
@@ -166,4 +167,107 @@ class HomeController extends Controller
     }
 
     //team
+
+    //all
+    public function team()
+    {
+        $teams = Team::all();
+        return view('partials.team.index', ['teams' => $teams]);
+    }
+    //all team
+    public function allteam()
+    {
+        $teams = Team::all();
+        return view('partials.admin.team.index', ['teams' => $teams]);
+    }
+
+    //create
+    public function team_create()
+    {
+        return view('partials.team.create');
+    }
+    //store
+    public function team_store(Request $request)
+    {
+        try {
+            $request->validate([
+                'name' => 'nullable',
+                'position' => 'nullable',
+                'image' => 'nullable',
+                'facebook' => 'nullable',
+                'twitter' => 'nullable',
+                'linkedin' => 'nullable',
+                'email' => 'nullable',
+                'phone' => 'nullable'
+            ]);
+            //image path
+            $imagePath = $request->file('image') ? $request->file('image')->store('Team_images', 'public') : null;
+
+            $team = new Team();
+            $team->name = $request->name;
+            $team->position = $request->position;
+            $team->image = $imagePath;
+            $team->facebook = $request->facebook;
+            $team->twitter = $request->twitter;
+            $team->linkedin = $request->linkedin;
+            $team->email = $request->email;
+            $team->phone = $request->phone;
+            $team->save();
+
+            return redirect()->route('team_list')->with('success', 'Membre ajouté avec succès');
+        } catch (\Throwable) {
+            return redirect()->route('team_list')->with('error', 'Erreur lors de l\'ajout du membre');
+        }
+    }
+    //edit
+    public function team_edit($id)
+    {
+        $team = Team::find($id);
+        return view('partials.team.update', ['team' => $team]);
+    }
+    //update
+    public function team_update(Request $request, $id)
+    {
+        try {
+            $request->validate([
+                'name' => 'nullable',
+                'position' => 'nullable',
+                'image' => 'nullable',
+                'facebook' => 'nullable',
+                'twitter' => 'nullable',
+                'linkedin' => 'nullable',
+                'email' => 'nullable',
+                'phone' => 'nullable'
+            ]);
+            //image path
+            $imagePath = $request->file('image') ? $request->file('image')->store('Team_images', 'public') : null;
+
+            $team = Team::find($id);
+
+            $team->name = $request->name;
+            $team->position = $request->position;
+            $team->image = $imagePath;
+            $team->facebook = $request->facebook;
+            $team->twitter = $request->twitter;
+            $team->linkedin = $request->linkedin;
+            $team->email = $request->email;
+            $team->phone = $request->phone;
+            $team->save();
+
+            return redirect()->route('team_list')->with('success', 'Membre mis à jour avec succès');
+        } catch (\Throwable) {
+            return redirect()->route('team_list')->with('error', 'Erreur lors de la mise à jour du membre');
+        }
+    }
+    //destroy
+    public function team_destroy($id)
+    {
+        try {
+            $team = Team::find($id);
+            $team->delete();
+            return redirect()->route('team_list')->with('success', 'Membre supprimé avec succès');
+        } catch (\Throwable) {
+            return redirect()->route('team_list')->with('error', 'Erreur lors de la suppression du membre');
+        }
+    }
 }

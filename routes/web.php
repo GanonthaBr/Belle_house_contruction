@@ -23,6 +23,9 @@ use App\Http\Controllers\Auth\RegisterController;
 Route::group(['middleware' => ['auth']], function () {
 
     //the routes go here...
+    //Team
+    Route::get('/team', [HomeController::class, 'allteam'])->name('team_list');
+
     // testimonials
     Route::get('/testimonials', [HomeController::class, 'testimonials'])->name('testimonial');
     Route::get('/testimonial/create', [HomeController::class, 'testimonial_create'])->name('testimonial.create');
