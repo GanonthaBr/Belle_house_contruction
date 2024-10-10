@@ -153,4 +153,10 @@ Route::get('/about/edit/{id}', [AboutController::class, 'edit'])->name('about.ed
 Route::put('/about/{id}', [AboutController::class, 'update'])->name('about.update');
 
 
-//testimonial
+//team
+Route::get('/team', [HomeController::class, 'team'])->name('team');
+Route::get('/team/create', [HomeController::class, 'team_create'])->name('team.create');
+Route::post('/team', [HomeController::class, 'team_store'])->name('team.store');
+Route::get('/team/{id}/edit', [HomeController::class, 'team_edit'])->name('team.edit');
+Route::put('/team/{id}', [HomeController::class, 'team_update'])->name('team.update');
+Route::delete('/team/{id}', [HomeController::class, 'team_destroy'])->name('team.destroy');

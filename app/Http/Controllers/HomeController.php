@@ -164,4 +164,6 @@ class HomeController extends Controller
         $testimonial->delete();
         return redirect()->route('testimonials')->with('success', 'Témoignage supprimé avec succès');
     }
+
+    //team
 }
