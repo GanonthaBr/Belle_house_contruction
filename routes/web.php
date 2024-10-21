@@ -21,6 +21,12 @@ use App\Http\Controllers\Auth\RegisterController;
 
 //protected Routes
 Route::group(['middleware' => ['auth']], function () {
+    // Advertising
+    Route::get('/advertising', [HomeController::class, 'alaune_admin'])->name('pub');
+    Route::get('/advertising/create', [HomeController::class, 'alaune_create'])->name('pub.create');
+    Route::post('/advertising/store', [HomeController::class, 'alaune_store'])->name('pub.store');
+    Route::delete('/advertising/{id}', [HomeController::class, 'alaune_destroy'])->name('pub.destroy');
+
 
     //the routes go here...
 
@@ -85,6 +91,7 @@ Route::group(['middleware' => ['auth']], function () {
 
 //Home 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/pub', [HomeController::class, 'alaune'])->name('alaune');
 
 
 

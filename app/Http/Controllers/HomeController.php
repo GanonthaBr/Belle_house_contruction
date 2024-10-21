@@ -6,6 +6,7 @@ use App\Models\Blog;
 use App\Models\Team;
 use App\Models\About;
 use App\Models\Stats;
+use App\Models\AlaUne;
 use App\Models\Contact;
 use App\Models\Partner;
 use App\Models\Project;
@@ -43,13 +44,15 @@ class HomeController extends Controller
         $realisation_number = $realisations->count();
         $partner_number = $partners->count();
         $blog_number = $blogs->count();
+        $alaune = AlaUne::all();
         return view('admin', [
             'projects' => $partner_number,
             'services' => $service_number,
             'blogs' => $blog_number,
             'realisations' => $realisation_number,
             'partners' => $partner_number,
-            '$contacts' => $contacts
+            '$contacts' => $contacts,
+            'alaune' => $alaune,
         ]);
     }
     public function contacts()
@@ -268,6 +271,50 @@ class HomeController extends Controller
             return redirect()->route('teamlist')->with('success', 'Membre supprimé avec succès');
         } catch (\Throwable) {
             return redirect()->route('teamlist')->with('error', 'Erreur lors de la suppression du membre');
+        }
+    }
+
+    // A la Une
+    public function alaune()
+    {
+        $alaune = AlaUne::all();
+        return view('partials.hero', ['alaune' => $alaune]);
+    }
+    public function alaune_admin()
+    {
+        $alaune = AlaUne::all();
+        return view('admin', ['alaune' => $alaune]);
+    }
+    public function alaune_create()
+    {
+        return view('partials.admin.create_pub');
+    }
+    public function alaune_store(Request $request)
+    {
+        try {
+            $request->validate([
+                'image' => 'required'
+            ]);
+
+            $imagePath = $request->file('image') ? $request->file('image')->store('pub_images', 'public') : null;
+
+            $alaune = new AlaUne();
+            $alaune->image = $imagePath;
+            $alaune->save();
+
+            return redirect()->route('admin')->with('success', 'Image ajoutée avec succès');
+        } catch (\Throwable) {
+            return redirect()->route('pub-create')->with('error', 'Erreur lors de l\'ajout de l\'image');
+        }
+    }
+    public function alaune_destroy($id)
+    {
+        try {
+            $alaune = AlaUne::find($id);
+            $alaune->delete();
+            return redirect()->route('admin')->with('success', 'Image supprimée avec succès');
+        } catch (\Throwable) {
+            return redirect()->route('admin')->with('error', 'Erreur lors de la suppression de l\'image');
         }
     }
 }
