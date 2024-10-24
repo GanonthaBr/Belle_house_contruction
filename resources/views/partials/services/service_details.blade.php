@@ -19,7 +19,7 @@
             <img src="{{asset('storage/' . $service->image)}}" alt="{{$service->id}}" height="200" width="400">
         </div>
         <div class="col-md-6 m-4">
-            <p>{{$service->description}}</p>
+            <p>{!!$service->description!!}</p>
         </div>
     </div>
     <div class="container">
