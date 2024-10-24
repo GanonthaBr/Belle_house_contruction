@@ -24,7 +24,7 @@
                             @foreach ($services as $service)
                             <tr>
                                 <td>{{$service->title}}</td>
-                                <td>{{substr($service->description,0,50)}}</td>
+                                <td>{!!substr($service->description,0,50)!!}</td>
                                 <td>
                                     <button class="btn btn-info"> <a href="{{route('service.edit', $service->id)}}" style="color: #fff; font-weight:bold">Modifier</a> </button>
                                     <form id="deleteForm{{$service->id}}" action="{{ route('service.destroy', $service->id) }}" method="POST" class="d-inline">
