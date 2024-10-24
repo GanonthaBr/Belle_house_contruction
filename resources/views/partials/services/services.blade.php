@@ -17,15 +17,15 @@
                             
                             @if ($service->id ==2)
                                 <p>
-                            {{substr($service->description,0,650)}}
+                            {!!substr($service->description,0,650)!!}
                             </p>
                             @elseif($service->id==1)
                             <p>
-                            {{substr($service->description,0,650)}}
+                            {!!substr($service->description,0,650)!!}
                             </p>
                             @elseif($service->id==3)
                             <p>
-                            {{substr($service->description,0,650)}}
+                            {!!substr($service->description,0,650)!!}
                             </p>
                             @endif
 
