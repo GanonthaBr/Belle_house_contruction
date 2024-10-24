@@ -15,7 +15,13 @@
 
     <!-- Fonts and icons -->
     <script src="assets/js/plugin/webfont/webfont.min.js"></script>
+    {{-- text area formatting: CKEditor --}}
+   <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
     <script>
+       window.onload = function() {
+      CKEDITOR.replace('description');
+      CKEDITOR.replace('description');
+    };
       WebFont.load({
         google: { families: ["Public Sans:300,400,500,600,700"] },
         custom: {
@@ -31,6 +37,7 @@
           sessionStorage.fonts = true;
         },
       });
+
     </script>
 
     <!-- CSS Files -->
