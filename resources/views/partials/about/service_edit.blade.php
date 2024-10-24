@@ -6,16 +6,16 @@
   <div class="main-panel">
     @include('partials.admin.mainheader')
 <div class="container">
-    <div class="container-fluid px-4">
     <form action="{{ route('service.update',$service->id) }}" method="POST" enctype="multipart/form-data">
         @csrf
+        @method('PUT')
         <div class="mb-3">
             <label for="title" class="form-label">Title:</label>
             <input type="text" class="form-control" id="title" name="title" value="{{$service->title}}" required>
         </div>
         <div class="mb-3">
             <label for="description" class="form-label">Description:</label>
-            <textarea  class="form-control" id="description" name="description" required> {{$service->description}} </textarea>
+            <input type="text" class="form-control" id="description" name="description" value="{{$service->description}}" required>
         </div>
         <div class="mb-3">
             <label for="image" class="form-label">Image:</label>
@@ -26,9 +26,8 @@
             <label for="images" class="form-label">Plus d'images</label>
             <input type="file" class="form-control" id="images" name="images[]" multiple>
         </div>
-        <button type="submit" class="btn btn-primary">Publier</button>
+        <button type="submit" class="btn btn-primary">Sauvegarder</button>
     </form>
-    </div>
 </div>
 @include('partials.admin.footer')
   </div>
