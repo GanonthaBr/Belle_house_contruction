@@ -31,7 +31,7 @@
                     <div class="text">
                         <div class="icon"><span class="flaticon-architect"></span></div>
                         <h2>{{$service->title}}</h2>
-                        <p>  {{substr($service->description,0,110)}}...</p>
+                        <p>  {!!substr($service->description,0,110)!!}...</p>
                         <a href="{{route('service.show',$service->id)}}" class="btn-custom">Voir Plus+</a>
                     </div>
                 </div>
