@@ -26,7 +26,7 @@
                         <div class="text d-block">
                               <div class="meta">
                                 <p>
-                                    <a><span class="fa fa-calendar mr-2"></span>Sept. 06, 2020</a>
+                                    <a><span class="fa fa-calendar mr-2"></span> {{substr($blog->created_at,0,10)}} </a>
                                     <a><span class="fa fa-user mr-2"></span>{{$blog->author}}</a>
                                     <a class="meta-chat"><span class="fa fa-comment mr-2"></span> 3</a>
                                 </p>
