@@ -41,7 +41,7 @@
                             @foreach($blogs as $blog)
                             <tr>
                                 <td>{{$blog->title}}</td>
-                                <td>{{substr($blog->content,0,100)}}</td>
+                                <td>{!!substr($blog->content,0,100)!!}</td>
                                 <td>
                                     <a href="{{route('blog.edit', $blog->id)}}" class="btn btn-primary">Modifier</a>
                                     <!-- <a href="{{route('blog.destroy', $blog->id)}}" class="btn btn-danger">Delete</a> -->
