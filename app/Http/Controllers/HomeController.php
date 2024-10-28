@@ -26,7 +26,7 @@ class HomeController extends Controller
         $services = Service::orderBy('created_at', 'asc')->take(3)->get();
         $realisations = Realisation::orderBy('created_at', 'desc')->take(6)->get();
         $partners = Partner::all();
-        $blogs = Blog::all();
+        $blogs = Blog::orderBy('created_at', 'desc')->take(6)->get();
         $stats = Stats::all();
         return view('home', ['projects' => $projects, 'partners' => $partners, 'blogs' => $blogs, 'realisations' => $realisations, 'services' => $services, 'stats' => $stats]);
     }
