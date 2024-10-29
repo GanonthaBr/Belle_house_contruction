@@ -49,7 +49,7 @@ class ProjectsController extends Controller
                 'maitre_douvrage' => 'nullable',
                 'description' => 'nullable',
                 'image' => 'nullable|image|max:10240',
-                'images.*' => 'nullable|image|mimes:jpeg,jpg,png,gif,svg|max:4096'
+                'images.*' => 'nullable|image|mimes:jpeg,jpg,png,gif,svg|max:10240'
 
             ]);
             //getting the requested data
@@ -111,14 +111,19 @@ class ProjectsController extends Controller
                 'maitre_douvrage' => 'nullable',
                 'description' => 'nullable',
                 'image' => 'nullable|image|max:10240',
-                'images.*' => 'nullable|image|mimes:jpeg,jpg,png,gif,svg|max:4096'
+                'images.*' => 'nullable|image|mimes:jpeg,jpg,png,gif,svg|max:10240'
             ]);
             //getting the requested data
+            $project = Project::findOrFail($id);
             //image path
-            $imagePath = $request->file('image') ? $request->file('image')->store('project_images', 'public') : null;
+            if ($request->hasFile('image')) {
+                $imagePath = $request->image->store('project_images', 'public');
+                $project->image = $imagePath;
+            }
+
 
             //create new Project
-            $project = Project::findOrFail($id);
+
             $project->name = $request->name;
             $project->type = $request->type;
             $project->area = $request->area;
@@ -130,7 +135,7 @@ class ProjectsController extends Controller
             $project->maitre_doeuvre = $request->maitre_doeuvre;
             $project->maitre_douvrage = $request->maitre_douvrage;
             $project->description = $request->description;
-            $project->image = $imagePath;
+
 
             //save
             $project->save();
