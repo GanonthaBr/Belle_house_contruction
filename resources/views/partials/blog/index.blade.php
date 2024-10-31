@@ -2,7 +2,7 @@
 
 @section('content')
 
-<section class="hero-wrap hero-wrap-2" style="background-image: url('images/banner-1.png');" data-stellar-background-ratio="0.5">
+<section class="hero-wrap hero-wrap-2" style="background-image: url('public/images/banner-1.png');" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
         <div class="row no-gutters slider-text align-items-end justify-content-start">
@@ -17,26 +17,26 @@
     <div class="container">
         <h2>Liste de Nos Blog Posts</h2>
         <div class="row d-flex">
-             @foreach ($blogs as $blog)
-                    
-                <div class="col-lg-4 ftco-animate">
-                    <div class="blog-entry">
-                        <a href="blog-single.html" class="block-20" style="background-image: url({{asset('storage/' . $blog->image)}});">
-                        </a>
-                        <div class="text d-block">
-                              <div class="meta">
-                                <p>
-                                    <a><span class="fa fa-calendar mr-2"></span> {{substr($blog->created_at,0,10)}} </a>
-                                    <a><span class="fa fa-user mr-2"></span>{{$blog->author}}</a>
-                                    <a class="meta-chat"><span class="fa fa-comment mr-2"></span> 3</a>
-                                </p>
-                            </div>
-                            <h3 class="heading"><a href="{{route('blog.show',$blog->id)}}"> {{$blog->title}}</a></h3>
-                            <p><a href="{{route('blog.show',$blog->id)}}" class="btn btn-secondary py-2 px-3">Voir Plus+</a></p>
+            @foreach ($blogs as $blog)
+
+            <div class="col-lg-4 ftco-animate">
+                <div class="blog-entry">
+                    <a href="blog-single.html" class="block-20" style="background-image: url({{asset('public/storage/' . $blog->image)}});">
+                    </a>
+                    <div class="text d-block">
+                        <div class="meta">
+                            <p>
+                                <a><span class="fa fa-calendar mr-2"></span> {{substr($blog->created_at,0,10)}} </a>
+                                <a><span class="fa fa-user mr-2"></span>{{$blog->author}}</a>
+                                <a class="meta-chat"><span class="fa fa-comment mr-2"></span> 3</a>
+                            </p>
                         </div>
+                        <h3 class="heading"><a href="{{route('blog.show',$blog->id)}}"> {{$blog->title}}</a></h3>
+                        <p><a href="{{route('blog.show',$blog->id)}}" class="btn btn-secondary py-2 px-3">Voir Plus+</a></p>
                     </div>
                 </div>
-                @endforeach
+            </div>
+            @endforeach
             {{-- <div class="col-lg-4 ftco-animate">
                 <div class="blog-entry">
                     <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
@@ -139,6 +139,12 @@
                     </div>
                 </div>
             </div> --}}
+        </div>
+        <div class="row mt-5">
+            <div class="col text-center">
+                
+                {{ $blogs->links() }}
+            </div>
         </div>
     </div>
 </section>

@@ -15,7 +15,8 @@ class BlogController extends Controller
     //index
     public function index()
     {
-        $blogs = Blog::all();
+        // $blogs = Blog::all();
+        $blogs = Blog::orderBy('created_at', 'desc')->paginate(6);
         return view('partials.blog.index', ['blogs' => $blogs]);
     }
     //allblogs
@@ -27,7 +28,7 @@ class BlogController extends Controller
     //show
     public function show($id)
     {
-        $blog = Blog::find($id);
+        $blog = Blog::findOrFail($id);
         return view('partials.blog.blog_details', ['blog' => $blog]);
     }
     //create
@@ -38,17 +39,18 @@ class BlogController extends Controller
     // Store a blog
     public function store(Request $request)
     {
+
         try {
             $request->validate([
                 'title' => 'required',
                 'content' => 'required',
                 'author' => 'nullable',
-                'image' => 'nullable|image|max:5120',
+                'image' => 'nullable|image|max:20480',
                 'images.*' => 'nullable|image|mimes:jpeg,jpg,png,gif,svg|max:8192'
             ]);
             //image path
             $imagePath = $request->file('image') ? $request->file('image')->store('blog_images', 'public') : null;
-
+            // dd($request->data());
             //sanitize with HTMLPurifier
 
             $config = HTMLPurifier_Config::createDefault();
@@ -77,8 +79,11 @@ class BlogController extends Controller
 
             return redirect()->route('allblogs')->with('blog-created', 'Votre blog post été ajouté avec succès!');
         } catch (ValidationException $e) {
-
+            // dd($e->getMessage());
             return response()->json(['message' => $e->getMessage()]);
+        } catch (\Throwable $e) {
+            // dd($e->getMessage());
+            return response()->json(['message' => 'Une erreur s\'est produite lors de la création du blog']);
         }
     }
     //edit
@@ -95,8 +100,8 @@ class BlogController extends Controller
                 'title' => 'required',
                 'content' => 'required',
                 'author' => 'nullable',
-                'image' => 'nullable|image|max:5120',
-                'images.*' => 'nullable|image|mimes:jpeg,jpg,png,gif,svg|max:8192'
+                'image' => 'nullable|image|max:20480',
+                'images.*' => 'nullable|image|mimes:jpeg,jpg,png,gif,svg|max:20480'
             ]);
             //image path
             $imagePath = $request->file('image') ? $request->file('image')->store('blog_images', 'public') : null;
@@ -126,7 +131,11 @@ class BlogController extends Controller
             }
             return redirect()->route('allblogs')->with('blog-updated', 'Votre blog post a été mis à jour avec succès!');
         } catch (ValidationException $e) {
+            // dd($e->getMessage());
             return response()->json(['message' => $e->getMessage()]);
+        } catch (\Throwable $e) {
+            // dd($e->getMessage());
+            return response()->json(['message' => 'Une erreur s\'est produite lors de la création du blog']);
         }
     }
     //delete
